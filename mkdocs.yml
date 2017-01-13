@@ -1,0 +1,13 @@
+site_name: Dataloop Support
+# site_url:
+repo_url: https://github.com/dataloop/dataloop-support
+site_description: Support and Help Documentation for Dataloop.IO
+site_author: support@dataloop.io
+copyright: © Dataloop 2017
+# google_analytics: [ ]
+remote_branch: gh-pages
+# pages:
+#   - Home: index.md
+#   - Setup and Configuration: setup.md
+#   - Integrations: integrations.md
+theme: readthedocs
