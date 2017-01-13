@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="support@dataloop.io">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Graphite - Dataloop Support</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Graphite";
+    var mkdocs_page_input_path = "endpoints/graphite.md";
+    var mkdocs_page_url = "/endpoints/graphite/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dataloop Support</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/">Integrations</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../setup/">Setup</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Account model</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/backup_restore/">Backup restore</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/private_packs/">Private packs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Agent</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/command_line_interface/">Command line interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/config_management/">Config management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/configuration/">Configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/solo_mode/">Solo mode</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/supported_operating_systems/">Supported operating systems</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/uninstall/">Uninstall</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Alerting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/agent_alerts/">Agent alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/metric_alerts/">Metric alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/plugin_alerts/">Plugin alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/rules/">Rules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/webhook/">Webhook</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Dashboards</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/annotations/">Annotations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/grafana/">Grafana</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/graph_widgets/">Graph widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/numeric_widgets/">Numeric widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/public_dashboards/">Public dashboards</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/troubleshooting/">Troubleshooting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Endpoints</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../collectd/">Collectd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Graphite</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#graphite">Graphite</a></li>
+                
+                    <li><a class="toctree-l4" href="#testing">Testing</a></li>
+                
+                    <li><a class="toctree-l4" href="#simple-example">Simple Example</a></li>
+                
+                    <li><a class="toctree-l4" href="#troubleshooting">Troubleshooting</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../hosted_statsd/">Hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../influxdb/">Influxdb</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../self-hosted_statsd/">Self hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../self-hosted_statsite/">Self hosted statsite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../statsd/">Statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../statsd_clients/">Statsd clients</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/API/">API</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/command_line_utility/">Command line utility</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/data_retention_policy/">Data retention policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/faq/">Faq</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/getting_help/">Getting help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/roadmap/">Roadmap</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/security/">Security</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/use_cases/">Use cases</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/where_we_fit/">Where we fit</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Integrations</span></li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Thirdparty</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/thirdparty/aws/">Aws</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Webhook</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/bigpanda/">Bigpanda</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/hipchat/">Hipchat</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/opsgenie/">Opsgenie</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/pagerduty/">Pagerduty</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/slack/">Slack</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/victorops/">Victorops</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Nagios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/built_in_python/">Built in python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/nagios_performance_data/">Nagios performance data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/nagios_plugins/">Nagios plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/plugin_deplotmen_models/">Plugin deplotmen models</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/powershell/">Powershell</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/prometheus_plugins/">Prometheus plugins</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dataloop Support</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Endpoints &raquo;</li>
+        
+      
+    
+    <li>Graphite</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/endpoints/graphite.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="graphite">Graphite</h1>
+<p>You can stream metrics directly into <code>graphite.dataloop.io</code> on tcp port <code>2003</code> using the Graphite metric format.</p>
+<p>This is great for high resolution metrics up to 1 second granularity or for long running jobs that you may want to schedule via cron. Many open source metric collection tools have Graphite backends which can be configured to stream metrics directly into Dataloop.</p>
+<p>The plain text protocol is described here:</p>
+<p>http://graphite.readthedocs.org/en/latest/feeding-carbon.html</p>
+<p>The metric path section of the string determines how Dataloop will store the data. The format should be:</p>
+<pre><code>fingerprint.metric.path value timestamp
+</code></pre>
+
+<p>The timestamp value is optional. If you don't set one we will set the timestamp as the time the metric arrived. You can send us historical timestamps if you wish to migrate data into Dataloop.</p>
+<p>Currently we only allow Graphite data to be attached to an Agent fingerprint.</p>
+<p>The first step is therefore to install a Dataloop Agent on your server. After that you can find your Agent fingerprint on Linux in <code>/etc/dataloop/agent.finger</code>, or in the Dataloop UI on the agent details page.</p>
+<h2 id="testing">Testing</h2>
+<p>Set the fingerprint variable so we can use it in the metric path:</p>
+<pre><code>finger=$(sed -n -e 's/fingerprint = //p' /etc/dataloop/agent.finger)
+</code></pre>
+
+<p>Then echo a random metric to our graphite port:</p>
+<pre><code>echo &quot;${finger}.test $RANDOM&quot; | nc -c graphite.dataloop.io 2003
+</code></pre>
+
+<p>You can now create a dashboard widget in Dataloop and browse to the agent you sent the metric in from.</p>
+<h2 id="simple-example">Simple Example</h2>
+<p>Start by finding your fingerprint:</p>
+<pre><code>cat /etc/dataloop/agent.finger
+
+[private]
+fingerprint = 2afee216-a80f-4f01-9220-14bc3195a3d5
+</code></pre>
+
+<p>Then simply echo the fingerprint followed by a dot separated metric path followed by your value.</p>
+<pre><code>echo &quot;2afee216-a80f-4f01-9220-14bc3195a3d5.some.metric.path $RANDOM&quot; | nc -c graphite.dataloop.io 2003
+</code></pre>
+
+<p>In our example we just sent in a random value. When you login to the Dataloop UI you'll now see some.metric.path show up in the dashboard tree browser and the alerts metric drop-down.</p>
+<p>Warning: There are a couple of implementations of netcat. The above example with the -c option was for the GNU implementation. If you are using a BSD implementation (like OSX) then use -q0 instead. </p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>The easiest way to troubleshoot a Graphite backend integration is to open a netcat instance listening on another port. For example</p>
+<pre><code>netcat -l -k 2004
+</code></pre>
+
+<p>Then temporarily redirect your 3rd party software to send to localhost port 2004 tcp. The netcat listener will print out the metrics so you can compare to the format listed above.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../hosted_statsd/" class="btn btn-neutral float-right" title="Hosted statsd">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../collectd/" class="btn btn-neutral" title="Collectd"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Dataloop 2017</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../collectd/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../hosted_statsd/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

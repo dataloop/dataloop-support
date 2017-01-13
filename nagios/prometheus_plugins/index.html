@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="support@dataloop.io">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Prometheus plugins - Dataloop Support</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Prometheus plugins";
+    var mkdocs_page_input_path = "nagios/prometheus_plugins.md";
+    var mkdocs_page_url = "/nagios/prometheus_plugins/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dataloop Support</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/">Integrations</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../setup/">Setup</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Account model</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/backup_restore/">Backup restore</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/private_packs/">Private packs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Agent</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/command_line_interface/">Command line interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/config_management/">Config management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/configuration/">Configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/solo_mode/">Solo mode</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/supported_operating_systems/">Supported operating systems</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/uninstall/">Uninstall</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Alerting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/agent_alerts/">Agent alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/metric_alerts/">Metric alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/plugin_alerts/">Plugin alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/rules/">Rules</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../alerting/webhook/">Webhook</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Dashboards</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/annotations/">Annotations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/grafana/">Grafana</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/graph_widgets/">Graph widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/numeric_widgets/">Numeric widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/public_dashboards/">Public dashboards</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/troubleshooting/">Troubleshooting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Endpoints</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/collectd/">Collectd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/graphite/">Graphite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/hosted_statsd/">Hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/influxdb/">Influxdb</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/self-hosted_statsd/">Self hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/self-hosted_statsite/">Self hosted statsite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/statsd/">Statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/statsd_clients/">Statsd clients</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/API/">API</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/command_line_utility/">Command line utility</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/data_retention_policy/">Data retention policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/faq/">Faq</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/getting_help/">Getting help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/roadmap/">Roadmap</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/security/">Security</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/use_cases/">Use cases</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/where_we_fit/">Where we fit</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Integrations</span></li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Thirdparty</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/thirdparty/aws/">Aws</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Webhook</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/bigpanda/">Bigpanda</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/hipchat/">Hipchat</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/opsgenie/">Opsgenie</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/pagerduty/">Pagerduty</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/slack/">Slack</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/victorops/">Victorops</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Nagios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../built_in_python/">Built in python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../nagios_performance_data/">Nagios performance data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../nagios_plugins/">Nagios plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../plugin_deplotmen_models/">Plugin deplotmen models</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../powershell/">Powershell</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Prometheus plugins</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#prometheus-plugins">Prometheus Plugins</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-for-node-exporter">Example for Node Exporter</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-for-application-instrumentation">Example for Application Instrumentation</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dataloop Support</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Nagios &raquo;</li>
+        
+      
+    
+    <li>Prometheus plugins</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/nagios/prometheus_plugins.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="prometheus-plugins">Prometheus Plugins</h1>
+<p>The Dataloop agent can run plugins that scrape Prometheus http endpoints. We recommend that you install a Dataloop agent on each server and then create a separate plugin to monitor each endpoint on localhost.</p>
+<h2 id="example-for-node-exporter">Example for Node Exporter</h2>
+<p>Start the Prometheus Node Exporter on a server following the instructions here:</p>
+<p>https://github.com/prometheus/node_exporter</p>
+<p>Then create a new plugin in Dataloop called node_exporter.py.</p>
+<p>Paste in the following code to scrape the endpoint:</p>
+<pre><code>#!/usr/bin/env python
+import requests
+requests.get('http://localhost:9100/metrics').text
+</code></pre>
+
+<p>Where port 9100 is the port the Node Exporter is running. Select the agent and press run to confirm that metrics are being received.</p>
+<p>Now <strong>set the output format to Prometheus</strong> and specify the scrape interval (the default is to scrape every 30 seconds) on the plugin details page. Save and apply to either a single agent or a tag for deployment.</p>
+<p>A list of other exporters can be found here:</p>
+<p>https://prometheus.io/docs/instrumenting/exporters/</p>
+<h2 id="example-for-application-instrumentation">Example for Application Instrumentation</h2>
+<p>Select a Prometheus client library for your language.</p>
+<p>https://prometheus.io/docs/instrumenting/clientlibs/</p>
+<p>Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on http://localhost:8000.</p>
+<p>Create a plugin called payments.py with the following content:</p>
+<pre><code>#!/usr/bin/env python
+import requests
+requests.get('http://localhost:8000/metrics').text
+</code></pre>
+
+<p>Test this by pressing the run button against a node running the payments application. Remember to switch the plugin format to Prometheus on the plugin details page. Save and apply to either a single agent or a tag for deployment.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../powershell/" class="btn btn-neutral" title="Powershell"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Dataloop 2017</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../powershell/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

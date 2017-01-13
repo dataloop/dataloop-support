@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="support@dataloop.io">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Rules - Dataloop Support</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Rules";
+    var mkdocs_page_input_path = "alerting/rules.md";
+    var mkdocs_page_url = "/alerting/rules/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dataloop Support</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/">Integrations</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../setup/">Setup</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Account model</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/backup_restore/">Backup restore</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../account_model/private_packs/">Private packs</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Agent</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/command_line_interface/">Command line interface</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/config_management/">Config management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/configuration/">Configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/solo_mode/">Solo mode</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/supported_operating_systems/">Supported operating systems</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/uninstall/">Uninstall</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Alerting</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent_alerts/">Agent alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../metric_alerts/">Metric alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../plugin_alerts/">Plugin alerts</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Rules</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#rules">Rules</a></li>
+                
+                    <li><a class="toctree-l4" href="#criteria-and-rule-status">Criteria and Rule status</a></li>
+                
+                    <li><a class="toctree-l4" href="#alert-lifecycle">Alert Lifecycle</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webhook/">Webhook</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Dashboards</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/annotations/">Annotations</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/grafana/">Grafana</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/graph_widgets/">Graph widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/numeric_widgets/">Numeric widgets</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/public_dashboards/">Public dashboards</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../dashboards/troubleshooting/">Troubleshooting</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Endpoints</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/collectd/">Collectd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/graphite/">Graphite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/hosted_statsd/">Hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/influxdb/">Influxdb</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/self-hosted_statsd/">Self hosted statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/self-hosted_statsite/">Self hosted statsite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/statsd/">Statsd</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../endpoints/statsd_clients/">Statsd clients</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Getting started</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/API/">API</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/command_line_utility/">Command line utility</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/data_retention_policy/">Data retention policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/faq/">Faq</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/getting_help/">Getting help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/overview/">Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/roadmap/">Roadmap</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/security/">Security</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/use_cases/">Use cases</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/where_we_fit/">Where we fit</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Integrations</span></li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Thirdparty</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/thirdparty/aws/">Aws</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Webhook</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/bigpanda/">Bigpanda</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/hipchat/">Hipchat</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/opsgenie/">Opsgenie</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/pagerduty/">Pagerduty</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/slack/">Slack</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../integrations/webhook/victorops/">Victorops</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Nagios</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/built_in_python/">Built in python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/nagios_performance_data/">Nagios performance data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/nagios_plugins/">Nagios plugins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/plugin_deplotmen_models/">Plugin deplotmen models</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/powershell/">Powershell</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../nagios/prometheus_plugins/">Prometheus plugins</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dataloop Support</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Alerting &raquo;</li>
+        
+      
+    
+    <li>Rules</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/alerting/rules.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="rules">Rules</h1>
+<p>Rules are comprised of <strong>criteria</strong> and <strong>actions</strong>. It is recommended that all rules be created based on tags and that criteria for a given service are grouped together based on severity.</p>
+<ul>
+<li>Example: The rule 'ElasticSearch Warning' may contain criteria that need attention but wouldn't necessarily wake anyone up. The actions for this rule would email a group and send a webhook to Slack. Whereas the 'ElasticSearch Critical' rule would contain a few critical checks, such as service down and would send a webhook to Pagerduty.</li>
+</ul>
+<p>Criterias are made up of a scope, the metric to alert on and options like comparator, duration and threshold.</p>
+<p>Supported actions include sending an email or a webhook. When a webhook is configured for a supported integration (listed under the Integrations section of the support docs) we detect the url and send additional fields.</p>
+<p>If multiple criteria are created within a rule then <strong>ANY</strong> need to be met before the rule is triggered and <strong>ALL</strong> actions are run.</p>
+<p>Dataloop rules are very flexible, to the point where you can shoot yourself in the foot if you choose to do so.</p>
+<ul>
+<li>Example: You can create a plugin to monitor a service and apply it to one tag of agents. Then configure a criteria to alert on that same plugin using a different tag that only contains a subset of agents that the plugin is deployed to. For this reason we have defined a simple traffic light system to help uncover mistakes in setup.</li>
+</ul>
+<h2 id="criteria-and-rule-status">Criteria and Rule status</h2>
+<p>You can view the overall health of rules in the alerts page in Dataloop. Each rule is colour coded as per the table below. To be confident that you have effective alerting setup the aim should be to keep all rules in a green state.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Colour</th>
+<th align="center">State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Green</td>
+<td align="center">Clear</td>
+</tr>
+<tr>
+<td align="center">Orange</td>
+<td align="center">Pending</td>
+</tr>
+<tr>
+<td align="center">Grey</td>
+<td align="center">Unknown</td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">Triggered</td>
+</tr>
+</tbody>
+</table>
+<p>When a criteria is defined in Dataloop a query is added to a background set of workers that poll every 10 seconds and compare desired state to current state.</p>
+<p>If a complete set of data is returned for <strong>all</strong> criteria in a rule and all checks pass then a criteria is considered clear. If all criteria within a rule are clear then the rule is clear.</p>
+<p>Pending is the transitional state between Clear and Triggered. A criteria will stay pending for the duration specified.</p>
+<ul>
+<li>Example: A criteria duration is set to 5 minutes and a problem occurs the criteria will switch from green to orange within 10 seconds and then stay pending for 5 minutes before turning red. The same is true when a problem is fixed. The criteria will change from red to orange and stay pending for 5 minutes before turning green.</li>
+</ul>
+<p>A rule will appear red if <strong>any</strong> criteria within it are red.</p>
+<p>A rule will appear grey if <strong>any</strong> of the criteria are not receiving data, of if the rule contains no criteria.</p>
+<p>When evaluating the order of state both within criteria and for criteria within rules we use the following matrix.</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th>unknown</th>
+<th>clear</th>
+<th>triggered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><strong>unknown</strong></td>
+<td><em>unknown</em></td>
+<td><em>unknown</em></td>
+<td><em>triggered</em></td>
+</tr>
+<tr>
+<td align="right"><strong>clear</strong></td>
+<td><em>unknown</em></td>
+<td><em>clear</em></td>
+<td><em>triggered</em></td>
+</tr>
+<tr>
+<td align="right"><strong>triggered</strong></td>
+<td><em>triggered</em></td>
+<td><em>triggered</em></td>
+<td><em>triggered</em></td>
+</tr>
+</tbody>
+</table>
+<p>This means that a triggered criteria will always turn a rule red. Also, that unknown criteria will always turn a rule grey (in the absence of any triggered criteria).</p>
+<h2 id="alert-lifecycle">Alert Lifecycle</h2>
+<p>For a rule that is currently <strong>green</strong> the only state change possible is to change to <strong>grey</strong> if any of the criteria stop returning data for any defined metric path. Or, alternatively, it may turn <strong>red</strong> if an agent or plugin changes status or a threshold is met.</p>
+<p>Actions are run when state changes to <strong>red</strong> with a message beginning <code>ALERT:</code> which signifies the start of an incident. Integration fields are configured in such a way that this will create a unique new incident.</p>
+<p>When a rule is red, but criteria within it change state, the actions are triggered again with a message beginning <code>UPDATE:</code> which signifies that something has changed (either got better or worse). These are correlated with supported integrations so that updates append additional information to the open incident, and don't create new incidents.</p>
+<p>When a rule is either grey or red it may change state to green. On state change to green the actions are triggered with a message beginning <code>RESOLVED:</code>. This signifies the end of the incident and supported integrations are configured to automatically close the incident.</p>
+<p>It is worth noting that a rule that has criteria not receiving data will never send a resolved email or webhook. However, changes to criteria within a grey rule will still send update notifications. It is recommended that an effort is made to keep all rules in a green state.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../webhook/" class="btn btn-neutral float-right" title="Webhook">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../plugin_alerts/" class="btn btn-neutral" title="Plugin alerts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Dataloop 2017</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../plugin_alerts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../webhook/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
