@@ -74,7 +74,7 @@ dlcli rm template microservice1
 You can show the contents of a template by running:
 
 ```
-dlcli show template microservice1
+dlcli get template microservice1
 ```
 
 Where `microservice1` is the name of the template you wish to inspect
