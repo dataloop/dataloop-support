@@ -2,23 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Dataloop Support Documents\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Welcome to Dataloop.IO Support Knowledgebase\n\n\nHere you will find a body of knowledge to get your monitoring started with Dataloop.IO\n\n\nStart with the \nInstallation\n pages to get Dataloop.IO agents installed on your servers.\n\n\nHead on over",
             "title": "Home"
         },
         {
-            "location": "/#welcome-to-dataloop-support-documents",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to Dataloop Support Documents"
-        },
-        {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "location": "/#welcome-to-dataloopio-support-knowledgebase",
+            "text": "Here you will find a body of knowledge to get your monitoring started with Dataloop.IO  Start with the  Installation  pages to get Dataloop.IO agents installed on your servers.  Head on over",
+            "title": "Welcome to Dataloop.IO Support Knowledgebase"
         },
         {
             "location": "/integrations/",
@@ -77,7 +67,7 @@
         },
         {
             "location": "/account_model/private_packs/",
-            "text": "Private Packs\n\n\nPrivate packs can be used to keep your custom plugins, dashboards and alert rules locked together as a single versioned entity within Dataloop.\n\n\nThey are designed to be small containers of monitoring configuration that can be shared around between accounts.\n\n\nCurrently private packs can only be managed with the Dataloop command line utility (dlcli). We will be adding private pack management to the UI soon\n\n\nTerminology:\n\n\n\n\nPack: The installed entity\n\n\nTemplate: The entity that can be installed from, that creates a pack in the account\n\n\n\n\nCreate a new pack\n\n\nIn our example we'll create a pack called microservice1. Names must be unique and friendly, ideally something that matches the service the pack will monitor. When used with autodiscovery the pack name is also used to tag agents.\n\n\ndlcli create pack microservice1\n\n\n\n\nThis should create a new directory on disk with the following structure:\n\n\n.\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 dashboards\n\u2502   \u2514\u2500\u2500 microservice1.yaml\n\u251c\u2500\u2500 package.yaml\n\u251c\u2500\u2500 plugins\n\u2502   \u2514\u2500\u2500 microservice1.py\n\u2514\u2500\u2500 rules\n    \u2514\u2500\u2500 microservice1.yaml\n\n\n\n\nYou can now start to populate this structure with the content created in the Dataloop UI by copying and pasting the plugin content and pressing export to yaml on the dashboards and rules pages. Or alternatively by using the dlcli pull commands. You may also want to update the pack metadata file package.yaml with additional information.\n\n\nOnce you have finished editing your pack locally it's time to upload it into Dataloop as a Template that can be installed.\n\n\nTo upload the pack as a Template in Dataloop run the following command from inside the pack directory:\n\n\ndlcli push template microservice1 .\n\n\n\n\nOnce the pack is pushed you can check it is there by running:\n\n\ndlcli get templates\n\n\n\n\nAssuming you are happy to install the pack you can now run\n\n\ndlcli install template microservice1\n\n\n\n\nTo uninstall the pack at a later date simply run\n\n\ndlcli rm pack microservice1\n\n\n\n\nTo delete the template run:\n\n\ndlcli rm template microservice1\n\n\n\n\nNote\n: Installing a template results in a tag being created that matches the pack name. You can therefore tag your agents with the same name as the pack and on install a link will automatically be created.\n\n\nTroubleshooting\n\n\nYou can show the contents of a template by running:\n\n\ndlcli show template microservice1\n\n\n\n\nWhere \nmicroservice1\n is the name of the template you wish to inspect",
+            "text": "Private Packs\n\n\nPrivate packs can be used to keep your custom plugins, dashboards and alert rules locked together as a single versioned entity within Dataloop.\n\n\nThey are designed to be small containers of monitoring configuration that can be shared around between accounts.\n\n\nCurrently private packs can only be managed with the Dataloop command line utility (dlcli). We will be adding private pack management to the UI soon\n\n\nTerminology:\n\n\n\n\nPack: The installed entity\n\n\nTemplate: The entity that can be installed from, that creates a pack in the account\n\n\n\n\nCreate a new pack\n\n\nIn our example we'll create a pack called microservice1. Names must be unique and friendly, ideally something that matches the service the pack will monitor. When used with autodiscovery the pack name is also used to tag agents.\n\n\ndlcli create pack microservice1\n\n\n\n\nThis should create a new directory on disk with the following structure:\n\n\n.\n\u251c\u2500\u2500 README.md\n\u251c\u2500\u2500 dashboards\n\u2502   \u2514\u2500\u2500 microservice1.yaml\n\u251c\u2500\u2500 package.yaml\n\u251c\u2500\u2500 plugins\n\u2502   \u2514\u2500\u2500 microservice1.py\n\u2514\u2500\u2500 rules\n    \u2514\u2500\u2500 microservice1.yaml\n\n\n\n\nYou can now start to populate this structure with the content created in the Dataloop UI by copying and pasting the plugin content and pressing export to yaml on the dashboards and rules pages. Or alternatively by using the dlcli pull commands. You may also want to update the pack metadata file package.yaml with additional information.\n\n\nOnce you have finished editing your pack locally it's time to upload it into Dataloop as a Template that can be installed.\n\n\nTo upload the pack as a Template in Dataloop run the following command from inside the pack directory:\n\n\ndlcli push template microservice1 .\n\n\n\n\nOnce the pack is pushed you can check it is there by running:\n\n\ndlcli get templates\n\n\n\n\nAssuming you are happy to install the pack you can now run\n\n\ndlcli install template microservice1\n\n\n\n\nTo uninstall the pack at a later date simply run\n\n\ndlcli rm pack microservice1\n\n\n\n\nTo delete the template run:\n\n\ndlcli rm template microservice1\n\n\n\n\nNote\n: Installing a template results in a tag being created that matches the pack name. You can therefore tag your agents with the same name as the pack and on install a link will automatically be created.\n\n\nTroubleshooting\n\n\nYou can show the contents of a template by running:\n\n\ndlcli get template microservice1\n\n\n\n\nWhere \nmicroservice1\n is the name of the template you wish to inspect",
             "title": "Private packs"
         },
         {
@@ -97,7 +87,7 @@
         },
         {
             "location": "/account_model/private_packs/#troubleshooting",
-            "text": "You can show the contents of a template by running:  dlcli show template microservice1  Where  microservice1  is the name of the template you wish to inspect",
+            "text": "You can show the contents of a template by running:  dlcli get template microservice1  Where  microservice1  is the name of the template you wish to inspect",
             "title": "Troubleshooting"
         },
         {
