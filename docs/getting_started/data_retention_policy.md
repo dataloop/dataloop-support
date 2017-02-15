@@ -1,3 +1,5 @@
+## Data Retention Policy
+
 Dataloop supports Nagios check scripts which send back metrics at 30 second intervals (by default) and Graphite / StatsD metrics which are 1 second resolution.
 
 We store:

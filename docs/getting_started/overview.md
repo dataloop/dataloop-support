@@ -1,14 +1,14 @@
-## Agent Installation and Tagging
+## Overview
+
+
+### Agent Installation and Tagging
 
 You should plan to install the dataloop-agent on every server. On Linux the agent is packaged up as a deb and rpm to make this simple. We have configuration management repositories for:
 
-[Puppet](https://github.com/dataloop/dataloop-puppet)
-
-[Chef](https://github.com/dataloop/dataloop-chef)
-
-[Ansible](https://github.com/dataloop/dataloop-ansible)
-
-[Salt](https://github.com/dataloop/dataloop-salt)
+[Puppet](https://github.com/dataloop/dataloop-puppet)  
+[Chef](https://github.com/dataloop/dataloop-chef)  
+[Ansible](https://github.com/dataloop/dataloop-ansible)  
+[Salt](https://github.com/dataloop/dataloop-salt)  
 
 On Windows it's a manual install via the installer. However, this does support silent install if you wish to automate with Powershell.
 
@@ -44,7 +44,7 @@ You can of course add any number of tags to your agents. The more you add the be
 
 It is important that you have an agent installed on every server, that they are in the right tags and that you keep vigilant for any discrepancies between what's in Dataloop and what is reality. If you get the building blocks correct then the plugins, dashboards and alerts you layer on top will almost guarantee you'll get told when something breaks. If you accidentally don't install agents or put agents into the correct tags then the monitoring is invalid.
 
-## Metrics Collection
+### Metrics Collection
 
 Once you have the agents installed and the tags setup as per section 1. you can start to layer on monitoring coverage.
 
@@ -80,7 +80,7 @@ Application Metrics: Nagios metrics poll the operating system and services from 
 
 1. The developers can expose metrics via a rest endpoint which could be scraped via a plugin. You could either make up your own spec, or use one like this: 
 
-    https://github.com/beamly/SE4  
+    <https://github.com/beamly/SE4>  
 
     If you're in a Java shop the Coda Hale metrics library is awesome. A lot of other languages have similar libraries for exposing internal metrics over an api so that monitoring tools like Dataloop can extract them.  
   
@@ -90,7 +90,7 @@ Application Metrics: Nagios metrics poll the operating system and services from 
 For large installations we recommend setting up a StatsD server per environment and tagging the agent on the StatsD server with the environment tag it is part of. This then makes metrics browsing easier inside Dataloop.
 
 
-## Dashboards
+### Dashboards
 
 Always create dashboards widgets based on tags, or combinations of tags. We let you create them for individual hosts but that's mostly for new people playing. If you create a dashboard of widgets based off a host and you delete that host, you will need to edit all of your widgets. Whereas if you created the dashboard from a tag, the hosts are expendable. You just need to put an agent back into the tag again to resume showing metrics.
 
@@ -111,7 +111,7 @@ You may want to add a few OS metrics too. Then you'll be able to tell if your di
 It's also a good idea to create some business dashboards. Write scripts that poll systems that have those metrics in them, or use StatsD as mentioned above. As with scripts, the dashboards are an ongoing process. Update them every time you want to keep an eye on something new.
  
 
-## Rules and Alerts
+### Rules and Alerts
 
 By default you get an `all systems` ruleset with criterial in it that will alert you on the `base` plugin on the all tag. Things like servers going down, cpu, disk, load etc. You should probably leave these as they are and possibly extend them if there are things you want to check across every box.
 

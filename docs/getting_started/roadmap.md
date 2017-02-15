@@ -4,9 +4,9 @@ Our product roadmap is largely driven by customer feedback and our long term ded
 
 If you have any suggestions please search and vote or raise a new feature idea on our user voice forum.
 
-https://dataloop.uservoice.com/forums/289987-general/filters/top
+<https://dataloop.uservoice.com/forums/289987-general/filters/top>
 
-Alternatively, come and chat with us on Slack.
+Alternatively, come and chat with us on [Slack](https://slack.dataloop.io).
 
 Below is high level overview of what we will be working on next. Ordering may change depending on customer priorities.
 

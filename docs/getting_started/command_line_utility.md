@@ -1,4 +1,4 @@
-## DLCLI
+## Command Line Utility (DLCLI)
 
 Up to date installation instructions can be found here:
 
