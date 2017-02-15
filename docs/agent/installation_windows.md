@@ -1,16 +1,18 @@
-## Windows Systems
+## Installation on windows
 
-1. Install the latest Dataloop Agent package from
+### Windows Systems
 
-https://download.dataloop.io/windows/latest/dataloop-1.1-windows-installer.exe
+* Install the latest Dataloop Agent package from
+
+<https://download.dataloop.io/windows/latest/dataloop-1.1-windows-installer.exe>
 
 For some systems you may need to install the Microsoft Visual C++ DLLs, they can be found here
 
-http://www.microsoft.com/en-us/download/details.aspx?id=29
+<http://www.microsoft.com/en-us/download/details.aspx?id=29>
 
- 
+- - -
 
-## Silent Installation
+### Silent Installation
 
 Starting with version 1.1.27 it is possible to install Dataloop-agent silently, passing the API Key to be put in the agent.yaml configuration file.
 

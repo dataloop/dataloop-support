@@ -1,3 +1,6 @@
+## Installation on Docker
+
+
 You can run a containerised agent in a docker container by running:
 
 ```
@@ -14,4 +17,4 @@ sudo docker run -d -e "DATALOOP_AGENT_KEY=${DATALOOP_AGENT_KEY}" \
 dataloop/dataloop-docker:latest
 ```
 
-This will download the container directly from the docker hub. For more info see https://github.com/dataloop/docker-alpine/dataloop-docker
+This will download the container directly from the docker hub. For more info see <https://github.com/dataloop/docker-alpine/dataloop-docker>
