@@ -1,4 +1,4 @@
-# Command Line Interface
+## Command Line Interface
 
 On Linux you can simply type `dataloop-agent` or call directly from `/usr/bin/dataloop-agent`
 
@@ -57,22 +57,22 @@ The most common use for the CLI is for tagging either in automated scripts or in
 As an example, while the agent is running, you can list what tags it is a member of and then modify them:
 
 ```
-# dataloop-agent tags list
+#> dataloop-agent tags list
 all
 riak
 prod
 tag1
 
-# dataloop-agent tags remove tag1
+#> dataloop-agent tags remove tag1
 
-# dataloop-agent tags list
+#> dataloop-agent tags list
 all
 riak
 prod
 
-# dataloop-agent tags add tag2
+#> dataloop-agent tags add tag2
 
-# dataloop-agent tags list
+#> dataloop-agent tags list
 all
 riak
 prod

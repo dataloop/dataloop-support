@@ -1,10 +1,13 @@
-By default the dataloop-agent will read agent.yaml for configuration from /etc/dataloop on Linux and c:\dataloop on Windows.
+## Configuration
+
+
+By default the dataloop-agent will read `agent.yaml` for configuration from `/etc/dataloop` on Linux and `c:\dataloop` on Windows.
 
 The only mandatory configuration required in this file is the api-key.
 
 Changes will be picked up on dataloop-agent service restart.
 
-Example:
+* Example:
 
 ```
 ---
@@ -25,9 +28,9 @@ api-key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 #name:
 ```
 
-On Linux there are also a couple of tweaks that can be made in /etc/default/dataloop-agent for Debian based distros and /etc/sysconfig/dataloop-agent for Redhat.
+On Linux there are also a couple of tweaks that can be made in `/etc/default/dataloop-agent` for Debian based distros and `/etc/sysconfig/dataloop-agent` for Redhat.
 
-Example:
+* Example:
 
 ```
 # Deregister node with dataloop when the agent stops?

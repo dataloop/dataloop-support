@@ -1,10 +1,10 @@
-# Solo Mode
+## Solo Mode
 
 You can configure the dataloop agent to run in solo mode by updating the agent.yaml and restarting the dataloop-agent service.
 
-When running in solo mode the agent won't run remote commands from the web interface.
+**When running in solo mode the agent won't run remote commands from the web interface.**
 
-It will also not automatically download plugins.
+**It will also not automatically download plugins.**
 
 However, you should still tag solo mode agents in the usual way so that the metrics coming from these agents appear in dashboards and alerts.
 
@@ -12,7 +12,7 @@ Solo mode agents show up in the UI with a little padlock next to their icon. Plu
 
 When running agents in solo mode you will also need to deploy a copy of `base.py` locally.
 
-## Agent Config
+### Agent Config
 
 To enable solo mode edit the `agent.yaml` file and restart the dataloop-agent service.
 
@@ -37,7 +37,7 @@ tags: tag1,tag2,tag3
 #name:
 ```
 
-## Local Plugin Deployment
+### Local Plugin Deployment
 
 You can deploy plugins to agents running in Solo mode or normal mode. Local plugins take precedence over plugins stored in Dataloop.
 

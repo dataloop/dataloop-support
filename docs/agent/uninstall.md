@@ -1,18 +1,23 @@
-On linux you can simply remove the 'dataloop-agent' package.
+## Uninstall
 
-## Redhat based:
+
+On linux you can simply remove the `dataloop-agent` package.
+
+### Redhat based:
 
 ```
 yum remove dataloop-agent
 ```
 
+- - -
 
-## Debian based:
+### Debian based:
 
 ```
 apt-get remove dataloop-agent
 ```
+- - -
 
-## Windows
+### Windows
 
 On windows you can remove via add/remove programs.
