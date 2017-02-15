@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../agent/command_line_interface/">Command line interface</a>
         
     </li>
@@ -153,6 +111,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_windows/">Installation windows</a>
         
     </li>
 
@@ -380,6 +373,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../overview/">Overview</a>
         
     </li>
@@ -597,22 +597,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="where-we-fit-in-the-monitoring-landscape">Where We Fit in the Monitoring Landscape</h1>
+                <h2 id="where-we-fit-in-the-monitoring-landscape">Where We Fit in the Monitoring Landscape</h2>
 <p>We are a platform for time-series data visualisation and alerting. You can send us any volume of data and we will aim to process and display it in real time with seamless historical querying. Our platform is agnostic in terms of what time-series data you send to us. However, we spend most of our time helping SaaS companies scale their online services. This generally includes operating system, application and business level metrics; hence a focus on plugins, interfaces and integrations that make sense in that context.</p>
 <p>We believe in using a few best of breed tools rather than a single mediocre unified tool. With open standards protocols and APIs, you can easily join tools together to prevent vendor lock-in and future-proof your monitoring stack.</p>
-<h2 id="logs">Logs</h2>
-<p>We don't accept log data. Other tools such as ELK, Splunk and Graylog do a great job at processing, indexing and querying logs. However, we do integrate with these systems. In the case of the ELK stack, you can use the StatsD forwarder to send time-series metrics from your logging pipeline to us via our Graphite port. For Splunk we have plugins that can scrape the API.</p>
-<h2 id="apm">APM</h2>
-<p>We don't provide tools that profile or introspect your production applications. Tools like New Relic and AppDynamics do a good job here. We integrate with these tools via scripts that poll their API.</p>
-<h2 id="statsd">StatsD</h2>
-<p>Where it gets slightly confusing is with StatsD. We do support StatsD metrics which a lot of companies use to send back data from their live production apps. These are custom metrics that have to be specifically configured within the application code.</p>
+<h3 id="logs">Logs</h3>
+<p>We don't accept log data. Other tools such as <a href="https://www.elastic.co/webinars/introduction-elk-stack">ELK</a>, <a href="https://www.splunk.com/">Splunk</a> and <a href="https://www.graylog.org/">Graylog</a> do a great job at processing, indexing and querying logs. However, we do integrate with these systems. In the case of the ELK stack, you can use the StatsD forwarder to send time-series metrics from your logging pipeline to us via our Graphite port. For Splunk we have plugins that can scrape the API.</p>
+<h3 id="apm">APM</h3>
+<p>We don't provide tools that profile or introspect your production applications. Tools like <a href="https://newrelic.com/application-monitoring">New Relic</a> and <a href="https://www.appdynamics.com/">AppDynamics</a> do a good job here. We integrate with these tools via scripts that poll their API.</p>
+<h3 id="statsd">StatsD</h3>
+<p>Where it gets slightly confusing is with <a href="https://github.com/etsy/statsd">StatsD</a>. We do support StatsD metrics which a lot of companies use to send back data from their live production apps. These are custom metrics that have to be specifically configured within the application code.</p>
 <p>APM and StatsD are best used in combination. Use an APM tool to profile your application and provide top 10s and drill-downs into slow transactions. Use StatsD custom metrics when you want to track a particular thing, like the performance of a section of code, business metrics like signups or even feature usage.</p>
-<h2 id="on-call-management">On-Call Management</h2>
+<h3 id="on-call-management">On-Call Management</h3>
 <p>Managing on-call scheduling, nagging, escalation and policies isn't our specialty at this time. We integrate with other tools like PagerDuty and OpsGenie for those features.</p>
-<h2 id="exception-tracking">Exception Tracking</h2>
+<h3 id="exception-tracking">Exception Tracking</h3>
 <p>Tools like Bugsnag will email your developers directly with stack traces caused by users in production. We're not that type of tool.</p>
-<h2 id="incident-management-tools">Incident Management Tools</h2>
-<p>We focus on gathering data, visualizing it and alerting. We don't help manage incidents in the way that tools like BigPanda do. If you have a wide variety of monitoring tools then our alerts could be configured to send to incident management tools for correlation.</p>
+<h3 id="incident-management-tools">Incident Management Tools</h3>
+<p>We focus on gathering data, visualizing it and alerting. We don't help manage incidents in the way that tools like <a href="https://bigpanda.io/">BigPanda</a> do. If you have a wide variety of monitoring tools then our alerts could be configured to send to incident management tools for correlation.</p>
               
             </div>
           </div>

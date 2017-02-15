@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../command_line_interface/">Command line interface</a>
         
     </li>
@@ -153,6 +111,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_windows/">Installation windows</a>
         
     </li>
 
@@ -391,6 +384,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../getting_started/overview/">Overview</a>
         
     </li>
@@ -589,14 +589,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="solo-mode">Solo Mode</h1>
+                <h2 id="solo-mode">Solo Mode</h2>
 <p>You can configure the dataloop agent to run in solo mode by updating the agent.yaml and restarting the dataloop-agent service.</p>
-<p>When running in solo mode the agent won't run remote commands from the web interface.</p>
-<p>It will also not automatically download plugins.</p>
+<p><strong>When running in solo mode the agent won't run remote commands from the web interface.</strong></p>
+<p><strong>It will also not automatically download plugins.</strong></p>
 <p>However, you should still tag solo mode agents in the usual way so that the metrics coming from these agents appear in dashboards and alerts.</p>
 <p>Solo mode agents show up in the UI with a little padlock next to their icon. Plugins deployed into the folder will also show up in the agent details page so you can verify they are being run.</p>
 <p>When running agents in solo mode you will also need to deploy a copy of <code>base.py</code> locally.</p>
-<h2 id="agent-config">Agent Config</h2>
+<h3 id="agent-config">Agent Config</h3>
 <p>To enable solo mode edit the <code>agent.yaml</code> file and restart the dataloop-agent service.</p>
 <pre><code>---
 ## Set to yes to disable RPC and run plugins from local plugin source
@@ -618,7 +618,7 @@ tags: tag1,tag2,tag3
 #name:
 </code></pre>
 
-<h2 id="local-plugin-deployment">Local Plugin Deployment</h2>
+<h3 id="local-plugin-deployment">Local Plugin Deployment</h3>
 <p>You can deploy plugins to agents running in Solo mode or normal mode. Local plugins take precedence over plugins stored in Dataloop.</p>
 <pre><code>Copy a plugin into /opt/dataloop/plugins (linux) or c:\dataloop\plugins (windows).
 Ensure the file has a valid file extension
@@ -669,7 +669,7 @@ format: PROMETHEUS
         <a href="../supported_operating_systems/" class="btn btn-neutral float-right" title="Supported operating systems">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../fingerprints/" class="btn btn-neutral" title="Fingerprints"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation_windows/" class="btn btn-neutral" title="Installation windows"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -699,7 +699,7 @@ format: PROMETHEUS
           <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../fingerprints/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../installation_windows/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../supported_operating_systems/" style="color: #fcfcfc">Next &raquo;</a></span>

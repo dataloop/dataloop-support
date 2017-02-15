@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../command_line_interface/">Command line interface</a>
         
     </li>
@@ -149,6 +107,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
+                
+            
             </ul>
         
     </li>
@@ -157,6 +118,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_windows/">Installation windows</a>
         
     </li>
 
@@ -384,6 +380,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../getting_started/overview/">Overview</a>
         
     </li>
@@ -582,10 +585,13 @@
           <div role="main">
             <div class="section">
               
-                <p>By default the dataloop-agent will read agent.yaml for configuration from /etc/dataloop on Linux and c:\dataloop on Windows.</p>
+                <h2 id="configuration">Configuration</h2>
+<p>By default the dataloop-agent will read <code>agent.yaml</code> for configuration from <code>/etc/dataloop</code> on Linux and <code>c:\dataloop</code> on Windows.</p>
 <p>The only mandatory configuration required in this file is the api-key.</p>
 <p>Changes will be picked up on dataloop-agent service restart.</p>
-<p>Example:</p>
+<ul>
+<li>Example:</li>
+</ul>
 <pre><code>---
 ##
 ## Set to yes to disable RPC and run plugins from local plugin source
@@ -604,8 +610,10 @@ api-key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 #name:
 </code></pre>
 
-<p>On Linux there are also a couple of tweaks that can be made in /etc/default/dataloop-agent for Debian based distros and /etc/sysconfig/dataloop-agent for Redhat.</p>
-<p>Example:</p>
+<p>On Linux there are also a couple of tweaks that can be made in <code>/etc/default/dataloop-agent</code> for Debian based distros and <code>/etc/sysconfig/dataloop-agent</code> for Redhat.</p>
+<ul>
+<li>Example:</li>
+</ul>
 <pre><code># Deregister node with dataloop when the agent stops?
 # Only 'no' will make this stop.
 DEREGISTER_ONSTOP=yes

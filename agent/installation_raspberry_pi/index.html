@@ -8,7 +8,7 @@
   
   <meta name="author" content="support@dataloop.io">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Installation docker - Dataloop Support</title>
+  <title>Installation raspberry pi - Dataloop Support</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Installation docker";
-    var mkdocs_page_input_path = "agent/Installation_docker.md";
-    var mkdocs_page_url = "/agent/Installation_docker/";
+    var mkdocs_page_name = "Installation raspberry pi";
+    var mkdocs_page_input_path = "agent/installation_raspberry_pi.md";
+    var mkdocs_page_url = "/agent/installation_raspberry_pi/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -49,20 +49,6 @@
             <li>
     <li class="toctree-l1 ">
         <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
         
     </li>
 <li>
@@ -102,38 +88,6 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Installation docker</a>
-        
-            <ul>
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
     <li class="toctree-l1 ">
         <a class="" href="../command_line_interface/">Command line interface</a>
         
@@ -157,6 +111,50 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Installation raspberry pi</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#installation-on-raspberry-pi">Installation on Raspberry Pi</a></li>
+                
+                    <li><a class="toctree-l4" href="#debian-based-linux-raspbian-jessie-only-for-now">Debian based Linux (Raspbian Jessie only for now)</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_windows/">Installation windows</a>
         
     </li>
 
@@ -384,6 +382,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../getting_started/overview/">Overview</a>
         
     </li>
@@ -569,10 +574,10 @@
         
       
     
-    <li>Installation docker</li>
+    <li>Installation raspberry pi</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/agent/Installation_docker.md"
+        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/agent/installation_raspberry_pi.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -582,21 +587,42 @@
           <div role="main">
             <div class="section">
               
-                <p>You can run a containerised agent in a docker container by running:</p>
-<pre><code>DATALOOP_AGENT_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-DATALOOP_NAME=docker_container_name
-sudo docker run -d -e &quot;DATALOOP_AGENT_KEY=${DATALOOP_AGENT_KEY}&quot; \
--e &quot;DATALOOP_NAME=${DATALOOP_NAME}&quot; \
--p 8000:8000 \
--p 8080:8080 \
---volume=/:/rootfs:ro \
---volume=/var/run:/var/run:rw \
---volume=/sys:/sys:ro \
---volume=/var/lib/docker/:/var/lib/docker:ro \
-dataloop/dataloop-docker:latest
+                <h2 id="installation-on-raspberry-pi">Installation on Raspberry Pi</h2>
+<h3 id="debian-based-linux-raspbian-jessie-only-for-now">Debian based Linux (Raspbian Jessie only for now)</h3>
+<ul>
+<li>Import the apt repository gpg key</li>
+</ul>
+<pre><code>curl -s https://download.dataloop.io/pubkey.gpg | apt-key add -
 </code></pre>
 
-<p>This will download the container directly from the docker hub. For more info see https://github.com/dataloop/docker-alpine/dataloop-docker</p>
+<ul>
+<li>Add the Dataloop apt repository</li>
+</ul>
+<pre><code>echo 'deb https://download.dataloop.io/deb/ unstable main' &gt; /etc/apt/sources.list.d/dataloop.list
+</code></pre>
+
+<ul>
+<li>Install the dataloop agent</li>
+</ul>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install dataloop-agent
+</code></pre>
+
+<ul>
+<li>
+<p>Update the /etc/dataloop/agent.yaml file with your API key</p>
+</li>
+<li>
+<p>Start the agent</p>
+</li>
+</ul>
+<pre><code>sudo systemctl start dataloop-agent
+</code></pre>
+
+<ul>
+<li>Set the agent to run on reboot</li>
+</ul>
+<pre><code>sudo systemctl enable dataloop-agent
+</code></pre>
               
             </div>
           </div>
@@ -604,10 +630,10 @@ dataloop/dataloop-docker:latest
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Installation_linux/" class="btn btn-neutral float-right" title="Installation linux">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../installation_windows/" class="btn btn-neutral float-right" title="Installation windows">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../account_model/private_packs/" class="btn btn-neutral" title="Private packs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation_linux/" class="btn btn-neutral" title="Installation linux"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -637,10 +663,10 @@ dataloop/dataloop-docker:latest
           <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../account_model/private_packs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../installation_linux/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Installation_linux/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../installation_windows/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

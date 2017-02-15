@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../agent/command_line_interface/">Command line interface</a>
         
     </li>
@@ -153,6 +111,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_windows/">Installation windows</a>
         
     </li>
 
@@ -380,6 +373,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../overview/">Overview</a>
         
     </li>
@@ -405,34 +405,27 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#server-monitoring">Server Monitoring</a></li>
+                <li class="toctree-l3"><a href="#use-cases">Use Cases</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#service-monitoring">Service Monitoring</a></li>
+                    <li><a class="toctree-l4" href="#server-monitoring">Server Monitoring</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#custom-service-monitoring">Custom Service Monitoring</a></li>
+                    <li><a class="toctree-l4" href="#service-monitoring">Service Monitoring</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#docker-monitoring">Docker Monitoring</a></li>
+                    <li><a class="toctree-l4" href="#custom-service-monitoring">Custom Service Monitoring</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#application-metrics">Application Metrics</a></li>
+                    <li><a class="toctree-l4" href="#docker-monitoring">Docker Monitoring</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#applications-instrumented-with-statsd">Applications Instrumented with StatsD</a></li>
+                    <li><a class="toctree-l4" href="#application-metrics">Application Metrics</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#long-running-jobs">Long Running Jobs</a></li>
+                    <li><a class="toctree-l4" href="#applications-instrumented-with-statsd">Applications Instrumented with StatsD</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#event-driven-jobs">Event Driven Jobs</a></li>
+                    <li><a class="toctree-l4" href="#long-running-jobs">Long Running Jobs</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#remote-monitoring">Remote Monitoring</a></li>
+                    <li><a class="toctree-l4" href="#event-driven-jobs">Event Driven Jobs</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#aggregation">Aggregation</a></li>
+                    <li><a class="toctree-l4" href="#remote-monitoring">Remote Monitoring</a></li>
+                
+                    <li><a class="toctree-l4" href="#aggregation">Aggregation</a></li>
                 
             
             </ul>
@@ -612,31 +605,32 @@
           <div role="main">
             <div class="section">
               
-                <p>Dataloop supports several ways to collect data. We are typically used as a central aggregation point for consolidating many tools into a single platform. This document describes best practices for which collection method we recommend depending upon use case.</p>
-<h2 id="server-monitoring">Server Monitoring</h2>
+                <h2 id="use-cases">Use Cases</h2>
+<p>Dataloop supports several ways to collect data. We are typically used as a central aggregation point for consolidating many tools into a single platform. This document describes best practices for which collection method we recommend depending upon use case.</p>
+<h3 id="server-monitoring">Server Monitoring</h3>
 <p>Install a Dataloop Agent onto each server. This lets Dataloop know if your server is up or down and collects operating system metrics like CPU, Disk, Memory and Network.</p>
-<h2 id="service-monitoring">Service Monitoring</h2>
+<h3 id="service-monitoring">Service Monitoring</h3>
 <p>For common services Dataloop provides packs which include a plugin, dashboard and alert rules. </p>
-<h2 id="custom-service-monitoring">Custom Service Monitoring</h2>
+<h3 id="custom-service-monitoring">Custom Service Monitoring</h3>
 <p>Create custom Nagios check scripts and apply them to agents using tags. Build dashboards and alert rules based on tags. To automate sharing configuration between teams create private packs.</p>
-<h2 id="docker-monitoring">Docker Monitoring</h2>
+<h3 id="docker-monitoring">Docker Monitoring</h3>
 <p>Install a Dataloop Agent onto each Docker host to collect host level metrics and run Nagios plugins for service monitoring. Also run a dataloop/dataloop-docker container on each Docker host to collect container resource metrics.</p>
-<h2 id="application-metrics">Application Metrics</h2>
+<h3 id="application-metrics">Application Metrics</h3>
 <p>Instrument your application with a Prometheus client library. Install a Dataloop Agent onto each server and scrape the Prometheus /metrics endpoint using a Prometheus format plugin.</p>
-<p>https://prometheus.io/docs/instrumenting/clientlibs/</p>
-<h2 id="applications-instrumented-with-statsd">Applications Instrumented with StatsD</h2>
+<p><a href="https://prometheus.io/docs/instrumenting/clientlibs/">https://prometheus.io/docs/instrumenting/clientlibs/</a></p>
+<h3 id="applications-instrumented-with-statsd">Applications Instrumented with StatsD</h3>
 <p>Run the Prometheus StatsD exporter on each StatsD server.</p>
-<p>https://github.com/prometheus/statsd_exporter</p>
+<p><a href="https://github.com/prometheus/statsd_exporter">https://github.com/prometheus/statsd_exporter</a></p>
 <p>Configure StatsD to send metrics into the StatsD exporter. Scrape the Prometheus metrics endpoint on the StatsD exporter using a Dataloop Agent and Prometheus format plugin.</p>
-<p>https://blog.dataloop.io/statsd-tags-and-dataloop</p>
-<h2 id="long-running-jobs">Long Running Jobs</h2>
+<p><a href="https://blog.dataloop.io/statsd-tags-and-dataloop">https://blog.dataloop.io/statsd-tags-and-dataloop</a></p>
+<h3 id="long-running-jobs">Long Running Jobs</h3>
 <p>For tasks that take a long time to complete write the output to a local file and monitor it with a Dataloop Agent and custom Nagios check script.</p>
-<h2 id="event-driven-jobs">Event Driven Jobs</h2>
+<h3 id="event-driven-jobs">Event Driven Jobs</h3>
 <p>For tasks that are initiated as a result of an external event like CI builds or cron jobs push Graphite line protocol metrics to graphite.dataloop.io on TCP port 2003 using netcat.</p>
-<p>https://support.dataloop.io/hc/en-gb/articles/201636353-Graphite</p>
-<h2 id="remote-monitoring">Remote Monitoring</h2>
+<p><a href="https://support.dataloop.io/endpoints/graphite">https://support.dataloop.io/endpoints/graphite</a></p>
+<h3 id="remote-monitoring">Remote Monitoring</h3>
 <p>Use the Dataloop Agent and custom Nagios plugins to remotely monitor over the network. For remote website monitoring designate a single agent to run the plugin. For monitoring external services like AWS RDS run the plugin from the application servers that access it. Where configuration varies between agents deploy a YAML file with settings from configuration management and read the file on each plugin run.</p>
-<h2 id="aggregation">Aggregation</h2>
+<h3 id="aggregation">Aggregation</h3>
 <p>Many open source collection tools like CollectD support Graphite output. These collectors can be configured to send metrics into Dataloop via our Graphite port.</p>
               
             </div>

@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -102,34 +88,6 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
     <li class="toctree-l1 current">
         <a class="current" href="./">Command line interface</a>
         
@@ -160,6 +118,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_windows/">Installation windows</a>
         
     </li>
 
@@ -387,6 +380,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../getting_started/overview/">Overview</a>
         
     </li>
@@ -585,7 +585,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="command-line-interface">Command Line Interface</h1>
+                <h2 id="command-line-interface">Command Line Interface</h2>
 <p>On Linux you can simply type <code>dataloop-agent</code> or call directly from <code>/usr/bin/dataloop-agent</code></p>
 <p>On Windows you can run:</p>
 <p><code>C:\Dataloop\embedded\bin\python.exe C:\Dataloop\agent\agent.py</code></p>
@@ -633,22 +633,22 @@ tags:
 
 <p>The most common use for the CLI is for tagging either in automated scripts or in config management.</p>
 <p>As an example, while the agent is running, you can list what tags it is a member of and then modify them:</p>
-<pre><code># dataloop-agent tags list
+<pre><code>#&gt; dataloop-agent tags list
 all
 riak
 prod
 tag1
 
-# dataloop-agent tags remove tag1
+#&gt; dataloop-agent tags remove tag1
 
-# dataloop-agent tags list
+#&gt; dataloop-agent tags list
 all
 riak
 prod
 
-# dataloop-agent tags add tag2
+#&gt; dataloop-agent tags add tag2
 
-# dataloop-agent tags list
+#&gt; dataloop-agent tags list
 all
 riak
 prod
@@ -664,7 +664,7 @@ tag2
         <a href="../config_management/" class="btn btn-neutral float-right" title="Config management">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Installation_windows/" class="btn btn-neutral" title="Installation windows"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../account_model/private_packs/" class="btn btn-neutral" title="Private packs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -694,7 +694,7 @@ tag2
           <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../Installation_windows/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../account_model/private_packs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../config_management/" style="color: #fcfcfc">Next &raquo;</a></span>

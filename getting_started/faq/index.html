@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../agent/Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../../agent/command_line_interface/">Command line interface</a>
         
     </li>
@@ -153,6 +111,41 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../agent/fingerprints/">Fingerprints</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../agent/installation_windows/">Installation windows</a>
         
     </li>
 
@@ -387,6 +380,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../overview/">Overview</a>
         
     </li>
@@ -585,62 +585,112 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="faq">FAQ</h1>
+                <h2 id="faq">FAQ</h2>
 <p>Dataloop.IO was built to be the fastest and simplest way to setup monitoring for your rapidly changing infrastructure. We’re constantly looking for ways to help users get up to speed in minutes and this FAQ is our first step.</p>
+<hr />
 <p><strong>Q. My question isn’t covered here, where can I get help?</strong></p>
-<p>A. Email us at support@dataloop.io or join our Slack room</p>
+<ul>
+<li>A. Email us at support@dataloop.io or join our Slack room</li>
+</ul>
+<hr />
 <p><strong>Q. I signed up and logged in for the first time but I’m confused. How  do I start monitoring?</strong></p>
-<p>A. The best way to start is to install an agent via curl onto a test virtual machine and have a play with installing packs and writing your own plugins. If you get stuck contact support and we'll happily guide you through everything.</p>
-<blockquote>
-<p>Q. I'm sending metrics into Dataloop. How do I browse them?</p>
-<p>A. You can browse your metrics on the dashboards and rules pages.</p>
-</blockquote>
+<ul>
+<li>A. The best way to start is to install an agent via curl onto a test virtual machine and have a play with installing packs and writing your own plugins. If you get stuck contact support and we'll happily guide you through everything.</li>
+</ul>
+<hr />
+<p><strong>Q. I'm sending metrics into Dataloop. How do I browse them?</strong></p>
+<ul>
+<li>A. You can browse your metrics on the dashboards and rules pages.</li>
+</ul>
 <p>Create a new dashboard and then click on the + widget to bring up the metric browser. Click on one tag, or a combination of tags, or a single agent and click 'select'. You will now be shown a tree of metrics available across the agents selected.</p>
 <p>The metrics you see will be determined by the Nagios plugins running and the Graphite or StatsD metrics you are sending in. You can now tick one or many metrics to display on graph and number widgets.</p>
 <p>On the rules page add a new rule and then add a new criteria. You will be presented with several drop downs that allow metric browsing and selection.</p>
-<p>Q. I can't see my StatsD metrics. Where should they appear?</p>
-<p>A. If you are using the Dataloop hosted StatsD then metrics can be browsed under the 'statsd' tag, or by browsing the 'dataloop' agent directly. If you cannot see your StatsD metrics in the tree then check your client settings or contact us for support by email or Slack.</p>
+<hr />
+<p><strong>Q. I can't see my StatsD metrics. Where should they appear?</strong></p>
+<ul>
+<li>A. If you are using the Dataloop hosted StatsD then metrics can be browsed under the 'statsd' tag, or by browsing the 'dataloop' agent directly. If you cannot see your StatsD metrics in the tree then check your client settings or contact us for support by email or Slack.</li>
+</ul>
 <p>If you have setup your own StatsD server then metrics will appear under whatever agent fingerprint they are being sent from.</p>
-<p>Q. How do I troubleshoot what the Agent is doing?</p>
-<p>A. You’ll hopefully never have to troubleshoot, but just in case..</p>
+<hr />
+<p><strong>Q. How do I troubleshoot what the Agent is doing?</strong></p>
+<ul>
+<li>A. You’ll hopefully never have to troubleshoot, but just in case..</li>
+</ul>
 <p>The Agent installer creates a ‘dataloop’ directory in /var/log. In this directory you’ll find an agent.log file that shows you exactly what the agent is doing.</p>
 <p>You can increase the logging information by turning on debugging. In the agent.yaml configuration file, set debug to yes:</p>
-<p>debug: yes</p>
+<pre><code>debug: yes
+</code></pre>
+
 <p>To restart the agent just run:</p>
-<p>service dataloop-agent restart</p>
+<pre><code>service dataloop-agent restart
+</code></pre>
+
 <p>On Windows the installer creates a service called ‘Dataloop’. To restart the agent just restart the Windows service from computer management. Windows puts the log file in C:\Dataloop.</p>
-<p>Q. How does the Agent connect to the web interface? Do I need to open any ports?</p>
-<p>A. The agent connects outbound on tcp port 443 to agent.dataloop.io.</p>
-<p>Q. Can I connect the Agent to the internet via a proxy?</p>
-<p>A. Yes, export the HTTPS_PROXY environment variable in /etc/default/dataloop-agent and restart the dataloop-agent service</p>
-<p>Q. What data are you collecting from me?</p>
-<p>A. The agent sends the hostname, mac address, fingerprint (a random unique string that we create to identify your server) and the data from your scripts. We also send back a list of processes (process.name from the psutils library) and some metadata.</p>
+<hr />
+<p><strong>Q. How does the Agent connect to the web interface? Do I need to open any ports?</strong></p>
+<ul>
+<li>A. The agent connects outbound on tcp port 443 to agent.dataloop.io.</li>
+</ul>
+<hr />
+<p><strong>Q. Can I connect the Agent to the internet via a proxy?</strong></p>
+<ul>
+<li>A. Yes, export the HTTPS_PROXY environment variable in /etc/default/dataloop-agent and restart the dataloop-agent service</li>
+</ul>
+<hr />
+<p><strong>Q. What data are you collecting from me?</strong></p>
+<ul>
+<li>A. The agent sends the hostname, mac address, fingerprint (a random unique string that we create to identify your server) and the data from your scripts. We also send back a list of processes (process.name from the psutils library) and some metadata.</li>
+</ul>
 <p>We use Nagios format scripts so the output is limited to 0,1,2 and 3 for alert status and something=value for the performance metrics. What gets sent back will largely be decided by you when you assign plugins.</p>
-<p>Q. How exactly do you keep up with the rate of change in my dynamic environments?</p>
-<p>A. All configuration is driven by tags. Simply run dataloop-agent --add-tags on the command line (or automate it via config management). Plugin deployment, dashboards and alerts are all bound to tags so purely by manipulating what tags your agent belongs to we keep up with change.</p>
+<hr />
+<p><strong>Q. How exactly do you keep up with the rate of change in my dynamic environments?</strong></p>
+<ul>
+<li>A. All configuration is driven by tags. Simply run dataloop-agent --add-tags on the command line (or automate it via config management). Plugin deployment, dashboards and alerts are all bound to tags so purely by manipulating what tags your agent belongs to we keep up with change.</li>
+</ul>
 <p>We provide secure agent registration, de-registration and presence detection. Simply run dataloop-agent --deregister to remove your agent from the system.</p>
 <p>We also support agent finger printing so that you can recreate nodes and reattach to old metrics. This is especially useful for phoenix deployments.</p>
 <p>By default agents will deregister on graceful shutdown which works well on AWS with auto scaling groups. You can spin up and down instances and your dashboards and alert rules will dynamically update.</p>
-<p>Q. Where is your product roadmap?</p>
-<p>A. We are very customer focused and are constantly iterating the product based on feedback. You can see and vote on which features you would like to see in Dataloop here: https://dataloop.uservoice.com/forums/289987-general/filters/top</p>
-<p>Q. What are shells?</p>
-<p>A. Something we added mostly for Windows.</p>
+<hr />
+<p><strong>Q. Where is your product roadmap?</strong></p>
+<ul>
+<li>A. We are very customer focused and are constantly iterating the product based on feedback. You can see and vote on which features you would like to see in Dataloop here: https://dataloop.uservoice.com/forums/289987-general/filters/top</li>
+</ul>
+<hr />
+<p><strong>Q. What are shells?</strong></p>
+<ul>
+<li>A. Something we added mostly for Windows.</li>
+</ul>
 <p>Linux and OSX run scripts with a shebang at the top of the file. Windows treats everything as if it’s a .cmd or a .exe. For those wanting to run Powershell or WSF / vbs / js files you can setup shell paths under the settings page. You could for instance setup a WSF shell pointing to c:\windows\system32\cscript.exe and apply it to your WSF script using the shell dropdown in the editor.</p>
 <p>Shells can also be used on Linux / OSX and we’ve found them very helpful for running PhantomJS scripts.</p>
-<p>Q. How do I remove the agent?</p>
-<p>A. On Linux remove the dataloop-agent package</p>
+<hr />
+<p><strong>Q. How do I remove the agent?</strong></p>
+<ul>
+<li>A. On Linux remove the dataloop-agent package</li>
+</ul>
 <p>On Windows remove the agent via the add/remove programs interface.</p>
-<p>Q. What’s the quickest way to write Nagios plugins?</p>
-<p>A. If you’re using Linux then you’re spoilt for choice as you have Bash, Ruby and Python installed by default. Pick your favourite scripting language and start writing.</p>
+<hr />
+<p><strong>Q. What’s the quickest way to write Nagios plugins?</strong></p>
+<ul>
+<li>A. If you’re using Linux then you’re spoilt for choice as you have Bash, Ruby and Python installed by default. Pick your favourite scripting language and start writing.</li>
+</ul>
 <p>On Windows you can use batch, or setup a shell for Powershell. Or, alternately use our built in Python interpreter by selecting 'Built-In Python' from the drop down at the top of the plugin editor page.</p>
 <p>You can find the Nagios Plugin Development Guide here: link</p>
 <p>If you need any help with writing scripts let us know.</p>
-<p>Q. Will you support other operating systems and architectures?</p>
-<p>A. We’ll probably only ever create installers for Linux and Windows. However, for those that want to install our agent on more exotic platforms (like Raspberry Pi or AIX / HP-UX / Solaris etc) we may be open to providing special builds. The agent is written in Python so in theory should run everywhere. If you’d like another operating system package please contact us.</p>
-<p>Q. How can I secure the Agent?</p>
-<p>A. We have a support page for security.</p>
-<p>Q. The share dashboard button has gone missing. How can I get it back?</p>
-<p>A. This can happen when you have browser extensions like Adblock installed</p>
+<hr />
+<p><strong>Q. Will you support other operating systems and architectures?</strong></p>
+<ul>
+<li>A. We’ll probably only ever create installers for Linux and Windows. However, for those that want to install our agent on more exotic platforms (like Raspberry Pi or AIX / HP-UX / Solaris etc) we may be open to providing special builds. The agent is written in Python so in theory should run everywhere. If you’d like another operating system package please contact us.</li>
+</ul>
+<hr />
+<p><strong>Q. How can I secure the Agent?</strong></p>
+<ul>
+<li>A. We have a support page for security.</li>
+</ul>
+<hr />
+<p><strong>Q. The share dashboard button has gone missing. How can I get it back?</strong></p>
+<ul>
+<li>A. This can happen when you have browser extensions like Adblock installed</li>
+</ul>
               
             </div>
           </div>

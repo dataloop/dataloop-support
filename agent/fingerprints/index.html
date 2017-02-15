@@ -54,20 +54,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/">Integrations</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../setup/">Setup</a>
-        
-    </li>
-<li>
-          
-            <li>
     <ul class="subnav">
     <li><span>Account model</span></li>
 
@@ -103,34 +89,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../Installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../Installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../command_line_interface/">Command line interface</a>
         
     </li>
@@ -158,10 +116,43 @@
             
                 <li class="toctree-l3"><a href="#fingerprints">Fingerprints</a></li>
                 
-                    <li><a class="toctree-l4" href="#example">Example</a></li>
-                
             
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_docker/">Installation docker</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_linux/">Installation linux</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_raspberry_pi/">Installation raspberry pi</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../installation_windows/">Installation windows</a>
         
     </li>
 
@@ -389,6 +380,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../getting_started/">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../getting_started/overview/">Overview</a>
         
     </li>
@@ -587,12 +585,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="fingerprints">Fingerprints</h1>
-<p>When an Agent starts for the first time on a new server it creates an agent.finger file (in /etc/dataloop on Linux boxes and C:\Dataloop on Windows). This is used to uniquely identify the Agent.</p>
-<p>Deleting the agent.finger file and restarting the service will cause the agent to generate a new identity and it will lose its old metrics.</p>
+                <h2 id="fingerprints">Fingerprints</h2>
+<p>When an Agent starts for the first time on a new server it creates an agent.finger file (in <code>/etc/dataloop</code> on Linux boxes and <code>C:\Dataloop</code> on Windows). This is used to uniquely identify the Agent.</p>
+<p>Deleting the <code>agent.finger</code> file and restarting the service will cause the agent to generate a new identity and it will lose its old metrics.</p>
 <p>Conversely, starting servers with known fingerprint files allows you to connect new boxes to existing metrics which is extremely useful for dynamically changing environments where configuration management tools are used.</p>
-<h2 id="example">Example</h2>
-<p>You may have an environment made up of 6 different server roles. Each role is scaled up to 10 servers. Your deployment mechanism may mean that every server gets recycled every few days as features are released. You may decide to store two fingerprints for each role in your configuration management system so that 2 / 10 of the nodes rejoin their old metrics. The remaining 8 servers per role get a new identify each time. In this way you can look back across many releases to determine what effects the changes have had on your service.</p>
+<ul>
+<li>Example</li>
+</ul>
+<p>You may have an environment made up of 6 different server roles.<br />
+Each role is scaled up to 10 servers.<br />
+Your deployment mechanism may mean that every server gets recycled every few days as features are released.<br />
+You may decide to store two fingerprints for each role in your configuration management system so that 2 / 10 of the nodes rejoin their old metrics.<br />
+The remaining 8 servers per role get a new identify each time.<br />
+In this way you can look back across many releases to determine what effects the changes have had on your service.</p>
               
             </div>
           </div>
@@ -600,7 +605,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../solo_mode/" class="btn btn-neutral float-right" title="Solo mode">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../configuration/" class="btn btn-neutral" title="Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -636,7 +641,7 @@
         <span><a href="../configuration/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../solo_mode/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
