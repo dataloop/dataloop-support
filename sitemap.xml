@@ -116,6 +116,12 @@
     </url>
         
     <url>
+     <loc>/alerting/</loc>
+     <lastmod>2017-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/alerting/metric_alerts/</loc>
      <lastmod>2017-02-16</lastmod>
      <changefreq>daily</changefreq>

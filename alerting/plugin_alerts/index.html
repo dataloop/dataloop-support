@@ -188,6 +188,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../metric_alerts/">Metric alerts</a>
         
     </li>
@@ -609,7 +616,7 @@
 
 <p>We treat these exit codes like a metric stream in Dataloop. For every Nagios script that returns data you'll see <code>&lt;script name&gt;.status</code> in the <code>Alert On</code> drop down.</p>
 <p>If you select this you'll be prompted with a slightly different set of options from metrics. Essentially you just need to set how long the script needs to have failed for before the criteria is triggered.</p>
-<p>We actually treat exit code <code>2</code> and <code>3</code> as down. So if your script returns exit code <code>2</code> or <code>3</code> it will trigger a script.status rule. This means we ignore OK and Warning for the purposes of alerting.</p>
+<p>We actually treat exit code <code>2</code> and <code>3</code> as down. So if your script returns exit code <code>2</code> or <code>3</code> it will trigger a <code>script.status</code> rule. This means we ignore OK and Warning for the purposes of alerting.</p>
               
             </div>
           </div>
