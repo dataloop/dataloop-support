@@ -2,9 +2,9 @@
 
 Statsite is an awesome alternative to the Etsy StatsD server implementation. Install as per the instructions here:
 
-https://github.com/armon/statsite
+<https://github.com/armon/statsite>
 
-Then create a statsite.conf with the following configuration:
+Then create a `statsite.conf` with the following configuration:
 
 ```
 [statsite]
@@ -56,7 +56,7 @@ Start statsite and wait for 10 seconds. Your netcat listening tab will show you 
 529b7fc2-2de5-4525-983a-184c8f43c085.production.agent.flush.size.stdev 1.338330 1436185723
 ```
 
-Here we can see the fingerprint first, then the dot seperator between the metric paths followed by the value and timestamp. If you have a malformed fingerprint.metric.path then metrics won't display in dataloop
+Here we can see the fingerprint first, then the dot seperator between the metric paths followed by the value and timestamp. If you have a malformed `fingerprint.metric.path` then metrics won't display in Dataloop
 
 Once you have confirmed it's working against localhost port 2004 you can flip it back to sending to dataloop. Metrics will appear under the agent fingerprint that you used.
 
@@ -65,8 +65,8 @@ Also, be careful about the time on your Statsite server. Installing NTP should h
  
 ## Sending to Graphite + Dataloop
 
-Sometimes people want to keep their local Graphite server running in parallel. You can do that quite easily with Statsite by changing the sink/graphite.py that they provide to a modified version.
+Sometimes people want to keep their local Graphite server running in parallel. You can do that quite easily with Statsite by changing the `sink/graphite.py` that they provide to a modified version.
 
-Grab the modified one from here: [gist](https://gist.github.com/sacreman/fb2984d2497103ab3afd)
+Grab the modified one from here: [gist](https://gist.github.com/tomashley/b38b8a784fd2e9d4210af25e9f9c996f)
 
 You'll need to modify the `self.fingerprint` variable in the init script with a valid agent fingerprint as discussed above.

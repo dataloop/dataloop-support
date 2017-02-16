@@ -6,7 +6,7 @@ This is great for high resolution metrics up to 1 second granularity or for long
 
 The plain text protocol is described here:
 
-http://graphite.readthedocs.org/en/latest/feeding-carbon.html
+<http://graphite.readthedocs.org/en/latest/feeding-carbon.html>
 
 The metric path section of the string determines how Dataloop will store the data. The format should be:
 
