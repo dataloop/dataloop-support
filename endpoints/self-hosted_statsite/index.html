@@ -295,6 +295,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../influxdb/">Influxdb</a>
         
     </li>
@@ -591,8 +598,8 @@
               
                 <h1 id="self-hosted-statsite">Self-Hosted Statsite</h1>
 <p>Statsite is an awesome alternative to the Etsy StatsD server implementation. Install as per the instructions here:</p>
-<p>https://github.com/armon/statsite</p>
-<p>Then create a statsite.conf with the following configuration:</p>
+<p><a href="https://github.com/armon/statsite">https://github.com/armon/statsite</a></p>
+<p>Then create a <code>statsite.conf</code> with the following configuration:</p>
 <pre><code>[statsite]
 bind_address = 0.0.0.0
 tcp_port = 8125
@@ -631,12 +638,12 @@ extended_counters = true
 529b7fc2-2de5-4525-983a-184c8f43c085.production.agent.flush.size.stdev 1.338330 1436185723
 </code></pre>
 
-<p>Here we can see the fingerprint first, then the dot seperator between the metric paths followed by the value and timestamp. If you have a malformed fingerprint.metric.path then metrics won't display in dataloop</p>
+<p>Here we can see the fingerprint first, then the dot seperator between the metric paths followed by the value and timestamp. If you have a malformed <code>fingerprint.metric.path</code> then metrics won't display in Dataloop</p>
 <p>Once you have confirmed it's working against localhost port 2004 you can flip it back to sending to dataloop. Metrics will appear under the agent fingerprint that you used.</p>
 <p>Also, be careful about the time on your Statsite server. Installing NTP should help with this. Dataloop will display whatever values against the timestamp you send in, so if your timestamps are wrong strangeness abounds.</p>
 <h2 id="sending-to-graphite-dataloop">Sending to Graphite + Dataloop</h2>
-<p>Sometimes people want to keep their local Graphite server running in parallel. You can do that quite easily with Statsite by changing the sink/graphite.py that they provide to a modified version.</p>
-<p>Grab the modified one from here: <a href="https://gist.github.com/sacreman/fb2984d2497103ab3afd">gist</a></p>
+<p>Sometimes people want to keep their local Graphite server running in parallel. You can do that quite easily with Statsite by changing the <code>sink/graphite.py</code> that they provide to a modified version.</p>
+<p>Grab the modified one from here: <a href="https://gist.github.com/tomashley/b38b8a784fd2e9d4210af25e9f9c996f">gist</a></p>
 <p>You'll need to modify the <code>self.fingerprint</code> variable in the init script with a valid agent fingerprint as discussed above.</p>
               
             </div>

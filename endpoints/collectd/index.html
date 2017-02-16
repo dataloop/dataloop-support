@@ -306,6 +306,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../influxdb/">Influxdb</a>
         
     </li>
@@ -592,8 +599,8 @@
                 <h1 id="collectd">Collectd</h1>
 <h2 id="collectd-configuration">CollectD Configuration</h2>
 <p>It's best to use the latest CollectD package. You can find instructions for setting up the repo's for Debian and Redhat based distros here:</p>
-<p>https://github.com/collectd/collectd-ci/blob/master/README.md</p>
-<p>Change the following lines in your collectd.conf file. Where fingerprint is the string from /etc/dataloop/agent.finger. You may need to uncomment the LoadPlugin line.</p>
+<p><a href="https://github.com/collectd/collectd-ci/blob/master/README.md">https://github.com/collectd/collectd-ci/blob/master/README.md</a></p>
+<p>Change the following lines in your collectd.conf file. Where fingerprint is the string from <code>/etc/dataloop/agent.finger</code>. You may need to uncomment the <code>LoadPlugin</code> line.</p>
 <pre><code>Hostname    &quot;fingerprint&quot;
 
 LoadPlugin  write_graphite
@@ -613,9 +620,9 @@ LoadPlugin  write_graphite
 &lt;/Plugin&gt;
 </code></pre>
 
-<p>The metrics will appear under 'collectd' when browsing in the Dataloop web interface.</p>
+<p>The metrics will appear under `collectd' when browsing in the Dataloop web interface.</p>
 <h2 id="other-software">Other Software</h2>
-<p>Lots of open source tools have a Graphite backend. In general you should only need to configure two settings; the graphite server address, and the metric prefix. Where our server address is graphite.dataloop.io and our metric prefix is your fingerprint.</p>
+<p>Lots of open source tools have a Graphite backend. In general you should only need to configure two settings; the graphite server address, and the metric prefix. Where our server address is <code>graphite.dataloop.io</code> and our metric prefix is your fingerprint.</p>
               
             </div>
           </div>
