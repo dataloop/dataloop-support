@@ -8,7 +8,7 @@
   
   <meta name="author" content="support@dataloop.io">
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Plugin deplotmen models - Dataloop Support</title>
+  <title>Plugin deployment models - Dataloop Support</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Plugin deplotmen models";
-    var mkdocs_page_input_path = "nagios/plugin_deplotmen_models.md";
-    var mkdocs_page_url = "/nagios/plugin_deplotmen_models/";
+    var mkdocs_page_name = "Plugin deployment models";
+    var mkdocs_page_input_path = "nagios/plugin_deployment_models.md";
+    var mkdocs_page_url = "/nagios/plugin_deployment_models/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -510,6 +510,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../nagios_performance_data/">Nagios performance data</a>
         
     </li>
@@ -524,7 +531,7 @@
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">Plugin deplotmen models</a>
+        <a class="current" href="./">Plugin deployment models</a>
         
             <ul>
             
@@ -585,10 +592,10 @@
         
       
     
-    <li>Plugin deplotmen models</li>
+    <li>Plugin deployment models</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/nagios/plugin_deplotmen_models.md"
+        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/nagios/plugin_deployment_models.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -604,7 +611,7 @@
 <p><img alt="nagios plugins" src="../../img/nagios_plugins.png" /></p>
 <p>There are two problems this mode solves;  firstly getting adoption so that more people can collaborate on increasing your monitoring coverage, and secondly reducing the round trip time between knowing what to measure and having those metrics available to use (improving the ooda loop).</p>
 <h2 id="2-hybrid-mode-centralised-decentralised-configuration">2. Hybrid  Mode (centralised + decentralised configuration)</h2>
-<p>The default mode of operation for the agent also supports loading plugins from disk. You can still deploy your plugins using the centralised model shown above, and additionally you can also put plugins into /opt/dataloop/plugins (or c:\dataloop\plugins on windows) so that they get loaded automatically by the agent.</p>
+<p>The default mode of operation for the agent also supports loading plugins from disk. You can still deploy your plugins using the centralised model shown above, and additionally you can also put plugins into <code>/opt/dataloop/plugins</code> (or <code>c:\dataloop\plugins</code> on windows) so that they get loaded automatically by the agent.</p>
 <p><img alt="nagios hybrid mode" src="../../img/nagios_plugins_hybrid.png" /></p>
 <p>In this mode you get to keep the benefits of the default mode for ad-hoc monitoring but can can use config management as your primary mechanism for determining what agents run what plugins, as well as using your version controlled change management process for deploying them.</p>
 <ul>

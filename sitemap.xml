@@ -334,6 +334,12 @@
     </url>
         
     <url>
+     <loc>/nagios/</loc>
+     <lastmod>2017-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/nagios/nagios_performance_data/</loc>
      <lastmod>2017-02-16</lastmod>
      <changefreq>daily</changefreq>
@@ -346,7 +352,7 @@
     </url>
         
     <url>
-     <loc>/nagios/plugin_deplotmen_models/</loc>
+     <loc>/nagios/plugin_deployment_models/</loc>
      <lastmod>2017-02-16</lastmod>
      <changefreq>daily</changefreq>
     </url>

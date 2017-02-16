@@ -510,6 +510,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../nagios_performance_data/">Nagios performance data</a>
         
     </li>
@@ -524,7 +531,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../plugin_deplotmen_models/">Plugin deplotmen models</a>
+        <a class="" href="../plugin_deployment_models/">Plugin deployment models</a>
         
     </li>
 
@@ -600,8 +607,8 @@
 <p>The Dataloop agent can run plugins that scrape Prometheus http endpoints. We recommend that you install a Dataloop agent on each server and then create a separate plugin to monitor each endpoint on localhost.</p>
 <h2 id="example-for-node-exporter">Example for Node Exporter</h2>
 <p>Start the Prometheus Node Exporter on a server following the instructions here:</p>
-<p>https://github.com/prometheus/node_exporter</p>
-<p>Then create a new plugin in Dataloop called node_exporter.py.</p>
+<p><a href="https://github.com/prometheus/node_exporter">https://github.com/prometheus/node_exporter</a></p>
+<p>Then create a new plugin in Dataloop called <code>node_exporter.py</code>.</p>
 <p>Paste in the following code to scrape the endpoint:</p>
 <pre><code>#!/usr/bin/env python
 import requests
@@ -611,11 +618,11 @@ requests.get('http://localhost:9100/metrics').text
 <p>Where port 9100 is the port the Node Exporter is running. Select the agent and press run to confirm that metrics are being received.</p>
 <p>Now <strong>set the output format to Prometheus</strong> and specify the scrape interval (the default is to scrape every 30 seconds) on the plugin details page. Save and apply to either a single agent or a tag for deployment.</p>
 <p>A list of other exporters can be found here:</p>
-<p>https://prometheus.io/docs/instrumenting/exporters/</p>
+<p><a href="https://prometheus.io/docs/instrumenting/exporters/">https://prometheus.io/docs/instrumenting/exporters/</a></p>
 <h2 id="example-for-application-instrumentation">Example for Application Instrumentation</h2>
 <p>Select a Prometheus client library for your language.</p>
-<p>https://prometheus.io/docs/instrumenting/clientlibs/</p>
-<p>Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on http://localhost:8000.</p>
+<p><a href="https://prometheus.io/docs/instrumenting/clientlibs/">https://prometheus.io/docs/instrumenting/clientlibs/</a></p>
+<p>Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on <a href="http://localhost:8000">http://localhost:8000</a>.</p>
 <p>Create a plugin called payments.py with the following content:</p>
 <pre><code>#!/usr/bin/env python
 import requests

@@ -510,6 +510,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../">Home</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../nagios_performance_data/">Nagios performance data</a>
         
     </li>
@@ -531,7 +538,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../plugin_deplotmen_models/">Plugin deplotmen models</a>
+        <a class="" href="../plugin_deployment_models/">Plugin deployment models</a>
         
     </li>
 
@@ -603,14 +610,14 @@ exit 0
 </code></pre>
 
 <p>Nagios plugins write a string to stdout containing a message, a pipe symbol and then key value pairs separated by an equals sign as per above. You can put multiple key value pairs on the same line separated by spaces. Anything after the pipe symbol can be used as performance data in Dataloop. Tip: ensure there is a pipe symbol in your plugins.</p>
-<p>You should also place exit codes in logic throughout your plugins. 0 means OK, 1 means warning, 2 means critical and 3 means unknown. These map to plugin_name.status metrics in Dataloop and can be used in Dashboards and alerts to express a state change which will change widget colours and fire off email alerts if you set them up.</p>
+<p>You should also place exit codes in logic throughout your plugins. 0 means OK, 1 means warning, 2 means critical and 3 means unknown. These map to <code>plugin_name.status</code> metrics in Dataloop and can be used in Dashboards and alerts to express a state change which will change widget colours and fire off email alerts if you set them up.</p>
 <p>You can also add units of measure and other options to the stdout string of Nagios plugins. The full spec can be found here:</p>
-<p>https://nagios-plugins.org/doc/guidelines.html</p>
+<p><a href="https://nagios-plugins.org/doc/guidelines.html">https://nagios-plugins.org/doc/guidelines.html</a></p>
 <p>In Dataloop something is either considered working, or it is broken. So for alerting off exit codes we only alert when the status is critical (2). Which means the majority of your plugins should emit exit code 0 on success and 2 on failure.</p>
 <p>If you need to monitor something generic, and we don't have it as an out of the box plugin, then usually the first place to look is the Nagios Exchange:</p>
-<p>http://exchange.nagios.org/directory/Plugins</p>
-<p>Alternatively, email us at info@dataloop.io or <a href="https://slack.dataloop.io/">come and find us in Slack</a> and we'll create a script for you and place it into our plugin library on Github:</p>
-<p>https://github.com/dataloop/plugins</p>
+<p><a href="http://exchange.nagios.org/directory/Plugins">http://exchange.nagios.org/directory/Plugins</a></p>
+<p>Alternatively, email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#116;&#97;&#108;&#111;&#111;&#112;&#46;&#105;&#111;">&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#116;&#97;&#108;&#111;&#111;&#112;&#46;&#105;&#111;</a> or <a href="https://slack.outlyer.com/">come and find us in Slack</a> and we'll create a script for you and place it into our plugin library on Github:</p>
+<p><a href="https://github.com/dataloop/plugins">https://github.com/dataloop/plugins</a></p>
               
             </div>
           </div>
@@ -618,7 +625,7 @@ exit 0
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../plugin_deplotmen_models/" class="btn btn-neutral float-right" title="Plugin deplotmen models">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../plugin_deployment_models/" class="btn btn-neutral float-right" title="Plugin deployment models">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../nagios_performance_data/" class="btn btn-neutral" title="Nagios performance data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -654,7 +661,7 @@ exit 0
         <span><a href="../nagios_performance_data/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../plugin_deplotmen_models/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../plugin_deployment_models/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
