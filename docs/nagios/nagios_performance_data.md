@@ -12,19 +12,21 @@ We support the absolute minimum in terms of what you can get away with and still
 echo "OK | something=$RANDOM"
 ```
 
-We graph everything after the pipe | symbol. You could even add a space after something=$RANDOM and add another whatever=value.
+We graph everything after the pipe `|` symbol. You could even add a space after `something=$RANDOM` and add another `whatever=value`.
 
 If you deployed this via drag and drop to some agents and wait 30 seconds (our default script interval) then you'll see 'something' and 'whatever' appear as metrics in the dashboard side panel and in the rules criteria metrics drop down.
 
 Obviously in your scripts you will want to build up the performance data string so that it includes metrics worth graphing. If you have metrics that can be grouped our advice is to use dots to separate. For instance:
 
+```
 OK | load.load1min=1234;;;; load.load5min=1234;;;; load.load15min=1234;;;;
+```
 
 We do some cool stuff in the Dataloop UI to group on dots.
 
 ## The full specification
 
-Nagios 3 and newer will concatenate the parts following a "|" in a) the first line output by the plugin, and b) in the second to last line, into a string it passes to whatever performance data processing it has configured. (Note that it currently does not insert additional whitespace between both, so the plugin needs to provide some to prevent the last pair of a) and the first of b) getting run together.) Please refer to the Nagios documentation for information on how to configure such processing. However, it is the responsibility of the plugin writer to ensure the performance data is in a "Nagios Plugins" format.
+Nagios 3 and newer will concatenate the parts following a `|` in a) the first line output by the plugin, and b) in the second to last line, into a string it passes to whatever performance data processing it has configured. (Note that it currently does not insert additional whitespace between both, so the plugin needs to provide some to prevent the last pair of a) and the first of b) getting run together.) Please refer to the Nagios documentation for information on how to configure such processing. However, it is the responsibility of the plugin writer to ensure the performance data is in a "Nagios Plugins" format.
 
 This is the expected format: 
 

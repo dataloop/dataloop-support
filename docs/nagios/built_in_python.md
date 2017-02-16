@@ -78,4 +78,4 @@ On Windows:
 c:\dataloop\embedded\bin\pip.exe install <module>
 ```
 
-If you contact us at support@dataloop.io you can request we bundle other libraries.
+If you contact us at <support@dataloop.io> you can request we bundle other libraries.

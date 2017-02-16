@@ -6,9 +6,9 @@ The Dataloop agent can run plugins that scrape Prometheus http endpoints. We rec
 
 Start the Prometheus Node Exporter on a server following the instructions here:
 
-https://github.com/prometheus/node_exporter
+<https://github.com/prometheus/node_exporter>
 
-Then create a new plugin in Dataloop called node_exporter.py.
+Then create a new plugin in Dataloop called `node_exporter.py`.
 
 Paste in the following code to scrape the endpoint:
 
@@ -24,7 +24,7 @@ Now **set the output format to Prometheus** and specify the scrape interval (the
 
 A list of other exporters can be found here:
 
-https://prometheus.io/docs/instrumenting/exporters/
+<https://prometheus.io/docs/instrumenting/exporters/>
 
  
 
@@ -32,9 +32,9 @@ https://prometheus.io/docs/instrumenting/exporters/
 
 Select a Prometheus client library for your language.
 
-https://prometheus.io/docs/instrumenting/clientlibs/
+<https://prometheus.io/docs/instrumenting/clientlibs/>
 
-Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on http://localhost:8000.
+Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on <http://localhost:8000>.
 
 Create a plugin called payments.py with the following content:
 

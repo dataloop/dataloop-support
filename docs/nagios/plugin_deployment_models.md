@@ -16,7 +16,7 @@ There are two problems this mode solves;  firstly getting adoption so that more 
 
  
 
-The default mode of operation for the agent also supports loading plugins from disk. You can still deploy your plugins using the centralised model shown above, and additionally you can also put plugins into /opt/dataloop/plugins (or c:\dataloop\plugins on windows) so that they get loaded automatically by the agent.
+The default mode of operation for the agent also supports loading plugins from disk. You can still deploy your plugins using the centralised model shown above, and additionally you can also put plugins into `/opt/dataloop/plugins` (or `c:\dataloop\plugins` on windows) so that they get loaded automatically by the agent.
 
 ![nagios hybrid mode](../img/nagios_plugins_hybrid.png)
 
