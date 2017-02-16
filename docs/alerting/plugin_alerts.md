@@ -13,4 +13,4 @@ We treat these exit codes like a metric stream in Dataloop. For every Nagios scr
 
 If you select this you'll be prompted with a slightly different set of options from metrics. Essentially you just need to set how long the script needs to have failed for before the criteria is triggered.
 
-We actually treat exit code `2` and `3` as down. So if your script returns exit code `2` or `3` it will trigger a script.status rule. This means we ignore OK and Warning for the purposes of alerting.
+We actually treat exit code `2` and `3` as down. So if your script returns exit code `2` or `3` it will trigger a `script.status` rule. This means we ignore OK and Warning for the purposes of alerting.

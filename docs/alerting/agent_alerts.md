@@ -1,6 +1,6 @@
 # Agent Alerts
 
-Agents create a persistent websocket connection to agent.dataloop.io when they start.
+Agents create a persistent websocket connection to <https://agent.dataloop.io> when they start.
 
 If this connection drops you will see agent names will change to either orange or red.
 
