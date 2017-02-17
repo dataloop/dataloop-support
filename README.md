@@ -19,7 +19,7 @@ Commits submitted to the `master` branch of this repository will be built and ma
 
 All raw markdown files can be found in the `/docs` directory.
 
-There is a top level `index.md` file that is the site front page. This requires manual updating for new categories and attempting to keep end-users aware of the `new pages` or `lates updated` sections. One drawback on generating the content in this manner.
+There is a top level `index.md` file that is the site front page. This requires manual updating for new categories and attempting to keep end-users aware of the `new pages` or `latest updated` sections. One drawback on generating the content in this manner.
 
 Pages have been split according to categories. Creating a new directory will create a new category.
 
