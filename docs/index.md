@@ -4,7 +4,7 @@ Here you will find a body of knowledge to get your monitoring started with Datal
 
 Start with the [Installation](/agent/) pages to get Dataloop.IO agents installed on your servers.
 
-Head on over to our [Zendesk ticketing system](https://dataloopio.zendesk.com/hc/en-gb/requests/new) to raise a support ticket with the Dataloop Team, or send an support request to <support@dataloop.io>
+Head on over to our [Zendesk ticketing system](https://dataloopio.zendesk.com/hc/en-gb/requests/new) to raise a support ticket with the Dataloop Team.
 
 
 
