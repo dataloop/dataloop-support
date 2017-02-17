@@ -1,625 +1,1219 @@
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="support@dataloop.io">
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Solo mode - Dataloop Support</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Solo mode";
-    var mkdocs_page_input_path = "agent/solo_mode.md";
-    var mkdocs_page_url = "/agent/solo_mode/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Dataloop Support</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Support and Help Documentation for Dataloop.IO">
+      
+      
+      
+        <meta name="author" content="support@dataloop.io">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.3">
+    
+    
+      
+        <title>Solo mode - Dataloop Support</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-5b0c41c2b5.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-166740f5bb.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="orange" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Dataloop Support" class=" md-logo  md-header-nav__button">
+          
+            <img src="../../img/touchicon-x120.png" width="24" height="24">
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Account model</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../account_model/backup_restore/">Backup restore</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../account_model/overview/">Overview</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../account_model/private_packs/">Private packs</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Agent</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../command_line_interface/">Command line interface</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../config_management/">Config management</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../configuration/">Configuration</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../fingerprints/">Fingerprints</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../">Home</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../installation_docker/">Installation docker</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../installation_linux/">Installation linux</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../installation_raspberry_pi/">Installation raspberry pi</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../installation_windows/">Installation windows</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Solo mode</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#solo-mode">Solo Mode</a></li>
-                
-                    <li><a class="toctree-l4" href="#agent-config">Agent Config</a></li>
-                
-                    <li><a class="toctree-l4" href="#local-plugin-deployment">Local Plugin Deployment</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../supported_operating_systems/">Supported operating systems</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../uninstall/">Uninstall</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Alerting</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/agent_alerts/">Agent alerts</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/">Home</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/metric_alerts/">Metric alerts</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/plugin_alerts/">Plugin alerts</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/rules/">Rules</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../alerting/webhook/">Webhook</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Dashboards</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/annotations/">Annotations</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/grafana/">Grafana</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/graph_widgets/">Graph widgets</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/numeric_widgets/">Numeric widgets</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/public_dashboards/">Public dashboards</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../dashboards/troubleshooting/">Troubleshooting</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Endpoints</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/collectd/">Collectd</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/graphite/">Graphite</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/hosted_statsd/">Hosted statsd</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/">Home</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/influxdb/">Influxdb</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/self-hosted_statsd/">Self hosted statsd</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/self-hosted_statsite/">Self hosted statsite</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/statsd/">Statsd</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../endpoints/statsd_clients/">Statsd clients</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Getting started</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/API/">API</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/command_line_utility/">Command line utility</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/data_retention_policy/">Data retention policy</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/faq/">Faq</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/getting_help/">Getting help</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/">Home</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/overview/">Overview</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/roadmap/">Roadmap</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/security/">Security</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/use_cases/">Use cases</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../getting_started/where_we_fit/">Where we fit</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Integrations</span></li>
-
-        
-            
-    <ul class="subnav">
-    <li><span>Thirdparty</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/thirdparty/aws/">Aws</a>
-        
-    </li>
-
-        
-    </ul>
-
-        
-            
-    <ul class="subnav">
-    <li><span>Webhook</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/bigpanda/">Bigpanda</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/hipchat/">Hipchat</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/opsgenie/">Opsgenie</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/pagerduty/">Pagerduty</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/slack/">Slack</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../integrations/webhook/victorops/">Victorops</a>
-        
-    </li>
-
-        
-    </ul>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Nagios</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/built_in_python/">Built in python</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/">Home</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/nagios_performance_data/">Nagios performance data</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/nagios_plugins/">Nagios plugins</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/plugin_deployment_models/">Plugin deployment models</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/powershell/">Powershell</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../nagios/prometheus_plugins/">Prometheus plugins</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-        </ul>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Dataloop Support</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Agent &raquo;</li>
-        
-      
-    
-    <li>Solo mode</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/agent/solo_mode.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
               
-                <h2 id="solo-mode">Solo Mode</h2>
+                <span class="md-header-nav__parent">
+                  Agent
+                </span>
+              
+            
+            Solo mode
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/dataloop/dataloop-support" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../../img/touchicon-x120.png">
+      
+    </i>
+    Dataloop Support
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/dataloop/dataloop-support" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../.." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Account model
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2">
+        Account model
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/backup_restore/" title="Backup restore" class="md-nav__link">
+        Backup restore
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/private_packs/" title="Private packs" class="md-nav__link">
+        Private packs
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Agent
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Agent
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../command_line_interface/" title="Command line interface" class="md-nav__link">
+        Command line interface
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../config_management/" title="Config management" class="md-nav__link">
+        Config management
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../configuration/" title="Configuration" class="md-nav__link">
+        Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../fingerprints/" title="Fingerprints" class="md-nav__link">
+        Fingerprints
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../installation_docker/" title="Installation docker" class="md-nav__link">
+        Installation docker
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../installation_linux/" title="Installation linux" class="md-nav__link">
+        Installation linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../installation_raspberry_pi/" title="Installation raspberry pi" class="md-nav__link">
+        Installation raspberry pi
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../installation_windows/" title="Installation windows" class="md-nav__link">
+        Installation windows
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Solo mode
+      </label>
+    
+    <a href="./" title="Solo mode" class="md-nav__link md-nav__link--active">
+      Solo mode
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solo-mode" title="Solo Mode" class="md-nav__link">
+    Solo Mode
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agent-config" title="Agent Config" class="md-nav__link">
+    Agent Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-plugin-deployment" title="Local Plugin Deployment" class="md-nav__link">
+    Local Plugin Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../supported_operating_systems/" title="Supported operating systems" class="md-nav__link">
+        Supported operating systems
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../uninstall/" title="Uninstall" class="md-nav__link">
+        Uninstall
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Alerting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Alerting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/agent_alerts/" title="Agent alerts" class="md-nav__link">
+        Agent alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/metric_alerts/" title="Metric alerts" class="md-nav__link">
+        Metric alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/plugin_alerts/" title="Plugin alerts" class="md-nav__link">
+        Plugin alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/rules/" title="Rules" class="md-nav__link">
+        Rules
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/webhook/" title="Webhook" class="md-nav__link">
+        Webhook
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dashboards
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        Dashboards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/annotations/" title="Annotations" class="md-nav__link">
+        Annotations
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/grafana/" title="Grafana" class="md-nav__link">
+        Grafana
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/graph_widgets/" title="Graph widgets" class="md-nav__link">
+        Graph widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/numeric_widgets/" title="Numeric widgets" class="md-nav__link">
+        Numeric widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/public_dashboards/" title="Public dashboards" class="md-nav__link">
+        Public dashboards
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+        Troubleshooting
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/collectd/" title="Collectd" class="md-nav__link">
+        Collectd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/graphite/" title="Graphite" class="md-nav__link">
+        Graphite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/hosted_statsd/" title="Hosted statsd" class="md-nav__link">
+        Hosted statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/influxdb/" title="Influxdb" class="md-nav__link">
+        Influxdb
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsd/" title="Self hosted statsd" class="md-nav__link">
+        Self hosted statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsite/" title="Self hosted statsite" class="md-nav__link">
+        Self hosted statsite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd/" title="Statsd" class="md-nav__link">
+        Statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd_clients/" title="Statsd clients" class="md-nav__link">
+        Statsd clients
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/API/" title="API" class="md-nav__link">
+        API
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/command_line_utility/" title="Command line utility" class="md-nav__link">
+        Command line utility
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/data_retention_policy/" title="Data retention policy" class="md-nav__link">
+        Data retention policy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/faq/" title="Faq" class="md-nav__link">
+        Faq
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/getting_help/" title="Getting help" class="md-nav__link">
+        Getting help
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/roadmap/" title="Roadmap" class="md-nav__link">
+        Roadmap
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/security/" title="Security" class="md-nav__link">
+        Security
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/use_cases/" title="Use cases" class="md-nav__link">
+        Use cases
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/where_we_fit/" title="Where we fit" class="md-nav__link">
+        Where we fit
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-1" type="checkbox" id="nav-8-1">
+    
+    <label class="md-nav__link" for="nav-8-1">
+      Thirdparty
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8-1">
+        Thirdparty
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/thirdparty/aws/" title="Aws" class="md-nav__link">
+        Aws
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
+    
+    <label class="md-nav__link" for="nav-8-2">
+      Webhook
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8-2">
+        Webhook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/bigpanda/" title="Bigpanda" class="md-nav__link">
+        Bigpanda
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/hipchat/" title="Hipchat" class="md-nav__link">
+        Hipchat
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/opsgenie/" title="Opsgenie" class="md-nav__link">
+        Opsgenie
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/pagerduty/" title="Pagerduty" class="md-nav__link">
+        Pagerduty
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/slack/" title="Slack" class="md-nav__link">
+        Slack
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/victorops/" title="Victorops" class="md-nav__link">
+        Victorops
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Nagios
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        Nagios
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/built_in_python/" title="Built in python" class="md-nav__link">
+        Built in python
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_performance_data/" title="Nagios performance data" class="md-nav__link">
+        Nagios performance data
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_plugins/" title="Nagios plugins" class="md-nav__link">
+        Nagios plugins
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/plugin_deployment_models/" title="Plugin deployment models" class="md-nav__link">
+        Plugin deployment models
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/powershell/" title="Powershell" class="md-nav__link">
+        Powershell
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/prometheus_plugins/" title="Prometheus plugins" class="md-nav__link">
+        Prometheus plugins
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#solo-mode" title="Solo Mode" class="md-nav__link">
+    Solo Mode
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agent-config" title="Agent Config" class="md-nav__link">
+    Agent Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#local-plugin-deployment" title="Local Plugin Deployment" class="md-nav__link">
+    Local Plugin Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/agent/solo_mode.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                  <h1>Solo mode</h1>
+                
+                <h2 id="solo-mode">Solo Mode<a class="headerlink" href="#solo-mode" title="Permanent link">&para;</a></h2>
 <p>You can configure the dataloop agent to run in solo mode by updating the agent.yaml and restarting the dataloop-agent service.</p>
 <p><strong>When running in solo mode the agent won't run remote commands from the web interface.</strong></p>
 <p><strong>It will also not automatically download plugins.</strong></p>
 <p>However, you should still tag solo mode agents in the usual way so that the metrics coming from these agents appear in dashboards and alerts.</p>
 <p>Solo mode agents show up in the UI with a little padlock next to their icon. Plugins deployed into the folder will also show up in the agent details page so you can verify they are being run.</p>
 <p>When running agents in solo mode you will also need to deploy a copy of <code>base.py</code> locally.</p>
-<h3 id="agent-config">Agent Config</h3>
+<h3 id="agent-config">Agent Config<a class="headerlink" href="#agent-config" title="Permanent link">&para;</a></h3>
 <p>To enable solo mode edit the <code>agent.yaml</code> file and restart the dataloop-agent service.</p>
-<pre><code>---
+<div class="codehilite"><pre><span></span>---
 ## Set to yes to disable RPC and run plugins from local plugin source
 solo:  yes
 
@@ -637,31 +1231,37 @@ tags: tag1,tag2,tag3
 
 ## Set if you would like a custom name for this agent. Default is hostname
 #name:
-</code></pre>
+</pre></div>
 
-<h3 id="local-plugin-deployment">Local Plugin Deployment</h3>
+
+<h3 id="local-plugin-deployment">Local Plugin Deployment<a class="headerlink" href="#local-plugin-deployment" title="Permanent link">&para;</a></h3>
 <p>You can deploy plugins to agents running in Solo mode or normal mode. Local plugins take precedence over plugins stored in Dataloop.</p>
-<pre><code>Copy a plugin into /opt/dataloop/plugins (linux) or c:\dataloop\plugins (windows).
+<div class="codehilite"><pre><span></span>Copy a plugin into /opt/dataloop/plugins (linux) or c:\dataloop\plugins (windows).
 Ensure the file has a valid file extension
 Ensure the file is owned by the dataloop user
 Ensure the file is executable
-</code></pre>
+</pre></div>
+
+
 <p>Within 10 seconds the plugin will be automatically loaded into a running Dataloop agent. The agent.log file will display whether plugins have been successfully loaded or not.
 Local Plugin Config</p>
 <p>You can optionally change plugin settings by creating a file in the plugins directory alongside the plugins.</p>
-<pre><code>Create a file called plugin_name.yaml
+<div class="codehilite"><pre><span></span>Create a file called plugin_name.yaml
 The file must exactly match the name of the plugin except with a yaml extension
 The file must be owned by the dataloop user
-</code></pre>
+</pre></div>
+
+
 <p>An example yaml file to change the settings for a plugin called node_exporter.sh</p>
-<pre><code># cat /opt/dataloop/plugins/node_exporter.yaml
+<div class="codehilite"><pre><span></span># cat /opt/dataloop/plugins/node_exporter.yaml
 ---
 interval: 10
-params: ''
-shell: ['/bin/bash']
+params: &#39;&#39;
+shell: [&#39;/bin/bash&#39;]
 type: INPROCESS
 format: PROMETHEUS
-</code></pre>
+</pre></div>
+
 
 <ul>
 <li>
@@ -681,53 +1281,88 @@ format: PROMETHEUS
 </li>
 </ul>
               
-            </div>
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../supported_operating_systems/" class="btn btn-neutral float-right" title="Supported operating systems">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../installation_windows/" class="btn btn-neutral" title="Installation windows"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../installation_windows/" title="Installation windows" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Installation windows
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../supported_operating_systems/" title="Supported operating systems" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Supported operating systems
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>© Dataloop 2017</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Dataloop 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
       </div>
-
-    </section>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/dataloop" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/outlyerapp" class="md-footer-social__link fa fa-twitter"></a>
     
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/dataloop/dataloop-support" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+    </div>
+  </div>
+</footer>
       
+    </div>
+    
+      <script src="../../assets/javascripts/application-39a173f6f5.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
-        <span><a href="../installation_windows/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+    
+    
       
-      
-        <span style="margin-left: 15px"><a href="../supported_operating_systems/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script src="../../js/theme.js"></script>
-
-</body>
+    
+  </body>
 </html>
