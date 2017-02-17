@@ -19,7 +19,7 @@
     
     
       
-        <title>Hosted statsd - Dataloop Support</title>
+        <title>Har archive - Dataloop Support</title>
       
     
     
@@ -81,11 +81,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Endpoints
+                  Troubleshooting
                 </span>
               
             
-            Hosted statsd
+            Har archive
           
         </span>
       </div>
@@ -598,7 +598,7 @@
       
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Endpoints
@@ -614,7 +614,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../collectd/" title="Collectd" class="md-nav__link">
+      <a href="../../endpoints/collectd/" title="Collectd" class="md-nav__link">
         Collectd
       </a>
     
@@ -625,7 +625,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../graphite/" title="Graphite" class="md-nav__link">
+      <a href="../../endpoints/graphite/" title="Graphite" class="md-nav__link">
         Graphite
       </a>
     
@@ -636,14 +636,9 @@
           
   <li class="md-nav__item">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="Hosted statsd" class="md-nav__link md-nav__link--active">
-      Hosted statsd
-    </a>
+      <a href="../../endpoints/hosted_statsd/" title="Hosted statsd" class="md-nav__link">
+        Hosted statsd
+      </a>
     
   </li>
 
@@ -652,7 +647,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../" title="Home" class="md-nav__link">
+      <a href="../../endpoints/" title="Home" class="md-nav__link">
         Home
       </a>
     
@@ -663,7 +658,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../influxdb/" title="Influxdb" class="md-nav__link">
+      <a href="../../endpoints/influxdb/" title="Influxdb" class="md-nav__link">
         Influxdb
       </a>
     
@@ -674,7 +669,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../self-hosted_statsd/" title="Self hosted statsd" class="md-nav__link">
+      <a href="../../endpoints/self-hosted_statsd/" title="Self hosted statsd" class="md-nav__link">
         Self hosted statsd
       </a>
     
@@ -685,7 +680,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../self-hosted_statsite/" title="Self hosted statsite" class="md-nav__link">
+      <a href="../../endpoints/self-hosted_statsite/" title="Self hosted statsite" class="md-nav__link">
         Self hosted statsite
       </a>
     
@@ -696,7 +691,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../statsd/" title="Statsd" class="md-nav__link">
+      <a href="../../endpoints/statsd/" title="Statsd" class="md-nav__link">
         Statsd
       </a>
     
@@ -707,7 +702,7 @@
           
   <li class="md-nav__item">
     
-      <a href="../statsd_clients/" title="Statsd clients" class="md-nav__link">
+      <a href="../../endpoints/statsd_clients/" title="Statsd clients" class="md-nav__link">
         Statsd clients
       </a>
     
@@ -1114,7 +1109,7 @@
       
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
     
     <label class="md-nav__link" for="nav-10">
       Troubleshooting
@@ -1130,9 +1125,64 @@
           
   <li class="md-nav__item">
     
-      <a href="../../troubleshooting/har_archive/" title="Har archive" class="md-nav__link">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
         Har archive
-      </a>
+      </label>
+    
+    <a href="./" title="Har archive" class="md-nav__link md-nav__link--active">
+      Har archive
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generating-an-http-archive-har-file" title="Generating an HTTP Archive (HAR) file" class="md-nav__link">
+    Generating an HTTP Archive (HAR) file
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome" title="Chrome" class="md-nav__link">
+    Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firefox" title="Firefox" class="md-nav__link">
+    Firefox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-explorer" title="Internet Explorer" class="md-nav__link">
+    Internet Explorer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1156,8 +1206,45 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generating-an-http-archive-har-file" title="Generating an HTTP Archive (HAR) file" class="md-nav__link">
+    Generating an HTTP Archive (HAR) file
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome" title="Chrome" class="md-nav__link">
+    Chrome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firefox" title="Firefox" class="md-nav__link">
+    Firefox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-explorer" title="Internet Explorer" class="md-nav__link">
+    Internet Explorer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1168,28 +1255,36 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
                
-                 <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/endpoints/hosted_statsd.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+                 <a href="https://github.com/dataloop/dataloop-support/edit/master/docs/troubleshooting/har_archive.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
                
               
                 
-                <h1 id="hosted-statsd-server">Hosted StatsD Server<a class="headerlink" href="#hosted-statsd-server" title="Permanent link">&para;</a></h1>
-<p>If you are on an enterprise Dataloop plan we'd be happy to manage a hosted StatsD and Grafana 3.0 instance for you. Please contact support to make arrangements.</p>
-<p>To use your hosted StatsD server (statsite) simply point your StatsD client at the Dataloop agent in your account. The server address to use is in the format:</p>
-<div class="codehilite"><pre><span></span>fingerprint.statsd.dataloop.io
-</pre></div>
-
-
-<p>To find your fingerprint log into your account and look for the 'dataloop' agent on the Setup Monitoring page. Click the little (i) next to it to look up the info.</p>
-<p><img alt="agent" src="../../img/agent_info_button.png" /></p>
-<p>Now on the agent details page look for the fingerprint of your agent.</p>
-<p><img alt="agent fingerprint" src="../../img/fingerprint_for_statsd.png" /></p>
-<p>In this example we would configure our StatsD clients to send to:</p>
-<div class="codehilite"><pre><span></span>1a202c1d-77a5-4480-8886-c936e4944fb8.statsd.dataloop.io
-</pre></div>
-
-
-<p>On the default UDP port 8125. Your server address will match whatever your fingerprint is set to (fingerprints are unique between agents).</p>
-<p>You can then find your StatsD metrics by browsing the dataloop agent or using the statsd tag inside Dataloop.</p>
+                  <h1>Har archive</h1>
+                
+                <h2 id="generating-an-http-archive-har-file">Generating an HTTP Archive (HAR) file<a class="headerlink" href="#generating-an-http-archive-har-file" title="Permanent link">&para;</a></h2>
+<p>If you report problems with a page on our site, we may ask you to send us a HAR file for debugging. HAR stands for the HTTP Archive file format. A HAR file logs all of your browser's interactions with our site. It can help us to diagnose and resolve certain types of issues:</p>
+<ul>
+<li>Performance: slow page load, timeout when performing certain task</li>
+<li>Page rendering: incorrect page format, missing information
+How you generate a HAR file depends on the browser you are using. Please choose your browser from the list below. If you do not see your browser listed, please contact us for assistance.</li>
+</ul>
+<h3 id="chrome">Chrome<a class="headerlink" href="#chrome" title="Permanent link">&para;</a></h3>
+<p>Google Chrome includes the Developer Tools, which can generate HAR files.</p>
+<p><img alt="Chrome HAR" src="../../img/chrome_har.png" /></p>
+<p>Bring up the developer tools by clicking the Chrome menu in the top right corner of your browser window, then selecting More Tools &gt; Developer Tools.
+Navigate to the Network tab.
+Check Disable Cache to force all content to be loaded from the server.
+Refresh the page to start capturing the traffic from the browser to the server.
+Complete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.
+Right-click in the DevTool window and select Save as HAR with content.</p>
+<h3 id="firefox">Firefox<a class="headerlink" href="#firefox" title="Permanent link">&para;</a></h3>
+<p><img alt="Firefox HAR" src="../../img/ff_har.png" /></p>
+<p>Bring up the Developer Tools by clicking the Firefox Menu button, then selecting Developer &gt; Network.
+Refresh the page to start capturing the traffic between the browser to the server.
+Complete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.
+Right-click in the Development Tool window and select Save All As HAR.</p>
+<h3 id="internet-explorer">Internet Explorer<a class="headerlink" href="#internet-explorer" title="Permanent link">&para;</a></h3>
+<p>Internet Explorer is not a browser supported for use with Dataloop.</p>
               
             </article>
           </div>
@@ -1202,7 +1297,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../graphite/" title="Graphite" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../nagios/prometheus_plugins/" title="Prometheus plugins" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1211,25 +1306,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Graphite
+                Prometheus plugins
               </span>
             </div>
           </a>
         
-        
-          <a href="../" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Home
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

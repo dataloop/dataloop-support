@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Dataloop.IO Support Knowledgebase\n\u00b6\n\n\nHere you will find a body of knowledge to get your monitoring started with Dataloop.IO\n\n\nStart with the \nInstallation\n pages to get Dataloop.IO agents installed on your servers.\n\n\nHead on over to our \nZendesk ticketing system\n to raise a support ticket with the Dataloop Team, or send an support request to \nsupport@dataloop.io\n\n\nSetup and Configuration\n\u00b6\n\n\nGetting Started\n\n\nDataloop Agent\n\n\nGraphite, StatsD & InfluxDB\n\n\nNagios and Prometheus\n\n\nAlerting\n\n\nDashboards\n\n\nOrganizational Account Model\n  \n\n\nIntegrations\n\u00b6\n\n\nThird Party\n\n\nWebhook\n\n\nTroubleshooting\n\u00b6\n\n\nGenerating an HTTP Archive (HAR) file\n\n\nLatest Pages\n\u00b6",
+            "text": "Welcome to Dataloop.IO Support Knowledgebase\n\u00b6\n\n\nHere you will find a body of knowledge to get your monitoring started with Dataloop.IO\n\n\nStart with the \nInstallation\n pages to get Dataloop.IO agents installed on your servers.\n\n\nHead on over to our \nZendesk ticketing system\n to raise a support ticket with the Dataloop Team, or send an support request to \nsupport@dataloop.io\n\n\nSetup and Configuration\n\u00b6\n\n\nGetting Started\n\n\nDataloop Agent\n\n\nGraphite, StatsD & InfluxDB\n\n\nNagios and Prometheus\n\n\nAlerting\n\n\nDashboards\n\n\nOrganizational Account Model\n  \n\n\nIntegrations\n\u00b6\n\n\nThird Party\n\n\nWebhook\n\n\nTroubleshooting\n\u00b6\n\n\nGenerating an HTTP Archive (HAR) file\n\n\nLatest Pages\n\u00b6\n\n\nGenerating an HTTP Archive (HAR) file",
             "title": "Home"
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "location": "/#latest-pages",
-            "text": "",
+            "text": "Generating an HTTP Archive (HAR) file",
             "title": "Latest Pages"
         },
         {
@@ -977,7 +977,7 @@
         },
         {
             "location": "/integrations/webhook/bigpanda/",
-            "text": "BigPanda\n\u00b6\n\n\nSetting up BigPanda\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://api.bigpanda.io/data/v2/alerts?access_token=\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n\"app_key\": \"your_bigpanda_app_key\"\n}\n\n\n\n\n\nHit the test button and you should get an incident triggered in BigPanda.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to BigPanda via the optional fields as specified in the Developer Docs\n\n\nhttps://www.bigpanda.io/docs/display/BD/POST+alerts",
+            "text": "BigPanda\n\u00b6\n\n\nSetting up BigPanda\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://api.bigpanda.io/data/v2/alerts?access_token=<YOUR TOKEN>\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n  \"app_key\": \"your_bigpanda_app_key\"\n}\n\n\n\n\n\nHit the test button and you should get an incident triggered in BigPanda.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to BigPanda via the optional fields as specified in the Developer Docs\n\n\nhttps://www.bigpanda.io/docs/display/BD/POST+alerts",
             "title": "Bigpanda"
         },
         {
@@ -987,7 +987,7 @@
         },
         {
             "location": "/integrations/webhook/bigpanda/#setting-up-bigpanda",
-            "text": "Set the webhook URL in Dataloop to:  https://api.bigpanda.io/data/v2/alerts?access_token=  Then in the Extra Payload box add the following:  {\n\"app_key\": \"your_bigpanda_app_key\"\n}  Hit the test button and you should get an incident triggered in BigPanda.",
+            "text": "Set the webhook URL in Dataloop to:  https://api.bigpanda.io/data/v2/alerts?access_token=<YOUR TOKEN>  Then in the Extra Payload box add the following:  {\n  \"app_key\": \"your_bigpanda_app_key\"\n}  Hit the test button and you should get an incident triggered in BigPanda.",
             "title": "Setting up BigPanda"
         },
         {
@@ -997,7 +997,7 @@
         },
         {
             "location": "/integrations/webhook/hipchat/",
-            "text": "Hipchat\n\u00b6\n\n\nSetting up HipChat\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=YOUR_TOKEN\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n\"from\": \"Dataloop\",\n\"message_format\": \"text\"\n}\n\n\n\n\n\nHit the test button and you should get a message in your HipChat room.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to HipChat via the optional fields as specified in the Developer Docs\n\n\nhttps://www.hipchat.com/docs/apiv2/method/send_room_notification",
+            "text": "Hipchat\n\u00b6\n\n\nSetting up HipChat\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=<YOUR_TOKEN>\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n  \"from\": \"Dataloop\",\n  \"message_format\": \"text\"\n}\n\n\n\n\n\nHit the test button and you should get a message in your HipChat room.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to HipChat via the optional fields as specified in the Developer Docs\n\n\nhttps://www.hipchat.com/docs/apiv2/method/send_room_notification",
             "title": "Hipchat"
         },
         {
@@ -1007,7 +1007,7 @@
         },
         {
             "location": "/integrations/webhook/hipchat/#setting-up-hipchat",
-            "text": "Set the webhook URL in Dataloop to:  https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=YOUR_TOKEN  Then in the Extra Payload box add the following:  {\n\"from\": \"Dataloop\",\n\"message_format\": \"text\"\n}  Hit the test button and you should get a message in your HipChat room.",
+            "text": "Set the webhook URL in Dataloop to:  https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=<YOUR_TOKEN>  Then in the Extra Payload box add the following:  {\n  \"from\": \"Dataloop\",\n  \"message_format\": \"text\"\n}  Hit the test button and you should get a message in your HipChat room.",
             "title": "Setting up HipChat"
         },
         {
@@ -1016,8 +1016,18 @@
             "title": "Optional Settings"
         },
         {
+            "location": "/integrations/webhook/",
+            "text": "Webhook Integrations\n\u00b6\n\n\nSlack\n\n\nHipChat\n\n\nPagerDuty\n\n\nOpsGenie\n\n\nBigPanda\n\n\nVictorOps",
+            "title": "Home"
+        },
+        {
+            "location": "/integrations/webhook/#webhook-integrations",
+            "text": "Slack  HipChat  PagerDuty  OpsGenie  BigPanda  VictorOps",
+            "title": "Webhook Integrations"
+        },
+        {
             "location": "/integrations/webhook/opsgenie/",
-            "text": "OpsGenie\n\u00b6\n\n\nSetting up OpsGenie\n\u00b6\n\n\nWe have an official integration with OpsGenie. Instructions for how to set this up can be found here:\n\n\nhttps://www.opsgenie.com/docs/integrations/dataloop-io-integration\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to OpsGenie via the optional fields as specified in the Developer Docs\n\n\nhttps://www.opsgenie.com/docs/web-api/alert-api\n\n\nOne of the more common options may be to specify which teams to alert.\n\n\n{\n\"apiKey: \"your_opsgenie_api_key\",\n\"teams\" : [\"operations\", \"developers\"]\n}",
+            "text": "OpsGenie\n\u00b6\n\n\nSetting up OpsGenie\n\u00b6\n\n\nWe have an official integration with OpsGenie. Instructions for how to set this up can be found here:\n\n\nhttps://www.opsgenie.com/docs/integrations/dataloop-io-integration\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to OpsGenie via the optional fields as specified in the Developer Docs\n\n\nhttps://www.opsgenie.com/docs/web-api/alert-api\n\n\nOne of the more common options may be to specify which teams to alert.\n\n\n{\n  \"apiKey: \"your_opsgenie_api_key\",\n  \"teams\" : [\"operations\", \"developers\"]\n}",
             "title": "Opsgenie"
         },
         {
@@ -1032,12 +1042,12 @@
         },
         {
             "location": "/integrations/webhook/opsgenie/#optional-settings",
-            "text": "You can pass in some additional details to OpsGenie via the optional fields as specified in the Developer Docs  https://www.opsgenie.com/docs/web-api/alert-api  One of the more common options may be to specify which teams to alert.  {\n\"apiKey: \"your_opsgenie_api_key\",\n\"teams\" : [\"operations\", \"developers\"]\n}",
+            "text": "You can pass in some additional details to OpsGenie via the optional fields as specified in the Developer Docs  https://www.opsgenie.com/docs/web-api/alert-api  One of the more common options may be to specify which teams to alert.  {\n  \"apiKey: \"your_opsgenie_api_key\",\n  \"teams\" : [\"operations\", \"developers\"]\n}",
             "title": "Optional Settings"
         },
         {
             "location": "/integrations/webhook/pagerduty/",
-            "text": "Pagerduty\n\u00b6\n\n\nSetting up Pagerduty\n\u00b6\n\n\nSetup a new Generic API Service in Pagerduty and take a copy of the Integration Key.\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://events.pagerduty.com/generic/2010-04-15/create_event.json\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n\"service_key\": \"your_pagerduty_integration_key\"\n}\n\n\n\n\n\nHit the test button and you should get an incident triggered in Pagerduty.\n\n\nWhen the rule is resolved in Dataloop the webhook will fire again to resolve the incident in Pagerduty automatically.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to PagerDuty via the optional fields as specified in the Developer Docs\n\n\nhttps://developer.pagerduty.com/documentation/integration/events/trigger",
+            "text": "Pagerduty\n\u00b6\n\n\nSetting up Pagerduty\n\u00b6\n\n\nSetup a new Generic API Service in Pagerduty and take a copy of the Integration Key.\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://events.pagerduty.com/generic/2010-04-15/create_event.json\n\n\nThen in the Extra Payload box add the following:\n\n\n{\n  \"service_key\": \"your_pagerduty_integration_key\"\n}\n\n\n\n\n\nHit the test button and you should get an incident triggered in Pagerduty.\n\n\nWhen the rule is resolved in Dataloop the webhook will fire again to resolve the incident in Pagerduty automatically.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to PagerDuty via the optional fields as specified in the Developer Docs\n\n\nhttps://developer.pagerduty.com/documentation/integration/events/trigger",
             "title": "Pagerduty"
         },
         {
@@ -1047,7 +1057,7 @@
         },
         {
             "location": "/integrations/webhook/pagerduty/#setting-up-pagerduty",
-            "text": "Setup a new Generic API Service in Pagerduty and take a copy of the Integration Key.  Set the webhook URL in Dataloop to:  https://events.pagerduty.com/generic/2010-04-15/create_event.json  Then in the Extra Payload box add the following:  {\n\"service_key\": \"your_pagerduty_integration_key\"\n}  Hit the test button and you should get an incident triggered in Pagerduty.  When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in Pagerduty automatically.",
+            "text": "Setup a new Generic API Service in Pagerduty and take a copy of the Integration Key.  Set the webhook URL in Dataloop to:  https://events.pagerduty.com/generic/2010-04-15/create_event.json  Then in the Extra Payload box add the following:  {\n  \"service_key\": \"your_pagerduty_integration_key\"\n}  Hit the test button and you should get an incident triggered in Pagerduty.  When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in Pagerduty automatically.",
             "title": "Setting up Pagerduty"
         },
         {
@@ -1072,7 +1082,7 @@
         },
         {
             "location": "/integrations/webhook/victorops/",
-            "text": "VictorOps\n\u00b6\n\n\nSetting up VictorOps\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://alert.victorops.com/integrations/generic/20131114/alert/[YOUR_API_KEY_HERE]/[ROUTING_KEY_HERE]\n\n\nHit the test button and you should get an incident triggered in VictorOps.\n\n\nWhen the rule is resolved in Dataloop the webhook will fire again to resolve the incident in VictorOps automatically.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to VictorOps via the optional fields as specified in the Developer Docs\n\n\nhttp://victorops.force.com/knowledgebase/articles/Integration/Alert-Ingestion-API-Documentation",
+            "text": "VictorOps\n\u00b6\n\n\nSetting up VictorOps\n\u00b6\n\n\nSet the webhook URL in Dataloop to:\n\n\nhttps://alert.victorops.com/integrations/generic/20131114/alert/<YOUR_API_KEY_HERE>/<ROUTING_KEY_HERE>\n\n\nHit the test button and you should get an incident triggered in VictorOps.\n\n\nWhen the rule is resolved in Dataloop the webhook will fire again to resolve the incident in VictorOps automatically.\n\n\nOptional Settings\n\u00b6\n\n\nYou can pass in some additional details to VictorOps via the optional fields as specified in the Developer Docs\n\n\nhttp://victorops.force.com/knowledgebase/articles/Integration/Alert-Ingestion-API-Documentation",
             "title": "Victorops"
         },
         {
@@ -1082,7 +1092,7 @@
         },
         {
             "location": "/integrations/webhook/victorops/#setting-up-victorops",
-            "text": "Set the webhook URL in Dataloop to:  https://alert.victorops.com/integrations/generic/20131114/alert/[YOUR_API_KEY_HERE]/[ROUTING_KEY_HERE]  Hit the test button and you should get an incident triggered in VictorOps.  When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in VictorOps automatically.",
+            "text": "Set the webhook URL in Dataloop to:  https://alert.victorops.com/integrations/generic/20131114/alert/<YOUR_API_KEY_HERE>/<ROUTING_KEY_HERE>  Hit the test button and you should get an incident triggered in VictorOps.  When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in VictorOps automatically.",
             "title": "Setting up VictorOps"
         },
         {
@@ -1194,6 +1204,31 @@
             "location": "/nagios/prometheus_plugins/#example-for-application-instrumentation",
             "text": "Select a Prometheus client library for your language.  https://prometheus.io/docs/instrumenting/clientlibs/  Each library has a set of documentation for how to instrument your code. In our example we'll pick a Python app for payments processing. The example shows how to import the client library and expose metrics on  http://localhost:8000 .  Create a plugin called payments.py with the following content:  1\n2\n3 #!/usr/bin/env python  import   requests  requests . get ( 'http://localhost:8000/metrics' ) . text    Test this by pressing the run button against a node running the payments application. Remember to switch the plugin format to Prometheus on the plugin details page. Save and apply to either a single agent or a tag for deployment.",
             "title": "Example for Application Instrumentation"
+        },
+        {
+            "location": "/troubleshooting/har_archive/",
+            "text": "Generating an HTTP Archive (HAR) file\n\u00b6\n\n\nIf you report problems with a page on our site, we may ask you to send us a HAR file for debugging. HAR stands for the HTTP Archive file format. A HAR file logs all of your browser's interactions with our site. It can help us to diagnose and resolve certain types of issues:\n\n\n\n\nPerformance: slow page load, timeout when performing certain task\n\n\nPage rendering: incorrect page format, missing information\nHow you generate a HAR file depends on the browser you are using. Please choose your browser from the list below. If you do not see your browser listed, please contact us for assistance.\n\n\n\n\nChrome\n\u00b6\n\n\nGoogle Chrome includes the Developer Tools, which can generate HAR files.\n\n\n\n\nBring up the developer tools by clicking the Chrome menu in the top right corner of your browser window, then selecting More Tools > Developer Tools.\nNavigate to the Network tab.\nCheck Disable Cache to force all content to be loaded from the server.\nRefresh the page to start capturing the traffic from the browser to the server.\nComplete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.\nRight-click in the DevTool window and select Save as HAR with content.\n\n\nFirefox\n\u00b6\n\n\n\n\nBring up the Developer Tools by clicking the Firefox Menu button, then selecting Developer > Network.\nRefresh the page to start capturing the traffic between the browser to the server.\nComplete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.\nRight-click in the Development Tool window and select Save All As HAR.\n\n\nInternet Explorer\n\u00b6\n\n\nInternet Explorer is not a browser supported for use with Dataloop.",
+            "title": "Har archive"
+        },
+        {
+            "location": "/troubleshooting/har_archive/#generating-an-http-archive-har-file",
+            "text": "If you report problems with a page on our site, we may ask you to send us a HAR file for debugging. HAR stands for the HTTP Archive file format. A HAR file logs all of your browser's interactions with our site. It can help us to diagnose and resolve certain types of issues:   Performance: slow page load, timeout when performing certain task  Page rendering: incorrect page format, missing information\nHow you generate a HAR file depends on the browser you are using. Please choose your browser from the list below. If you do not see your browser listed, please contact us for assistance.",
+            "title": "Generating an HTTP Archive (HAR) file"
+        },
+        {
+            "location": "/troubleshooting/har_archive/#chrome",
+            "text": "Google Chrome includes the Developer Tools, which can generate HAR files.   Bring up the developer tools by clicking the Chrome menu in the top right corner of your browser window, then selecting More Tools > Developer Tools.\nNavigate to the Network tab.\nCheck Disable Cache to force all content to be loaded from the server.\nRefresh the page to start capturing the traffic from the browser to the server.\nComplete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.\nRight-click in the DevTool window and select Save as HAR with content.",
+            "title": "Chrome"
+        },
+        {
+            "location": "/troubleshooting/har_archive/#firefox",
+            "text": "Bring up the Developer Tools by clicking the Firefox Menu button, then selecting Developer > Network.\nRefresh the page to start capturing the traffic between the browser to the server.\nComplete the steps that trigger or demonstrate your issue. For example, if a certain dashboard is slow, click on the dashboard and wait for it to completely load.\nRight-click in the Development Tool window and select Save All As HAR.",
+            "title": "Firefox"
+        },
+        {
+            "location": "/troubleshooting/har_archive/#internet-explorer",
+            "text": "Internet Explorer is not a browser supported for use with Dataloop.",
+            "title": "Internet Explorer"
         }
     ]
 }

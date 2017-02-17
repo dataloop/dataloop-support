@@ -987,6 +987,17 @@
           
   <li class="md-nav__item">
     
+      <a href="../" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
       <a href="../opsgenie/" title="Opsgenie" class="md-nav__link">
         Opsgenie
       </a>
@@ -1135,6 +1146,38 @@
   </li>
 
     
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../../troubleshooting/har_archive/" title="Har archive" class="md-nav__link">
+        Har archive
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1187,11 +1230,11 @@
                 <h1 id="hipchat">Hipchat<a class="headerlink" href="#hipchat" title="Permanent link">&para;</a></h1>
 <h2 id="setting-up-hipchat">Setting up HipChat<a class="headerlink" href="#setting-up-hipchat" title="Permanent link">&para;</a></h2>
 <p>Set the webhook URL in Dataloop to:</p>
-<p>https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=YOUR_TOKEN</p>
+<p><a href="https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=&lt;YOUR_TOKEN>">https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=&lt;YOUR_TOKEN></a></p>
 <p>Then in the Extra Payload box add the following:</p>
 <div class="codehilite"><pre><span></span>{
-&quot;from&quot;: &quot;Dataloop&quot;,
-&quot;message_format&quot;: &quot;text&quot;
+  &quot;from&quot;: &quot;Dataloop&quot;,
+  &quot;message_format&quot;: &quot;text&quot;
 }
 </pre></div>
 
@@ -1199,7 +1242,7 @@
 <p>Hit the test button and you should get a message in your HipChat room.</p>
 <h2 id="optional-settings">Optional Settings<a class="headerlink" href="#optional-settings" title="Permanent link">&para;</a></h2>
 <p>You can pass in some additional details to HipChat via the optional fields as specified in the Developer Docs</p>
-<p>https://www.hipchat.com/docs/apiv2/method/send_room_notification</p>
+<p><a href="https://www.hipchat.com/docs/apiv2/method/send_room_notification">https://www.hipchat.com/docs/apiv2/method/send_room_notification</a></p>
               
             </article>
           </div>
@@ -1227,13 +1270,13 @@
           </a>
         
         
-          <a href="../opsgenie/" title="Opsgenie" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../" title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Opsgenie
+                Home
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

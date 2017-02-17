@@ -987,6 +987,17 @@
           
   <li class="md-nav__item">
     
+      <a href="../" title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
       <a href="../opsgenie/" title="Opsgenie" class="md-nav__link">
         Opsgenie
       </a>
@@ -1135,6 +1146,38 @@
   </li>
 
     
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../../troubleshooting/har_archive/" title="Har archive" class="md-nav__link">
+        Har archive
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1187,10 +1230,10 @@
                 <h1 id="bigpanda">BigPanda<a class="headerlink" href="#bigpanda" title="Permanent link">&para;</a></h1>
 <h2 id="setting-up-bigpanda">Setting up BigPanda<a class="headerlink" href="#setting-up-bigpanda" title="Permanent link">&para;</a></h2>
 <p>Set the webhook URL in Dataloop to:</p>
-<p>https://api.bigpanda.io/data/v2/alerts?access_token=<YOUR TOKEN></p>
+<p><a href="https://api.bigpanda.io/data/v2/alerts?access_token=&lt;YOUR TOKEN>">https://api.bigpanda.io/data/v2/alerts?access_token=&lt;YOUR TOKEN></a></p>
 <p>Then in the Extra Payload box add the following:</p>
 <div class="codehilite"><pre><span></span>{
-&quot;app_key&quot;: &quot;your_bigpanda_app_key&quot;
+  &quot;app_key&quot;: &quot;your_bigpanda_app_key&quot;
 }
 </pre></div>
 
@@ -1198,7 +1241,7 @@
 <p>Hit the test button and you should get an incident triggered in BigPanda.</p>
 <h2 id="optional-settings">Optional Settings<a class="headerlink" href="#optional-settings" title="Permanent link">&para;</a></h2>
 <p>You can pass in some additional details to BigPanda via the optional fields as specified in the Developer Docs</p>
-<p>https://www.bigpanda.io/docs/display/BD/POST+alerts</p>
+<p><a href="https://www.bigpanda.io/docs/display/BD/POST+alerts">https://www.bigpanda.io/docs/display/BD/POST+alerts</a></p>
               
             </article>
           </div>
