@@ -27,11 +27,10 @@ Head on over to our [Zendesk ticketing system](https://dataloopio.zendesk.com/hc
 
 ## Troubleshooting
 
-[Generating an HTTP Archive (HAR) file]()
+[Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
 
 
 
 ## Latest Pages
 
-
-
+[Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
