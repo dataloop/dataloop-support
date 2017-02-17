@@ -1,17 +1,37 @@
-# Welcome to Dataloop Support Documents
+# Welcome to Dataloop.IO Support Knowledgebase
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Here you will find a body of knowledge to get your monitoring started with Dataloop.IO
 
-## Commands
+Start with the [Installation](/agent/) pages to get Dataloop.IO agents installed on your servers.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Head on over to our [Zendesk ticketing system](https://dataloopio.zendesk.com/hc/en-gb/requests/new) to raise a support ticket with the Dataloop Team, or send an support request to <support@dataloop.io>
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+## Setup and Configuration
+
+[Getting Started](/getting_started/)  
+[Dataloop Agent](/agent/)  
+[Graphite, StatsD & InfluxDB](/endpoints/)  
+[Nagios and Prometheus](/nagios/)  
+[Alerting](/alerting/)  
+[Dashboards](/dashboards)  
+[Organizational Account Model](/account_model)  
+
+
+## Integrations
+
+[Third Party](/integrations/thirdparty/)  
+[Webhook](/integrations/webhook/)
+
+
+## Troubleshooting
+
+[Generating an HTTP Archive (HAR) file]()
+
+
+
+## Latest Pages
+
+
+
