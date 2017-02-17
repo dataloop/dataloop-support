@@ -2,7 +2,7 @@
 
 ## Setting up HipChat
 
-Set the webhook URL in Dataloop to:
+Set the webhook URL in Outlyer to:
 
 <https://api.hipchat.com/v2/room/{room_id_or_name}/notification?auth_token=<YOUR_TOKEN\>>
 
@@ -10,7 +10,7 @@ Then in the Extra Payload box add the following:
 
 ```
 {
-  "from": "Dataloop",
+  "from": "Outlyer",
   "message_format": "text"
 }
 ```

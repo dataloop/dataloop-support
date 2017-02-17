@@ -1,6 +1,6 @@
 ## Overview
 
-The Dataloop account model is designed around the concept of organizations and accounts. Users can exist in multiple organizations and accounts and can switch between them by using the dropdowns in the global header. 
+The Outlyer account model is designed around the concept of organizations and accounts. Users can exist in multiple organizations and accounts and can switch between them by using the dropdowns in the global header. 
 
 ### Organizations
 

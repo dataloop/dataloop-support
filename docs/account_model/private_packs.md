@@ -1,6 +1,6 @@
 ## Private Packs
 
-Private packs can be used to keep your custom plugins, dashboards and alert rules locked together as a single versioned entity within Dataloop.
+Private packs can be used to keep your custom plugins, dashboards and alert rules locked together as a single versioned entity within Outlyer.
 
 They are designed to be small containers of monitoring configuration that can be shared around between accounts.
 
@@ -33,11 +33,11 @@ This should create a new directory on disk with the following structure:
     └── microservice1.yaml
 ```
 
-You can now start to populate this structure with the content created in the Dataloop UI by copying and pasting the plugin content and pressing export to yaml on the dashboards and rules pages. Or alternatively by using the dlcli pull commands. You may also want to update the pack metadata file package.yaml with additional information.
+You can now start to populate this structure with the content created in the Outlyer UI by copying and pasting the plugin content and pressing export to yaml on the dashboards and rules pages. Or alternatively by using the dlcli pull commands. You may also want to update the pack metadata file package.yaml with additional information.
 
-Once you have finished editing your pack locally it's time to upload it into Dataloop as a Template that can be installed.
+Once you have finished editing your pack locally it's time to upload it into Outlyer as a Template that can be installed.
 
-To upload the pack as a Template in Dataloop run the following command from inside the pack directory:
+To upload the pack as a Template in Outlyer, run the following command from inside the pack directory:
 
 ```
 dlcli push template microservice1 .

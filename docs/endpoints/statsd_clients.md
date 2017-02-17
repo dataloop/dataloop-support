@@ -1,6 +1,6 @@
 # StatsD Clients
 
-StatsD enables developers to instrument server side code and send metrics to Dataloop for visualisation and alerting. Data is sent using UDP so network issues will never slow your application down.
+StatsD enables developers to instrument server side code and send metrics to Outlyer for visualisation and alerting. Data is sent using UDP so network issues will never slow your application down.
 
 ### Things you need to get started
 
@@ -9,7 +9,7 @@ StatsD enables developers to instrument server side code and send metrics to Dat
 
 ### Basic one-time setup
 
-Each accounts gets a docker container hosting a StatsD server. [Details for hosted StatsD can be found here](https://support.dataloop.io/hc/en-gb/articles/204924459-Hosted-StatsD). Alternatively, you can setup your own StatsD server following our [config guide](https://support.dataloop.io/hc/en-gb/articles/201636363-StatsD-Server).
+Each accounts gets a docker container hosting a StatsD server. [Details for hosted StatsD can be found here](/endpoints/hosted_statsd). Alternatively, you can setup your own StatsD server following our [config guide](/endpoints/self-hosted_statsd).
 
 Once you have a server setup find an appropriate StatsD Client for the language you are using.
 

@@ -15,7 +15,7 @@ pip install dlcli
 account: default
 key: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 org: acme-ltd
-url: https://app.dataloop.io/api/v1
+url: https://app.outlyer.com/api/v1
 ```
 
 * Create a directory for your backups
