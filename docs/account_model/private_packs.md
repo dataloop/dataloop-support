@@ -1,4 +1,4 @@
-# Private Packs
+## Private Packs
 
 Private packs can be used to keep your custom plugins, dashboards and alert rules locked together as a single versioned entity within Dataloop.
 
@@ -6,12 +6,12 @@ They are designed to be small containers of monitoring configuration that can be
 
 Currently private packs can only be managed with the Dataloop command line utility (dlcli). We will be adding private pack management to the UI soon
 
-## Terminology:
+### Terminology:
 
 * Pack: The installed entity
 * Template: The entity that can be installed from, that creates a pack in the account
 
-## Create a new pack
+### Create a new pack
 
 In our example we'll create a pack called microservice1. Names must be unique and friendly, ideally something that matches the service the pack will monitor. When used with autodiscovery the pack name is also used to tag agents.
 
@@ -69,7 +69,7 @@ dlcli rm template microservice1
 
 **Note**: Installing a template results in a tag being created that matches the pack name. You can therefore tag your agents with the same name as the pack and on install a link will automatically be created.
 
-## Troubleshooting
+### Troubleshooting
 
 You can show the contents of a template by running:
 

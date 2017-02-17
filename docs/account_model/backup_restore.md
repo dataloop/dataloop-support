@@ -1,14 +1,14 @@
-# Backup and Restore
+## Backup and Restore
 
 You can backup and restore entire organizations, accounts or objects with the Dataloop Command Line Tool and a Linux backup server.
 
-1. Install the Dataloop Command Line Utility
+* Install the Dataloop Command Line Utility
 
 ```
 pip install dlcli
 ```
 
-2. Create the file /etc/dataloop/dlcli.yaml and enter your details
+* Create the file /etc/dataloop/dlcli.yaml and enter your details
 
 ```
 ---
@@ -18,15 +18,15 @@ org: acme-ltd
 url: https://app.dataloop.io/api/v1
 ```
 
-3. Create a directory for your backups
+* Create a directory for your backups
 
 ```
 mkdir /backup
 ```
 
-4. Create a private Git repo called 'dataloop', add deploy keys for the root user with push access and optionally add a webhook to notify a Slack channel. Then clone into /backup so you have /backup/dataloop as your local copy.
+* Create a private Git repo called 'dataloop', add deploy keys for the root user with push access and optionally add a webhook to notify a Slack channel. Then clone into /backup so you have /backup/dataloop as your local copy.
 
-5. Create a file called `dataloop-backup.sh` in `/usr/local/bin` with the following content
+* Create a file called `dataloop-backup.sh` in `/usr/local/bin` with the following content
 
 ```
 #!/usr/bin/env bash
@@ -40,7 +40,7 @@ git push
 
 Change the `acme-ltd` to whatever your `org` is called.
 
-6. Setup a cron to run the backup every 10 mins
+* Setup a cron to run the backup every 10 mins
 
 ```
 */10 * * * * /usr/local/bin/dataloop-backup.sh > /var/log/backup.log 2>&1
