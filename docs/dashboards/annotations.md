@@ -52,4 +52,4 @@ Chef
 
 We have a Chef handler for posting annotations into Dataloop on every chef run.
 
-https://github.com/dataloop/dataloop-chef-handler
+<https://github.com/dataloop/dataloop-chef-handler>
