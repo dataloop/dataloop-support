@@ -10,4 +10,21 @@ remote_branch: gh-pages
 #   - Home: index.md
 #   - Setup and Configuration: setup.md
 #   - Integrations: integrations.md
-theme: readthedocs
+#   - Troubleshooting: foo.md
+theme: material
+extra:
+  logo: 'img/touchicon-x120.png'
+  palette:
+    primary: 'orange'
+    accent: 'teal'
+  social:
+    - type: 'github'
+      link: 'https://github.com/dataloop'
+    - type: 'twitter'
+      link: 'https://twitter.com/outlyerapp'
+
+markdown_extensions:
+  - admonition
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
+
