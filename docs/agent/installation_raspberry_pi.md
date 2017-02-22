@@ -1,6 +1,10 @@
 ## Installation on Raspberry Pi
 
-### Debian based Linux (Raspbian Jessie only for now)
+Currently, only Debian based Linux (Raspbian Jessie) running on Raspberry PI 2's (armv7) is supported.
+
+## Raspbian Jessie:
+
+For the next 2 steps you must be logged in as root. You can do this via `su root`. If you don't know your password for root you can easily update it using the command `sudo passwd root` to set it.
 
 * Import the apt repository gpg key
 
@@ -20,6 +24,8 @@ echo 'deb https://download.dataloop.io/deb/ unstable main' > /etc/apt/sources.li
 sudo apt-get update && sudo apt-get install dataloop-agent
 ```
 
+**Note:** If you get the error 'E: The method driver /usr/lib/apt/methods/https could not be found' then you can easily install it using the command 'sudo apt-get install apt-transport-https'.
+
 * Update the /etc/dataloop/agent.yaml file with your API key
 
 * Start the agent
@@ -32,4 +38,18 @@ sudo systemctl start dataloop-agent
 
 ```
 sudo systemctl enable dataloop-agent
+```
+
+* Access GPIO Pins (Optional)
+
+For security, the agent runs as the non-privileged 'dataloop' user. By default this user will not have access to the GPIO pins on your PI required for reading and writing to sensors attached to your PI. In order to allow your agent plugins to work with GPIO you will need to add the dataloop user to the 'gpio' group on your PI. Please note this will allow anyone running scripts on your agent to read and write to your GPIO memory bus! To add the 'dataloop' user to the 'gpio' group type the following command:
+
+```
+sudo adduser dataloop gpio
+```
+
+Make sure you restart the Dataloop agent afterwards to ensure the agent permissions are correct:
+
+```
+sudo systemctl restart dataloop-agent
 ```
