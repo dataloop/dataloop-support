@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Support and Help Documentation for Dataloop.IO">
+        <meta name="description" content="Support and Help Documentation for Outlyer.com">
       
       
       
-        <meta name="author" content="support@dataloop.io">
+        <meta name="author" content="support@outlyer.com">
       
       
         <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -1310,7 +1310,7 @@
 <h3 id="metrics-collection">Metrics Collection<a class="headerlink" href="#metrics-collection" title="Permanent link">&para;</a></h3>
 <p>Once you have the agents installed and the tags setup as per section 1. you can start to layer on monitoring coverage.</p>
 <p>By default every agent gets put into a tag called <code>all</code>. This is useful because you can drag plugins onto this tag and they will run on every single server. We use this tag to deploy a script called 'base' which sends back all of the basic operating system metrics you would expect. Things like CPU, Memory, Disk, Network etc. We'd advise you leave 'base' running on the all tag otherwise you won't get alerted when disks fill up or servers max out on CPU.</p>
-<p>Every server role that you have probably has something installed on it, like apache, or nginx or mysql or elasticsearch etc. For every role you should ensure that each of the components you depend on has at least one script deployed to monitor it. We provide scripts for most commonly used services. If your service is not listed then you may need to create a plugin to cover it, or request one via email to info@dataloop.io</p>
+<p>Every server role that you have probably has something installed on it, like apache, or nginx or mysql or elasticsearch etc. For every role you should ensure that each of the components you depend on has at least one script deployed to monitor it. We provide scripts for most commonly used services. If your service is not listed then you may need to create a plugin to cover it, or request one via email to info@outlyer.com</p>
 <p>In our example before we had todo,prod and web tags. These boxes only run Nginx. In the Dataloop UI we would therefore drag the Nginx plugin on top of the 'web' tag so that it will automatically deploy and start sending back metrics.</p>
 <p>It is worth noting at this stage that some plugins require some configuration. You should always click <code>edit</code> on a plugin, select a server to test it on and hit run. The console will show either an error, which needs fixing by either configuration or setting some variables in the script. In the case of variables we tend to put good comments into the script so it's easy to see what variables to update. Commonly altered variables will always be set at the top of the script in uppercase.</p>
 <p>In a ideal world you'd have base running on every system via the all tag. Then a plugin deployed for every service you have. Ultimately this will all be auto discovered, but for now you need to assign the correct plugins.</p>
@@ -1408,7 +1408,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Dataloop 2017
+            © Outlyer 2017
           </div>
         
         powered by
@@ -1438,6 +1438,8 @@
     
       <script src="../../assets/javascripts/application-39a173f6f5.js"></script>
       <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../docs/js/segmentio.js"></script>
       
     
     

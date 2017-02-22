@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Support and Help Documentation for Dataloop.IO">
+        <meta name="description" content="Support and Help Documentation for Outlyer.com">
       
       
       
-        <meta name="author" content="support@dataloop.io">
+        <meta name="author" content="support@outlyer.com">
       
       
         <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
@@ -1230,7 +1230,7 @@
                 <h1 id="pagerduty">Pagerduty<a class="headerlink" href="#pagerduty" title="Permanent link">&para;</a></h1>
 <h2 id="setting-up-pagerduty">Setting up Pagerduty<a class="headerlink" href="#setting-up-pagerduty" title="Permanent link">&para;</a></h2>
 <p>Setup a new Generic API Service in Pagerduty and take a copy of the Integration Key.</p>
-<p>Set the webhook URL in Dataloop to:</p>
+<p>Set the webhook URL in Outlyer to:</p>
 <p><a href="https://events.pagerduty.com/generic/2010-04-15/create_event.json">https://events.pagerduty.com/generic/2010-04-15/create_event.json</a></p>
 <p>Then in the Extra Payload box add the following:</p>
 <div class="codehilite"><pre><span></span>{
@@ -1239,8 +1239,8 @@
 </pre></div>
 
 
-<p>Hit the test button and you should get an incident triggered in Pagerduty.</p>
-<p>When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in Pagerduty automatically.</p>
+<p>Hit the test button and you will get an incident triggered in Pagerduty.</p>
+<p>When the rule is resolved in Outlyer the webhook will fire again to resolve the incident in Pagerduty automatically.</p>
 <h2 id="optional-settings">Optional Settings<a class="headerlink" href="#optional-settings" title="Permanent link">&para;</a></h2>
 <p>You can pass in some additional details to PagerDuty via the optional fields as specified in the Developer Docs</p>
 <p><a href="https://developer.pagerduty.com/documentation/integration/events/trigger">https://developer.pagerduty.com/documentation/integration/events/trigger</a></p>
@@ -1293,7 +1293,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Dataloop 2017
+            © Outlyer 2017
           </div>
         
         powered by
@@ -1323,6 +1323,8 @@
     
       <script src="../../../assets/javascripts/application-39a173f6f5.js"></script>
       <script>app.initialize({url:{base:"../../.."}})</script>
+      
+        <script src="../../../docs/js/segmentio.js"></script>
       
     
     

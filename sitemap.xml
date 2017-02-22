@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,25 @@
         
     <url>
      <loc>/account_model/backup_restore/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/account_model/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/account_model/overview/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/account_model/private_packs/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,73 +41,73 @@
         
     <url>
      <loc>/agent/command_line_interface/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/config_management/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/configuration/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/fingerprints/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/installation_docker/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/installation_linux/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/installation_raspberry_pi/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/installation_windows/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/solo_mode/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/supported_operating_systems/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/agent/uninstall/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,37 +117,37 @@
         
     <url>
      <loc>/alerting/agent_alerts/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/alerting/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/alerting/metric_alerts/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/alerting/plugin_alerts/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/alerting/rules/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/alerting/webhook/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -157,43 +157,43 @@
         
     <url>
      <loc>/dashboards/annotations/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/grafana/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/graph_widgets/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/numeric_widgets/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/public_dashboards/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/dashboards/troubleshooting/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -203,55 +203,55 @@
         
     <url>
      <loc>/endpoints/collectd/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/graphite/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/hosted_statsd/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/influxdb/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/self-hosted_statsd/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/self-hosted_statsite/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/statsd/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/endpoints/statsd_clients/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -261,67 +261,67 @@
         
     <url>
      <loc>/getting_started/API/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/command_line_utility/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/data_retention_policy/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/faq/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/getting_help/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/overview/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/roadmap/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/security/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/use_cases/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting_started/where_we_fit/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -347,43 +347,43 @@
         
     <url>
      <loc>/nagios/built_in_python/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/nagios_performance_data/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/nagios_plugins/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/plugin_deployment_models/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/powershell/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nagios/prometheus_plugins/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -393,7 +393,7 @@
         
     <url>
      <loc>/troubleshooting/har_archive/</loc>
-     <lastmod>2017-02-17</lastmod>
+     <lastmod>2017-02-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

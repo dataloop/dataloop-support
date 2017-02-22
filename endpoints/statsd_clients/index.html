@@ -6,11 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Support and Help Documentation for Dataloop.IO">
+        <meta name="description" content="Support and Help Documentation for Outlyer.com">
       
       
       
-        <meta name="author" content="support@dataloop.io">
+        <meta name="author" content="support@outlyer.com">
       
       
         <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -1224,14 +1224,14 @@
               
                 
                 <h1 id="statsd-clients">StatsD Clients<a class="headerlink" href="#statsd-clients" title="Permanent link">&para;</a></h1>
-<p>StatsD enables developers to instrument server side code and send metrics to Dataloop for visualisation and alerting. Data is sent using UDP so network issues will never slow your application down.</p>
+<p>StatsD enables developers to instrument server side code and send metrics to Outlyer for visualisation and alerting. Data is sent using UDP so network issues will never slow your application down.</p>
 <h3 id="things-you-need-to-get-started">Things you need to get started<a class="headerlink" href="#things-you-need-to-get-started" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Connection details for a StatsD server</li>
 <li>A StatsD client library</li>
 </ol>
 <h3 id="basic-one-time-setup">Basic one-time setup<a class="headerlink" href="#basic-one-time-setup" title="Permanent link">&para;</a></h3>
-<p>Each accounts gets a docker container hosting a StatsD server. <a href="https://support.dataloop.io/hc/en-gb/articles/204924459-Hosted-StatsD">Details for hosted StatsD can be found here</a>. Alternatively, you can setup your own StatsD server following our <a href="https://support.dataloop.io/hc/en-gb/articles/201636363-StatsD-Server">config guide</a>.</p>
+<p>Each accounts gets a docker container hosting a StatsD server. <a href="../../endpoints/hosted_statsd">Details for hosted StatsD can be found here</a>. Alternatively, you can setup your own StatsD server following our <a href="../../endpoints/self-hosted_statsd">config guide</a>.</p>
 <p>Once you have a server setup find an appropriate StatsD Client for the language you are using.</p>
 <p>For our example we'll use Python and the <a href="https://github.com/jsocol/pystatsd">pystatsd</a> library. Full documentation can be found <a href="http://statsd.readthedocs.org/en/latest/index.html">here</a></p>
 <p>All StatsD client libraries will need to be configured with a StatsD server and port to connect to. In our example we've spun up a StatsD server at demo-statsd.dataloop.io on port 8125 udp.</p>
@@ -1295,7 +1295,7 @@ statsd = StatsClient(host=&#39;demo=statsd.dataloop.io&#39;,
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            © Dataloop 2017
+            © Outlyer 2017
           </div>
         
         powered by
@@ -1325,6 +1325,8 @@ statsd = StatsClient(host=&#39;demo=statsd.dataloop.io&#39;,
     
       <script src="../../assets/javascripts/application-39a173f6f5.js"></script>
       <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../docs/js/segmentio.js"></script>
       
     
     
