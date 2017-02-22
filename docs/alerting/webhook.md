@@ -18,7 +18,7 @@ X-Dataloop-Event: alert-webhook
 {
   "event": "alert",
   "rule": "All Sytems",
-  "account": "noreply@dataloop.io",
+  "account": "noreply@outlyer.com",
   "triggers": [
     {
       "criteria": "hosts are reporting down",

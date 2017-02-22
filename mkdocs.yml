@@ -1,9 +1,9 @@
 site_name: Dataloop Support
 # site_url:
 repo_url: https://github.com/dataloop/dataloop-support
-site_description: Support and Help Documentation for Dataloop.IO
-site_author: support@dataloop.io
-copyright: © Dataloop 2017
+site_description: Support and Help Documentation for Outlyer.com
+site_author: support@outlyer.com
+copyright: © Outlyer 2017
 # google_analytics: [ ]
 remote_branch: gh-pages
 # pages:
@@ -22,6 +22,7 @@ extra:
       link: 'https://github.com/dataloop'
     - type: 'twitter'
       link: 'https://twitter.com/outlyerapp'
+extra_javascript: ['docs/js/segmentio.js']
 
 markdown_extensions:
   - admonition

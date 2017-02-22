@@ -26,6 +26,6 @@ If you need to monitor something generic, and we don't have it as an out of the 
 
 <http://exchange.nagios.org/directory/Plugins>
 
-Alternatively, email us at <info@dataloop.io> or [come and find us in Slack](https://slack.outlyer.com/) and we'll create a script for you and place it into our plugin library on Github:
+Alternatively, email us at <info@outlyer.com> or [come and find us in Slack](https://slack.outlyer.com/) and we'll create a script for you and place it into our plugin library on Github:
 
 <https://github.com/dataloop/plugins>
