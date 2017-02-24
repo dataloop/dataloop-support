@@ -358,45 +358,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Installation raspberry pi
-      </label>
-    
     <a href="./" title="Installation raspberry pi" class="md-nav__link md-nav__link--active">
       Installation raspberry pi
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation-on-raspberry-pi" title="Installation on Raspberry Pi" class="md-nav__link">
-    Installation on Raspberry Pi
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debian-based-linux-raspbian-jessie-only-for-now" title="Debian based Linux (Raspbian Jessie only for now)" class="md-nav__link">
-    Debian based Linux (Raspbian Jessie only for now)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -1201,18 +1165,12 @@
     Installation on Raspberry Pi
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debian-based-linux-raspbian-jessie-only-for-now" title="Debian based Linux (Raspbian Jessie only for now)" class="md-nav__link">
-    Debian based Linux (Raspbian Jessie only for now)
-  </a>
-  
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#raspbian-jessie" title="Raspbian Jessie:" class="md-nav__link">
+    Raspbian Jessie:
+  </a>
   
 </li>
       
@@ -1234,7 +1192,9 @@
                   <h1>Installation raspberry pi</h1>
                 
                 <h2 id="installation-on-raspberry-pi">Installation on Raspberry Pi<a class="headerlink" href="#installation-on-raspberry-pi" title="Permanent link">&para;</a></h2>
-<h3 id="debian-based-linux-raspbian-jessie-only-for-now">Debian based Linux (Raspbian Jessie only for now)<a class="headerlink" href="#debian-based-linux-raspbian-jessie-only-for-now" title="Permanent link">&para;</a></h3>
+<p>Currently, only Debian based Linux (Raspbian Jessie) running on Raspberry PI 2's (armv7) is supported.</p>
+<h2 id="raspbian-jessie">Raspbian Jessie:<a class="headerlink" href="#raspbian-jessie" title="Permanent link">&para;</a></h2>
+<p>For the next 2 steps you must be logged in as root. You can do this via <code>su root</code>. If you don't know your password for root you can easily update it using the command <code>sudo passwd root</code> to set it.</p>
 <ul>
 <li>Import the apt repository gpg key</li>
 </ul>
@@ -1256,6 +1216,7 @@
 </pre></div>
 
 
+<p><strong>Note:</strong> If you get the error 'E: The method driver /usr/lib/apt/methods/https could not be found' then you can easily install it using the command 'sudo apt-get install apt-transport-https'.</p>
 <ul>
 <li>
 <p>Update the /etc/dataloop/agent.yaml file with your API key</p>
@@ -1272,6 +1233,19 @@
 <li>Set the agent to run on reboot</li>
 </ul>
 <div class="codehilite"><pre><span></span>sudo systemctl enable dataloop-agent
+</pre></div>
+
+
+<ul>
+<li>Access GPIO Pins (Optional)</li>
+</ul>
+<p>For security, the agent runs as the non-privileged 'dataloop' user. By default this user will not have access to the GPIO pins on your PI required for reading and writing to sensors attached to your PI. In order to allow your agent plugins to work with GPIO you will need to add the dataloop user to the 'gpio' group on your PI. Please note this will allow anyone running scripts on your agent to read and write to your GPIO memory bus! To add the 'dataloop' user to the 'gpio' group type the following command:</p>
+<div class="codehilite"><pre><span></span>sudo adduser dataloop gpio
+</pre></div>
+
+
+<p>Make sure you restart the Dataloop agent afterwards to ensure the agent permissions are correct:</p>
+<div class="codehilite"><pre><span></span>sudo systemctl restart dataloop-agent
 </pre></div>
               
             </article>
