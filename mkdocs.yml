@@ -23,7 +23,7 @@ extra:
       link: 'https://github.com/dataloop'
     - type: 'twitter'
       link: 'https://twitter.com/outlyerapp'
-extra_javascript: ['docs/js/segmentio.js']
+extra_javascript: [ 'js/segmentio.js', 'js/dltrk.js' ]
 
 markdown_extensions:
   - admonition
