@@ -3,6 +3,7 @@ site_name: Dataloop Support
 repo_url: https://github.com/dataloop/dataloop-support
 site_description: Support and Help Documentation for Outlyer.com
 site_author: support@outlyer.com
+site_favicon: 'img/favicon.ico'
 copyright: © Outlyer 2017
 # google_analytics: [ ]
 remote_branch: gh-pages
