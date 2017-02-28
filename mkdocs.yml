@@ -16,7 +16,7 @@ theme: material
 extra:
   logo: 'img/touchicon-x120.png'
   palette:
-    primary: 'orange'
+    primary: 'deep-orange'
     accent: 'teal'
   social:
     - type: 'github'
