@@ -19,6 +19,8 @@ extra:
     primary: 'deep-orange'
     accent: 'teal'
   social:
+    - type: 'support'
+      link: 'https://outlyer.zendesk.com/hc/en-gb/requests/new'
     - type: 'github'
       link: 'https://github.com/dataloop'
     - type: 'twitter'
