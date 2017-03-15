@@ -1,4 +1,4 @@
-## Dataloop Agent
+## Outlyer Agent
 
 [Installation Linux](installation_linux.md)  
 [Installation Windows](installation_windows.md)  
