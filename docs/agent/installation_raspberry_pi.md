@@ -1,3 +1,5 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 ## Installation on Raspberry Pi
 
 Currently, only Debian based Linux (Raspbian Jessie) running on Raspberry PI 2's (armv7) is supported.
