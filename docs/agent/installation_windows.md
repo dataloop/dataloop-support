@@ -1,4 +1,6 @@
-## Installation on windows
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
+## Installation on Windows
 
 ### Windows Systems
 
@@ -6,7 +8,7 @@
 
 <https://download.dataloop.io/windows/latest/dataloop-1.1-windows-installer.exe>
 
-For some systems you may need to install the Microsoft Visual C++ DLLs, they can be found here
+For some systems you may need to install the Microsoft Visual C++ DLLs, they can be found here:
 
 <http://www.microsoft.com/en-us/download/details.aspx?id=29>
 
