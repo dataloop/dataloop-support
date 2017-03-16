@@ -1,7 +1,10 @@
+-unsure as to whether to replace Dataloop
+-added comment re rebrand above
+
 ## Installation on Docker
 
 
-You can run a containerised agent in a docker container by running:
+You can run a containerised agent in a Docker container by running:
 
 ```
 DATALOOP_AGENT_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -17,4 +20,4 @@ sudo docker run -d -e "DATALOOP_AGENT_KEY=${DATALOOP_AGENT_KEY}" \
 dataloop/dataloop-docker:latest
 ```
 
-This will download the container directly from the docker hub. For more info see <https://github.com/dataloop/docker-alpine/dataloop-docker>
+This will download the container directly from the Docker hub. For more info see <https://github.com/outlyerapp/docker-alpine/tree/master/dataloop-docker> 
