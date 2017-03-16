@@ -3,7 +3,7 @@ _**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.
 ## Uninstall
 
 
-On linux you can simply remove the `dataloop-agent` package.
+On Linux you can simply remove the `dataloop-agent` package.
 
 ### Redhat based:
 
@@ -22,4 +22,4 @@ apt-get remove dataloop-agent
 
 ### Windows
 
-On windows you can remove via add/remove programs.
+On Windows you can remove via add/remove programs.
