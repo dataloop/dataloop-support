@@ -1,12 +1,14 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 ## FAQ
 
-Dataloop.IO was built to be the fastest and simplest way to setup monitoring for your rapidly changing infrastructure. We’re constantly looking for ways to help users get up to speed in minutes and this FAQ is our first step.
+Outlyer was built to be the fastest and simplest way to set up monitoring for your rapidly changing infrastructure. We’re constantly looking for ways to help users get up to speed in minutes and this FAQ is our first step.
  
 - - -
 
 **Q. My question isn’t covered here, where can I get help?**
 
-* A. Email us at support@outlyer.com or join our Slack room
+* A. Email us at support@outlyer.com or [join our Slack room](https://slack.outlyer.com/)
 
 - - -
 
@@ -16,7 +18,7 @@ Dataloop.IO was built to be the fastest and simplest way to setup monitoring for
 
 - - -
 
-**Q. I'm sending metrics into Dataloop. How do I browse them?**
+**Q. I'm sending metrics into Outlyer. How do I browse them?**
 
 * A. You can browse your metrics on the dashboards and rules pages.
 
@@ -30,17 +32,17 @@ On the rules page add a new rule and then add a new criteria. You will be presen
 
 **Q. I can't see my StatsD metrics. Where should they appear?**
 
-* A. If you are using the Dataloop hosted StatsD then metrics can be browsed under the 'statsd' tag, or by browsing the 'dataloop' agent directly. If you cannot see your StatsD metrics in the tree then check your client settings or contact us for support by email or Slack.
+* A. If you are using the Outlyer-hosted StatsD, then metrics can be browsed under the 'statsd' tag, or by browsing the 'dataloop' agent directly. If you cannot see your StatsD metrics in the tree then check your client settings or contact us for support by email or Slack.
 
 If you have setup your own StatsD server then metrics will appear under whatever agent fingerprint they are being sent from.
 
 - - -
 
-**Q. How do I troubleshoot what the Agent is doing?**
+**Q. How do I troubleshoot what the agent is doing?**
 
 * A. You’ll hopefully never have to troubleshoot, but just in case..
 
-The Agent installer creates a ‘dataloop’ directory in /var/log. In this directory you’ll find an agent.log file that shows you exactly what the agent is doing.
+The agent installer creates a ‘dataloop’ directory in /var/log. In this directory you’ll find an agent.log file that shows you exactly what the agent is doing.
 
 You can increase the logging information by turning on debugging. In the agent.yaml configuration file, set debug to yes:
 
@@ -92,7 +94,7 @@ By default agents will deregister on graceful shutdown which works well on AWS w
 
 **Q. Where is your product roadmap?**
 
-* A. We are very customer focused and are constantly iterating the product based on feedback. You can see and vote on which features you would like to see in Dataloop here: https://dataloop.uservoice.com/forums/289987-general/filters/top
+* A. We are very customer focused and are constantly iterating the product based on feedback. You can see and vote on which features you would like to see in Outlyer (formerly Dataloop.IO - thanks for your patience while we are rebranding) [here](https://dataloop.uservoice.com/forums/289987-general/filters/top)
 
 - - -
 
@@ -116,7 +118,7 @@ On Windows remove the agent via the add/remove programs interface.
 
 **Q. What’s the quickest way to write Nagios plugins?**
 
-* A. If you’re using Linux then you’re spoilt for choice as you have Bash, Ruby and Python installed by default. Pick your favourite scripting language and start writing.
+* A. If you’re using Linux then you’re spoiled for choice as you have Bash, Ruby and Python installed by default. Pick your favourite scripting language and start writing.
 
 On Windows you can use batch, or setup a shell for Powershell. Or, alternately use our built in Python interpreter by selecting 'Built-In Python' from the drop down at the top of the plugin editor page.
 
