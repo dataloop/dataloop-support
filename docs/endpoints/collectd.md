@@ -1,8 +1,10 @@
-# Collectd
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
+# CollectD
 
 ## CollectD Configuration
 
-It's best to use the latest CollectD package. You can find instructions for setting up the repo's for Debian and Redhat based distros here:
+It's best to use the latest CollectD package. You can find instructions for setting up the repo's for Debian and RedHat based distros here:
 
 <https://github.com/collectd/collectd-ci/blob/master/README.md>
 
