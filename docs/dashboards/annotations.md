@@ -1,6 +1,8 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 # Annotations
 
-You can post annotations into Dataloop via either the API or command line utility.
+You can post annotations into Outlyer via either the API or command line utility.
 
 [API Docs](https://documenter.getpostman.com/view/505524/dataloop_public_api/2FyccR#annotations)
 
