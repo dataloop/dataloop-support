@@ -8,7 +8,7 @@ For long running issues we recommend that you [log a support ticket](https://out
  
 ### Chat Support
 
-For quick questions or help troubleshooting issues in real time please visit our Slack channel at <https://slack.outlyer.com>. There's usually somebody online from Dataloop to help out. Feel free to ask us any kind of questions related to monitoring.
+For quick questions or help troubleshooting issues in real time please visit our Slack channel at <https://slack.outlyer.com>. There's usually somebody online from Outlyer to help out. Feel free to ask us any kind of questions related to monitoring.
 
 - - - 
  
@@ -16,4 +16,4 @@ For quick questions or help troubleshooting issues in real time please visit our
 
 If you're more comfortable firing off a quick email with a question then send them to <support@outlyer.com>. This is a group mailbox that our support team looks at and you'll get a reply back as quick as humanly possible. 
  
-Feel free to send us any type of enquiry to these support channels. From product, bugs, billing, security or any range of question. We're always happy to help.
+Feel free to send us any type of enquiry to these support channels: product, bugs, billing, security, or any question at all. We're always happy to help.
