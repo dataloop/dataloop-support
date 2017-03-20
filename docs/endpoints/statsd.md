@@ -1,6 +1,6 @@
 # Statsd
 
-Once you have your **StatsD Server** and **StatsD Client** setup you can start sending metrics to Dataloop. This document explains how to use StatsD.
+Once you have your **StatsD Server** and **StatsD Client** setup you can start sending metrics to Outlyer. This document explains how to use StatsD.
 
 The information below is from: <https://github.com/b/statsd_spec>
 
