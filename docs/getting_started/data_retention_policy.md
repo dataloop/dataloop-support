@@ -1,6 +1,6 @@
 ## Data Retention Policy
 
-Dataloop supports Nagios check scripts which send back metrics at 30 second intervals (by default) and Graphite / StatsD metrics which are 1 second resolution.
+Outlyer supports Nagios check scripts which send back metrics at 30 second intervals (by default) and Graphite / StatsD metrics which are 1 second resolution.
 
 We store:
 
@@ -12,4 +12,4 @@ The 1 second resolution metrics are great for troubleshooting issues as they hap
 
 Holding 1 minute resolution for 60 days provides a high level of detail for dashboards, reports and looking at trends.
 
-We will effectively keep every metrics you enter into Dataloop forever at a 1 hour resolution.
+We will effectively keep every metrics you enter into Outlyer forever at a 1 hour resolution.
