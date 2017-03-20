@@ -10,7 +10,7 @@ You can add a Dataloop agent as a datasource in Grafana by following these instr
 
 <http://docs.grafana.org/installation/>
 
-* Add the Dataloop data source
+* Add the Outlyer data source
 
 ```
 #> cd /var/lib/grafana/plugins
