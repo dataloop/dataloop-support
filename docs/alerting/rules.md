@@ -10,13 +10,13 @@ Supported actions include sending an email or a webhook. When a webhook is confi
 
 If multiple criteria are created within a rule then **ANY** need to be met before the rule is triggered and **ALL** actions are run.
 
-Dataloop rules are very flexible, to the point where you can shoot yourself in the foot if you choose to do so.
+Outyer rules are very flexible, to the point where you can shoot yourself in the foot if you choose to do so.
 
 * Example: You can create a plugin to monitor a service and apply it to one tag of agents. Then configure a criteria to alert on that same plugin using a different tag that only contains a subset of agents that the plugin is deployed to. For this reason we have defined a simple traffic light system to help uncover mistakes in setup.
 
 ## Criteria and Rule status
 
-You can view the overall health of rules in the alerts page in Dataloop. Each rule is colour coded as per the table below. To be confident that you have effective alerting setup the aim should be to keep all rules in a green state.
+You can view the overall health of rules in the alerts page in Outlyer. Each rule is colour coded as per the table below. To be confident that you have effective alerting setup the aim should be to keep all rules in a green state.
 
 | Colour | State     |
 |:-------:|:-----------:|
@@ -25,7 +25,7 @@ You can view the overall health of rules in the alerts page in Dataloop. Each ru
 | Grey   | Unknown   |
 | Red    | Triggered |
 
-When a criteria is defined in Dataloop a query is added to a background set of workers that poll every 10 seconds and compare desired state to current state.
+When a criteria is defined in Outlyer, a query is added to a background set of workers that poll every 10 seconds and compare desired state to current state.
 
 If a complete set of data is returned for **all** criteria in a rule and all checks pass then a criteria is considered clear. If all criteria within a rule are clear then the rule is clear.
 
