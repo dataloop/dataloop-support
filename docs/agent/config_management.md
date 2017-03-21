@@ -1,7 +1,7 @@
 ## Chef, Ansible, Puppet and Salt
 
-Dataloop currently has modules for Chef, Ansible, Puppet and Salt to help with rolling out the agent.
+Outlyer currently has modules for Chef, Ansible, Puppet and Salt to help with rolling out the agent.
 
-You can find these in our public Github account:
+You can find these in our public GitHub account:
 
-<https://github.com/dataloop>
+<https://github.com/outlyerapp>

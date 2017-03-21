@@ -27,7 +27,7 @@ Post a new annotation for a new deployment.
 dlcli push annotation deployments --name 'deployed micro-service-1' --description 'version 100'
 ```
 
-Now in Dataloop browse to a dashboard and tick the `deployments` stream from the annotations drop down.
+Now in Outlyer, browse to a dashboard and tick the `deployments` stream from the annotations drop down.
 
 Annotations will then be visible on graph widgets and the details can be seen by hovering over the dot on the horizontal axis.
 
@@ -52,6 +52,6 @@ Chef
 
 ## Chef
 
-We have a Chef handler for posting annotations into Outlyer on every Chef run.
+We have a Chef handler for posting annotations into Outlyer on every chef run.
 
 <https://github.com/dataloop/dataloop-chef-handler>

@@ -1,18 +1,20 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 ## Use Cases
 
-Dataloop supports several ways to collect data. We are typically used as a central aggregation point for consolidating many tools into a single platform. This document describes best practices for which collection method we recommend depending upon use case.
+Outlyer supports several ways to collect data. We are typically used as a central aggregation point for consolidating many tools into a single platform. This document describes best practices for which collection method we recommend depending upon use case.
 
 ### Server Monitoring
 
-Install a Dataloop Agent onto each server. This lets Dataloop know if your server is up or down and collects operating system metrics like CPU, Disk, Memory and Network.
+Install a Dataloop Agent onto each server. This lets Outlyer know if your server is up or down and collects operating system metrics like CPU, Disk, Memory and Network.
 
 ### Service Monitoring
 
-For common services Dataloop provides packs which include a plugin, dashboard and alert rules. 
+For common services Outyer provides [packs](https://github.com/outlyerapp/packs) which include a plugin, dashboard and alert rules. 
 
 ### Custom Service Monitoring
 
-Create custom Nagios check scripts and apply them to agents using tags. Build dashboards and alert rules based on tags. To automate sharing configuration between teams create private packs.
+Create custom Nagios check scripts and apply them to agents using tags. Build dashboards and alert rules based on tags. To automate sharing configuration between teams, create private packs.
 
 ### Docker Monitoring
 
@@ -30,9 +32,9 @@ Run the Prometheus StatsD exporter on each StatsD server.
 
 <https://github.com/prometheus/statsd_exporter>
 
-Configure StatsD to send metrics into the StatsD exporter. Scrape the Prometheus metrics endpoint on the StatsD exporter using a Dataloop Agent and Prometheus format plugin.
+Configure StatsD to send metrics into the StatsD exporter. Scrape the Prometheus metrics endpoint on the StatsD exporter using a Dataloop Agent and Prometheus format plugin: 
 
-<https://blog.dataloop.io/statsd-tags-and-dataloop>
+[StatsD, Tags and Outlyer](https://blog.outlyer.com/statsd-tags-and-dataloop)
 
 ### Long Running Jobs
 
@@ -42,7 +44,7 @@ For tasks that take a long time to complete write the output to a local file and
 
 For tasks that are initiated as a result of an external event like CI builds or cron jobs push Graphite line protocol metrics to graphite.dataloop.io on TCP port 2003 using netcat.
 
-<https://support.dataloop.io/endpoints/graphite>
+<https://docs.outlyer.com/endpoints/graphite/>
 
 ### Remote Monitoring
 
@@ -50,4 +52,4 @@ Use the Dataloop Agent and custom Nagios plugins to remotely monitor over the ne
 
 ### Aggregation
 
-Many open source collection tools like CollectD support Graphite output. These collectors can be configured to send metrics into Dataloop via our Graphite port.
+Many open source collection tools like CollectD support Graphite output. These collectors can be configured to send metrics into Outlyer via our Graphite port.

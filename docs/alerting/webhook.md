@@ -1,3 +1,5 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 # Webhook
 
 When adding an action to a rule you can select the webhook option. This is a great way to connect your alerts into other systems like Slack or iFTTT (if this then that).

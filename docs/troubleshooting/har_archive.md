@@ -34,6 +34,6 @@ Right-click in the Development Tool window and select Save All As HAR.
 
 ### Internet Explorer
 
-Internet Explorer is not a browser supported for use with Dataloop.
+Internet Explorer is not a browser supported for use with Outlyer.
 
 

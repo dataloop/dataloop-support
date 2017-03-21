@@ -2,7 +2,7 @@
 
 [Use Cases](/getting_started/use_cases.md)  
 [Getting Help](/getting_started/getting_help.md)  
-[Overview of Dataloop](/getting_started/overview.md)  
+[Overview of Outlyer](/getting_started/overview.md)  
 [API](/getting_started/API.md)  
 [Command Line Utility](/getting_started/command_line_utility.md)  
 [Security](/getting_started/security.md)  

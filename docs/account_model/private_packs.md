@@ -4,7 +4,7 @@ Private packs can be used to keep your custom plugins, dashboards and alert rule
 
 They are designed to be small containers of monitoring configuration that can be shared around between accounts.
 
-Currently private packs can only be managed with the Dataloop command line utility (dlcli). We will be adding private pack management to the UI soon
+Currently private packs can only be managed with the Outlyer command line utility (dlcli). We will be adding private pack management to the UI soon
 
 ### Terminology:
 

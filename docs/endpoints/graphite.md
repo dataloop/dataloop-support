@@ -1,3 +1,5 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 # Graphite
 
 You can stream metrics directly into `graphite.dataloop.io` on tcp port `2003` using the Graphite metric format.
@@ -36,7 +38,7 @@ Then echo a random metric to our graphite port:
 echo "${finger}.test $RANDOM" | nc -c graphite.dataloop.io 2003
 ```
 
-You can now create a dashboard widget in Dataloop and browse to the agent you sent the metric in from.
+You can now create a dashboard widget in Outlyer and browse to the agent you sent the metric in from.
 
  
 
@@ -57,7 +59,7 @@ Then simply echo the fingerprint followed by a dot separated metric path followe
 echo "2afee216-a80f-4f01-9220-14bc3195a3d5.some.metric.path $RANDOM" | nc -c graphite.dataloop.io 2003
 ```
 
-In our example we just sent in a random value. When you login to the Dataloop UI you'll now see some.metric.path show up in the dashboard tree browser and the alerts metric drop-down.
+In our example we just sent in a random value. When you login to the Outlyer UI you'll now see some.metric.path show up in the dashboard tree browser and the alerts metric drop-down.
 
 Warning: There are a couple of implementations of netcat. The above example with the -c option was for the GNU implementation. If you are using a BSD implementation (like OSX) then use -q0 instead. 
 

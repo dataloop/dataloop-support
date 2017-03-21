@@ -4,15 +4,15 @@ The Outlyer account model is designed around the concept of organizations and ac
 
 ### Organizations
 
-An organization typically maps directly to your company name. On a new sign-up users are prompted to provide an organization name.
+An organization typically maps directly to your company name. On a new sign-up, users are prompted to provide an organization name.
 
-For example your organization might be called `Acme-Inc`.
+For example, your organization might be called `Acme-Inc`.
 
-Once an organization is created additional members can be invited in.
+Once an organization is created, additional members can be invited in.
 
 ### Accounts
 
-Accounts can be created within an organization. For smaller companies these typically map to environments. At scale they can map to services or product service groupings. Accounts allow you to segment your monitoring setup. For MSP's these can even map to customer company names.
+Accounts can be created within an organization. For smaller companies these typically map to environments. At scale they can map to services or product service groupings. Accounts allow you to segment your monitoring setup. For MSPs these can even map to customer company names.
 
 For example your accounts under the Acme-Inc organization might be called `Test`, `Staging` and `Production`. 
 
@@ -22,7 +22,7 @@ The first user to sign up and create an organization automatically becomes an **
 
 Organization admins have full access to every account. They can create, rename and delete accounts in addition to managing the members and roles within each account.
 
-When creating new accounts an organization admin should also enter the account and invite initial account members. Account member setup can be delegated by setting the role to admin.
+When creating new accounts an organization admin should also enter the account name and invite initial account members. Account member setup can be delegated by setting the role to admin.
 
 ### Account Members
 

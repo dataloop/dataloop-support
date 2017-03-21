@@ -1,6 +1,6 @@
 # Plugin Alerts
  
-Dataloop uses Nagios format plugins which means that we adhere to these exit codes:
+Outlyer uses Nagios format plugins which means that we adhere to these exit codes:
 
 ```
 0 OK
@@ -9,7 +9,7 @@ Dataloop uses Nagios format plugins which means that we adhere to these exit cod
 3 UNKNOWN
 ```
 
-We treat these exit codes like a metric stream in Dataloop. For every Nagios script that returns data you'll see `<script name>.status` in the `Alert On` drop down.
+We treat these exit codes like a metric stream in Outlyer. For every Nagios script that returns data you'll see `<script name>.status` in the `Alert On` drop down.
 
 If you select this you'll be prompted with a slightly different set of options from metrics. Essentially you just need to set how long the script needs to have failed for before the criteria is triggered.
 

@@ -2,13 +2,13 @@
 
 ## Setting up VictorOps
 
-Set the webhook URL in Dataloop to:
+Set the webhook URL in Outlyer to:
 
 <https://alert.victorops.com/integrations/generic/20131114/alert/<YOUR_API_KEY_HERE\>/<ROUTING_KEY_HERE\>>
 
 Hit the test button and you should get an incident triggered in VictorOps.
 
-When the rule is resolved in Dataloop the webhook will fire again to resolve the incident in VictorOps automatically.
+When the rule is resolved in Outlyer the webhook will fire again to resolve the incident in VictorOps automatically.
 
  
 

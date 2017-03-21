@@ -1,8 +1,8 @@
-# Pagerduty
+# PagerDuty
 
-## Setting up Pagerduty
+## Setting up PagerDuty
 
-Setup a new Generic API Service in Pagerduty and take a copy of the Integration Key.
+Setup a new Generic API Service in PagerDuty and take a copy of the Integration Key.
 
 Set the webhook URL in Outlyer to:
 
@@ -16,9 +16,9 @@ Then in the Extra Payload box add the following:
 }
 ```
 
-Hit the test button and you will get an incident triggered in Pagerduty.
+Hit the test button and you will get an incident triggered in PagerDuty.
 
-When the rule is resolved in Outlyer the webhook will fire again to resolve the incident in Pagerduty automatically.
+When the rule is resolved in Outlyer the webhook will fire again to resolve the incident in PagerDuty automatically.
 
 ## Optional Settings
 

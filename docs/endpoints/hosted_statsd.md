@@ -1,8 +1,10 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 # Hosted StatsD Server
 
-If you are on an enterprise Dataloop plan we'd be happy to manage a hosted StatsD and Grafana 3.0 instance for you. Please contact support to make arrangements.
+If you are on an enterprise Outlyer plan, we'd be happy to manage a hosted StatsD and Grafana 3.0 instance for you. Please contact support to make arrangements.
 
-To use your hosted StatsD server (statsite) simply point your StatsD client at the Dataloop agent in your account. The server address to use is in the format:
+To use your hosted StatsD server (statsite) simply point your StatsD client at the Dataloop (Outlyer) agent in your account. The server address to use is in the format:
 
 ```
 fingerprint.statsd.dataloop.io

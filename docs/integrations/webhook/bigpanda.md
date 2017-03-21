@@ -2,7 +2,7 @@
 
 ## Setting up BigPanda
 
-Set the webhook URL in Dataloop to:
+Set the webhook URL in Outlyer to:
 
 <https://api.bigpanda.io/data/v2/alerts?access_token=<YOUR TOKEN\>>
 
