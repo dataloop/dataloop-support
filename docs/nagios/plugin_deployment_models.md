@@ -34,7 +34,7 @@ In this mode you get to keep the benefits of the default mode for ad-hoc monitor
 
  
 
-Solo mode disables the ability to create, test and deploy plugins in the browser. For this mode you will need to use configuration management to deploy your plugins directly into the local plugin directory. These plugins then automatically register inside Dataloop and appear in the agent details page when running (but never in the plugins list, since they don’t get uploaded to us).
+Solo mode disables the ability to create, test and deploy plugins in the browser. For this mode you will need to use configuration management to deploy your plugins directly into the local plugin directory. These plugins then automatically register inside Outlyer and appear in the agent details page when running (but never in the plugins list, since they don’t get uploaded to us).
 
 ![nagios plugins solo](../img/nagios_plugins_solo.png)
 
