@@ -1,10 +1,10 @@
 # Nagios Performance Data
 
-You can create, edit, run / test and deploy Nagios format check scripts in any language from within the Dataloop web interface. This is unique to Dataloop and we believe this is the secret sauce that enables adoption.
+You can create, edit, run / test and deploy Nagios format check scripts in any language from within the Outlyer web interface. This is unique to Outlyer and we believe this is the secret sauce that enables adoption.
 
 For performance data we adhere to the full spec listed [here](https://nagios-plugins.org/doc/guidelines.html#AEN200) (the relevant bit copied below)
 
-We support the absolute minimum in terms of what you can get away with and still have us graph the output. The following is a perfectly legitimate bash script that would graph properly if you used it in Dataloop:
+We support the absolute minimum in terms of what you can get away with and still have us graph the output. The following is a perfectly legitimate bash script that would graph properly if you used it in Outlyer:
 
 ```
 #!/bin/bash
