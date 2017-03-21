@@ -32,9 +32,9 @@ Run the Prometheus StatsD exporter on each StatsD server.
 
 <https://github.com/prometheus/statsd_exporter>
 
-Configure StatsD to send metrics into the StatsD exporter. Scrape the Prometheus metrics endpoint on the StatsD exporter using a Dataloop Agent and Prometheus format plugin.
+Configure StatsD to send metrics into the StatsD exporter. Scrape the Prometheus metrics endpoint on the StatsD exporter using a Dataloop Agent and Prometheus format plugin: 
 
-<https://blog.dataloop.io/statsd-tags-and-dataloop>
+[StatsD, Tags and Outlyer](https://blog.outlyer.com/statsd-tags-and-dataloop)
 
 ### Long Running Jobs
 
