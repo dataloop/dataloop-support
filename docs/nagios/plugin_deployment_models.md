@@ -1,14 +1,16 @@
+_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+
 # Plugin Deployment Models
 
 ## 1. Default  Mode (centralised configuration)
 
  
 
-In this model you create your plugins in the Dataloop web UI. They get stored centrally within your Dataloop account and can be edited and tested using our built-in plugin editor. You can add these plugins to either agents directly, or tags of agents, so that they deploy instantly and start returning metrics that can be used on dashboards and in alert rules.
+In this model you create your plugins in the Outlyer web UI. They get stored centrally within your Outlyer account and can be edited and tested using our built-in plugin editor. You can add these plugins to either agents directly, or tags of agents, so that they deploy instantly and start returning metrics that can be used on dashboards and in alert rules.
 
 ![nagios plugins](../img/nagios_plugins.png)
 
-There are two problems this mode solves;  firstly getting adoption so that more people can collaborate on increasing your monitoring coverage, and secondly reducing the round trip time between knowing what to measure and having those metrics available to use (improving the ooda loop).
+There are two problems this mode solves; firstly, getting adoption so that more people can collaborate on increasing your monitoring coverage, and secondly, reducing the round trip time between knowing what to measure and having those metrics available to use (improving the OODA loop).
 
  
 
@@ -24,7 +26,7 @@ In this mode you get to keep the benefits of the default mode for ad-hoc monitor
 
  
 
-* In this mode we will never upload the plugins deployed from disk into Dataloop, so they won’t appear in your plugins list. However, the plugins will show as running in the agent details page. Also, the run button will only ever run plugins written in the browser.
+* In this mode we will never upload the plugins deployed from disk into Outlyer, so they won’t appear in your plugins list. However, the plugins will show as running in the agent details page. Also, the run button will only ever run plugins written in the browser.
 
  
 
@@ -36,7 +38,7 @@ Solo mode disables the ability to create, test and deploy plugins in the browser
 
 ![nagios plugins solo](../img/nagios_plugins_solo.png)
 
-Some benefits to this are that you get to work the way you may always have worked with monitoring tools like Nagios and Sensu. Infact, with Dataloop it’s even simpler than those tools, you simply need to drop plugins into the correct directory and the agent will automatically run them. You’ll still need to tag your agents as before so that metrics appear in dashboards and alert rules based on those tags work.
+Some benefits to this are that you get to work the way you may always have worked with monitoring tools like Nagios and Sensu. Infact, with Outlyer   it’s even simpler than those tools, you simply need to drop plugins into the correct directory and the agent will automatically run them. You’ll still need to tag your agents as before so that metrics appear in dashboards and alert rules based on those tags work.
 
  
 
