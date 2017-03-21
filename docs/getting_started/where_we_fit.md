@@ -20,7 +20,7 @@ APM and StatsD are best used in combination. Use an APM tool to profile your app
 
 ### On-Call Management
 
-Managing on-call scheduling, nagging, escalation and policies isn't our specialty at this time. We integrate with other tools like PagerDuty and OpsGenie for those features.
+Managing on-call scheduling, nagging, escalation and policies isn't our specialty at this time. We integrate with other tools like [PagerDuty](https://www.pagerduty.com/) and [OpsGenie](https://www.opsgenie.com/) for those features.
 
 ### Exception Tracking
 
