@@ -22,7 +22,7 @@ Obviously in your scripts you will want to build up the performance data string 
 OK | load.load1min=1234;;;; load.load5min=1234;;;; load.load15min=1234;;;;
 ```
 
-We do some cool stuff in the Dataloop UI to group on dots.
+We do some cool stuff in the Outlyer UI to group on dots.
 
 ## The full specification
 
