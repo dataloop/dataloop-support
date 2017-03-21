@@ -2,7 +2,7 @@ PLEASE NOTE: We have recently rebranded and changed our name from Dataloop.IO to
 
 # Prometheus Plugins
 
-The Outlyer agent can run plugins that scrape Prometheus http endpoints. We recommend that you install a Outlyer (Dataloop) agent on each server and then create a separate plugin to monitor each endpoint on localhost.
+The Outlyer agent can run plugins that scrape Prometheus http endpoints. We recommend that you install an Outlyer (Dataloop) agent on each server and then create a separate plugin to monitor each endpoint on localhost.
 
 ## Example for Node Exporter
 
