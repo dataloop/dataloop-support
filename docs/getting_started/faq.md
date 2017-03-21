@@ -6,7 +6,7 @@ Dataloop.IO was built to be the fastest and simplest way to setup monitoring for
 
 **Q. My question isn’t covered here, where can I get help?**
 
-* A. Email us at support@outlyer.com or join our Slack room
+* A. Email us at <support@outlyer.com> or join our Slack room
 
 - - -
 
