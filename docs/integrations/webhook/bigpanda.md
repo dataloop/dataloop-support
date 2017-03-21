@@ -19,7 +19,7 @@ Hit the test button and you should get an incident triggered in BigPanda.
 
 ## Optional Settings
 
-You can pass in some additional details to BigPanda via the optional fields as specified in the Developer Docs
+You can pass in some additional details to BigPanda via the optional fields as specified in the developer docs:
 
 <https://www.bigpanda.io/docs/display/BD/POST+alerts>
 
