@@ -18,7 +18,7 @@ The timestamp value is optional. If you don't set one we will set the timestamp 
 
 Currently we only allow Graphite data to be attached to an Agent fingerprint.
 
-The first step is therefore to install a Dataloop Agent on your server. After that you can find your Agent fingerprint on Linux in `/etc/dataloop/agent.finger`, or in the Dataloop UI on the agent details page.
+The first step is therefore to install a Dataloop Agent on your server. After that you can find your Agent fingerprint on Linux in `/etc/dataloop/agent.finger`, or in the Dataloop UI on the Dataloop (Outlyer) Agent details page.
 
  
 
@@ -36,7 +36,7 @@ Then echo a random metric to our graphite port:
 echo "${finger}.test $RANDOM" | nc -c graphite.dataloop.io 2003
 ```
 
-You can now create a dashboard widget in Dataloop and browse to the agent you sent the metric in from.
+You can now create a dashboard widget in Dataloop and browse to the Dataloop (Outlyer) Agent you sent the metric in from.
 
  
 

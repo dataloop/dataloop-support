@@ -56,7 +56,7 @@ tags:
 
 The most common use for the CLI is for tagging either in automated scripts or in config management.
 
-As an example, while the agent is running, you can list what tags it is a member of and then modify them:
+As an example, while the Dataloop (Outlyer) Agent is running, you can list what tags it is a member of and then modify them:
 
 ```
 #> dataloop-agent tags list

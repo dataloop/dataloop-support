@@ -2,7 +2,7 @@
 
 StatsD is a service that aggregates metrics over time. We plan to provide hosted StatsD in the future, but for now you'll need to setup StatsD on your own servers and point them at the Dataloop graphite port.
 
-Like everything in Dataloop you need to bind your metrics to a fingerprint. The easiest way to do this may be to setup an AWS micro instance and install an agent on it. You could give the server a host name like 'statsd' so that the agent appears in Dataloop with a friendly name. Drag this agent into the appropriate part of your hierarchy.
+Like everything in Dataloop you need to bind your metrics to a fingerprint. The easiest way to do this may be to setup an AWS micro instance and install a Dataloop (Outlyer) Agent on it. You could give the server a host name like 'statsd' so that the Dataloop (Outlyer) Agent appears in Dataloop with a friendly name. Drag this Dataloop (Outlyer) Agent into the appropriate part of your hierarchy.
 
 ## Installing StatsD
 
@@ -34,7 +34,7 @@ Then start statsd by running:
 node stats.js config.js
 ```
 
-3. Open Dataloop in a browser. Click on the dashboards tab and then browse down to your StatsD agent in the tree. You should see some metrics already streaming in.
+3. Open Dataloop in a browser. Click on the dashboards tab and then browse down to your StatsD Dataloop (Outlyer) Agent in the tree. You should see some metrics already streaming in.
 
  
 

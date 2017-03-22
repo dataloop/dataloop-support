@@ -4,7 +4,7 @@ _**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.
 
 ## Grafana 3.0 Plugin
 
-You can add a Dataloop agent as a datasource in Grafana by following these instructions. This is especially useful when used with a StatsD server. Install a Dataloop agent on the StatsD server and use the fingerprint to view all of your StatsD metrics in Grafana.
+You can add a Dataloop (Outlyer) Agent as a datasource in Grafana by following these instructions. This is especially useful when used with a StatsD server. Install a Dataloop Dataloop (Outlyer) Agent on the StatsD server and use the fingerprint to view all of your StatsD metrics in Grafana.
 
 * Install Grafana 3.0
 

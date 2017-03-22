@@ -49,7 +49,7 @@ This means that a triggered criteria will always turn a rule red. Also, that unk
 
 ## Alert Lifecycle
 
-For a rule that is currently **green** the only state change possible is to change to **grey** if any of the criteria stop returning data for any defined metric path. Or, alternatively, it may turn **red** if an agent or plugin changes status or a threshold is met.
+For a rule that is currently **green** the only state change possible is to change to **grey** if any of the criteria stop returning data for any defined metric path. Or, alternatively, it may turn **red** if a Dataloop (Outlyer) Agent or plugin changes status or a threshold is met.
 
 Actions are run when state changes to **red** with a message beginning `ALERT:` which signifies the start of an incident. Integration fields are configured in such a way that this will create a unique new incident.
 

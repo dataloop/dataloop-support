@@ -4,7 +4,7 @@ _**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.
 
 When an Agent starts for the first time on a new server it creates an agent.finger file (in `/etc/dataloop` on Linux boxes and `C:\Dataloop` on Windows). This is used to uniquely identify the Agent.
 
-Deleting the `agent.finger` file and restarting the service will cause the agent to generate a new identity and it will lose its old metrics.
+Deleting the `agent.finger` file and restarting the service will cause the Dataloop (Outlyer) Agent to generate a new identity and it will lose its old metrics.
 
 Conversely, starting servers with known fingerprint files allows you to connect new boxes to existing metrics which is extremely useful for dynamically changing environments where configuration management tools are used.
 

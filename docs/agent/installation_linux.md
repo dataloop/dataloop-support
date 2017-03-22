@@ -30,7 +30,7 @@ sudo apt-get update && sudo apt-get install dataloop-agent
 sudo service dataloop-agent start
 ```
 
-* Set the agent to run on reboot
+* Set the Dataloop (Outlyer) Agent to run on reboot
 
 ```
 sudo update-rc.d dataloop-agent defaults
@@ -67,7 +67,7 @@ sudo yum install dataloop-agent
 sudo service dataloop-agent start
 ```
 
-* Set the agent to run on reboot
+* Set the Dataloop (Outlyer) Agent to run on reboot
 
 ```
 sudo chkconfig --level 345 dataloop-agent on
@@ -97,7 +97,7 @@ sudo rpm -i dataloop-agent-1.1.18-1.x86_64.rpm
 sudo systemctl start dataloop-agent
 ```
 
-* Set the agent to run on reboot
+* Set the Dataloop (Outlyer) Agent to run on reboot
 
 ```
 sudo systemctl enable dataloop-agent
@@ -128,7 +128,7 @@ pacman -U dataloop-agent-1.1.20-1-x86_64.pkg.tar.xz
 sudo systemctl start dataloop-agent
 ```
 
-* Set the agent to run on reboot
+* Set the Dataloop (Outlyer) Agent to run on reboot
 
 ```
 sudo systemctl enable dataloop-agent

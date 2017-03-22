@@ -22,7 +22,7 @@ input_counter = numStats
 extended_counters = true
 ```
 
-The important line here is the stream_cmd setting. You may need to update the location of the graphite.py file. The last part of the line is the metric prefix that is sent to Outlyer. Usually people install a Dataloop agent onto their Statsite server so they can use the fingerprint string from `/etc/dataloop/agent.finger`. Remember to append a fullstop to the end of the fingerprint.
+The important line here is the stream_cmd setting. You may need to update the location of the graphite.py file. The last part of the line is the metric prefix that is sent to Outlyer. Usually people install a Dataloop (Outlyer) Agent onto their Statsite server so they can use the fingerprint string from `/etc/dataloop/agent.finger`. Remember to append a fullstop to the end of the fingerprint.
 
 An example of a good stream_cmd line is:
 
@@ -60,7 +60,7 @@ Start statsite and wait for 10 seconds. Your netcat listening tab will show you 
 
 Here we can see the fingerprint first, then the dot seperator between the metric paths followed by the value and timestamp. If you have a malformed `fingerprint.metric.path` then metrics won't display in Outlyer.
 
-Once you have confirmed it's working against localhost port 2004 you can flip it back to sending to Outlyer. Metrics will appear under the agent fingerprint that you used.
+Once you have confirmed it's working against localhost port 2004 you can flip it back to sending to Outlyer. Metrics will appear under the Dataloop (Outlyer) Agent fingerprint that you used.
 
 Also, be careful about the time on your Statsite server. Installing NTP should help with this. Outlyer will display whatever values against the timestamp you send in, so if your timestamps are wrong strangeness abounds.
 
@@ -71,4 +71,4 @@ Sometimes people want to keep their local Graphite server running in parallel. Y
 
 Grab the modified one from here: [gist](https://gist.github.com/tomashley/b38b8a784fd2e9d4210af25e9f9c996f)
 
-You'll need to modify the `self.fingerprint` variable in the init script with a valid agent fingerprint as discussed above.
+You'll need to modify the `self.fingerprint` variable in the init script with a valid Dataloop (Outlyer) Agent fingerprint as discussed above.

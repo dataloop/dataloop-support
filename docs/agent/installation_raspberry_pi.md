@@ -36,7 +36,7 @@ sudo apt-get update && sudo apt-get install dataloop-agent
 sudo systemctl start dataloop-agent
 ```
 
-* Set the agent to run on reboot
+* Set the Dataloop (Outlyer) Agent to run on reboot
 
 ```
 sudo systemctl enable dataloop-agent
@@ -44,13 +44,13 @@ sudo systemctl enable dataloop-agent
 
 * Access GPIO Pins (Optional)
 
-For security, the agent runs as the non-privileged 'dataloop' user. By default this user will not have access to the GPIO pins on your PI required for reading and writing to sensors attached to your PI. In order to allow your agent plugins to work with GPIO you will need to add the dataloop user to the 'gpio' group on your PI. Please note this will allow anyone running scripts on your agent to read and write to your GPIO memory bus! To add the 'dataloop' user to the 'gpio' group type the following command:
+For security, the Dataloop (Outlyer) Agent runs as the non-privileged 'dataloop' user. By default this user will not have access to the GPIO pins on your PI required for reading and writing to sensors attached to your PI. In order to allow your Dataloop (Outlyer) Agent plugins to work with GPIO you will need to add the dataloop user to the 'gpio' group on your PI. Please note this will allow anyone running scripts on your Dataloop (Outlyer) Agent to read and write to your GPIO memory bus! To add the 'dataloop' user to the 'gpio' group type the following command:
 
 ```
 sudo adduser dataloop gpio
 ```
 
-Make sure you restart the Dataloop agent afterwards to ensure the agent permissions are correct:
+Make sure you restart the Dataloop Dataloop (Outlyer) Agent afterwards to ensure the Dataloop (Outlyer) Agent permissions are correct:
 
 ```
 sudo systemctl restart dataloop-agent

@@ -3,7 +3,7 @@ _**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.
 ## Installation on Docker
 
 
-You can run a containerised agent in a Docker container by running:
+You can run a containerised Dataloop (Outlyer) Agent in a Docker container by running:
 
 ```
 DATALOOP_AGENT_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
