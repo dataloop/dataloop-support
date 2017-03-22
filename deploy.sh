@@ -24,4 +24,4 @@ docker run -t --rm \
   -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
   -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
   python3 \
-  aws s3 --dryrun sync site s3://${S3_BUCKET} --cache-control "public, max-age=300, must-revalidate"
+  aws s3 sync site s3://${S3_BUCKET} --cache-control "public, max-age=300, must-revalidate"
