@@ -53,7 +53,7 @@ Once you have the agents installed and the tags setup as per section 1. you can 
 
 By default every Dataloop (Outlyer) Agent gets put into a tag called `all`. This is useful because you can drag plugins onto this tag and they will run on every single server. We use this tag to deploy a script called 'base' which sends back all of the basic operating system metrics you would expect. Things like CPU, Memory, Disk, Network etc. We'd advise you leave 'base' running on the all tag otherwise you won't get alerted when disks fill up or servers max out on CPU.
 
-Every server role that you have probably has something installed on it, like apache, or nginx or mysql or elasticsearch etc. For every role you should ensure that each of the components you depend on has at least one script deployed to monitor it. We provide scripts for most commonly used services. If your service is not listed then you may need to create a plugin to cover it, or request one via email to <support@outlyer.com>.
+Every server role that you have probably has something installed on it, like apache, or nginx or mysql or elasticsearch etc. For every role you should ensure that each of the components you depend on has at least one script deployed to monitor it. We provide scripts for most commonly used services. If your service is not listed then you may need to create a plugin to cover it, or request one via email to [support[at]outlyer.com](mailto:support[at]outlyer.com).com.
 
 In our example before we had todo,prod and web tags. These boxes only run Nginx. In the Outlyer UI we would therefore drag the Nginx plugin on top of the 'web' tag so that it will automatically deploy and start sending back metrics.
 

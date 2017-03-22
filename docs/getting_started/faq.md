@@ -9,7 +9,7 @@ Outlyer was built to be the fastest and simplest way to set up monitoring for yo
 
 **Q. My question isn’t covered here, where can I get help?**
 
-* A. Email us at <support@outlyer.com> or [join our Slack room](https://slack.outlyer.com/)
+* A. Email us at [support[at]outlyer.com](mailto:support[at]outlyer.com) or [join our Slack room](https://slack.outlyer.com/)
 
 - - -
 

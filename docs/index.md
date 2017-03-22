@@ -4,7 +4,7 @@ Here you will find a body of knowledge to get your monitoring started with Datal
 
 Start with the [Installation](/agent/) pages to get Outlyer.com agents installed on your servers.
 
-Head on over to our [Zendesk ticketing system](https://support.outlyer.com/hc/en-gb/requests/new) to raise a support ticket with the Outlyer Team, or send an support request to <support@outlyer.com>, which will also open a ticket.
+Head on over to our [Zendesk ticketing system](https://support.outlyer.com/hc/en-gb/requests/new) to raise a support ticket with the Outlyer Team, or send an support request to [support[at]outlyer.com](mailto:support[at]outlyer.com), which will also open a ticket.
 
 
 

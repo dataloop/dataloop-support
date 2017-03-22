@@ -82,4 +82,4 @@ On Windows:
 c:\dataloop\embedded\bin\pip.exe install <module>
 ```
 
-If you contact us at <support@outlyer.com> you can request we bundle other libraries.
+If you contact us at [support[at]outlyer.com](mailto:support[at]outlyer.com) you can request we bundle other libraries.
