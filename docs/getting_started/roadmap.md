@@ -6,7 +6,7 @@ If you have any suggestions please search and vote or raise a new feature idea o
 
 <https://dataloop.uservoice.com/forums/289987-general/filters/top>
 
-Alternatively, come and chat with us on [Slack](https://slack.dataloop.io).
+Alternatively, come and chat with us on [Slack](https://slack.outlyer.com).
 
 Below is high level overview of what we will be working on next. Ordering may change depending on customer priorities.
 
