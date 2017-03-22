@@ -2,7 +2,7 @@
 
 Our product roadmap is largely driven by customer feedback and our long term dedication to improving the lives of everyone involved with building and operating SaaS products.
 
-If you have any suggestions please search and vote or raise a new feature idea on our user voice forum.
+If you have any suggestions please search and vote or raise a new feature idea on our user voice forum (thanks for bearing with us as we rebrand this page to our new company name):
 
 <https://dataloop.uservoice.com/forums/289987-general/filters/top>
 

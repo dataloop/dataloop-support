@@ -1,8 +1,9 @@
-PLEASE NOTE: We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
 
 # Prometheus Plugins
 
-The Outlyer agent can run plugins that scrape Prometheus http endpoints. We recommend that you install an Outlyer (Dataloop) agent on each server and then create a separate plugin to monitor each endpoint on localhost.
+The Dataloop (Outlyer) Agent can run plugins that scrape Prometheus http endpoints. We recommend that you install a Dataloop (Outlyer) Agent on each server and then create a separate plugin to monitor each endpoint on localhost.
 
 ## Example for Node Exporter
 
@@ -20,9 +21,9 @@ import requests
 requests.get('http://localhost:9100/metrics').text
 ```
 
-Where port 9100 is the port the Node Exporter is running. Select the agent and press run to confirm that metrics are being received.
+Where port 9100 is the port the Node Exporter is running. Select the Dataloop (Outlyer) Agent and press run to confirm that metrics are being received.
 
-Now **set the output format to Prometheus** and specify the scrape interval (the default is to scrape every 30 seconds) on the plugin details page. Save and apply to either a single agent or a tag for deployment.
+Now **set the output format to Prometheus** and specify the scrape interval (the default is to scrape every 30 seconds) on the plugin details page. Save and apply to either a single Dataloop (Outlyer) Agent or a tag for deployment.
 
 A list of other exporters can be found here:
 
@@ -46,4 +47,4 @@ import requests
 requests.get('http://localhost:8000/metrics').text
 ```
 
-Test this by pressing the run button against a node running the payments application. Remember to switch the plugin format to Prometheus on the plugin details page. Save and apply to either a single agent or a tag for deployment.
+Test this by pressing the run button against a node running the payments application. Remember to switch the plugin format to Prometheus on the plugin details page. Save and apply to either a single Dataloop (Outlyer) Agent or a tag for deployment.

@@ -48,7 +48,7 @@ For tasks that are initiated as a result of an external event like CI builds or 
 
 ### Remote Monitoring
 
-Use the Dataloop Agent and custom Nagios plugins to remotely monitor over the network. For remote website monitoring designate a single agent to run the plugin. For monitoring external services like AWS RDS run the plugin from the application servers that access it. Where configuration varies between agents deploy a YAML file with settings from configuration management and read the file on each plugin run.
+Use the Dataloop Agent and custom Nagios plugins to remotely monitor over the network. For remote website monitoring designate a single Dataloop (Outlyer) Agent to run the plugin. For monitoring external services like AWS RDS run the plugin from the application servers that access it. Where configuration varies between agents deploy a YAML file with settings from configuration management and read the file on each plugin run.
 
 ### Aggregation
 

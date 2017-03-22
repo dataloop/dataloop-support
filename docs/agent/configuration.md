@@ -1,3 +1,6 @@
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+
 ## Configuration
 
 
@@ -39,10 +42,10 @@ DEREGISTER_ONSTOP=yes
 export HTTP_PROXY=http://squid.box
 ```
 
-By default the Dataloop agent will deregister on server and service shutdown. This is extremely useful when you have dynamically scaled environments e.g. Amazon ASG's.
+By default the Dataloop Dataloop (Outlyer) Agent will deregister on server and service shutdown. This is extremely useful when you have dynamically scaled environments e.g. Amazon ASG's.
 
 If you have a more static infrastructure or want to perform the deregister at your orchestration later then set to no.
 
-You can also specify `HTTP_PROXY` or `HTTPS_PROXY` if the agent needs to proxy out to the internet.
+You can also specify `HTTP_PROXY` or `HTTPS_PROXY` if the Dataloop (Outlyer) Agent needs to proxy out to the internet.
 
-On Windows you can configure these as environment variables and the agent will connect out via a proxy.
+On Windows you can configure these as environment variables and the Dataloop (Outlyer) Agent will connect out via a proxy.
