@@ -10,14 +10,14 @@ S3_BUCKET='docs.outlyer.com.us-east-1'
 docker build -t python3 .
 
 # build in an immutable docker
-docker run -ti --rm \
+docker run -t --rm \
   -v $PWD:/mkdocs \
   --workdir /mkdocs \
   python3 \
   mkdocs build --clean --strict --verbose
 
 # Push up to s3 in a docker
-docker run -ti --rm \
+docker run -t --rm \
   -v $PWD:/mkdocs \
   --workdir /mkdocs \
   -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
