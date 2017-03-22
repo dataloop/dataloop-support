@@ -27,10 +27,11 @@ Head on over to our [Zendesk ticketing system](https://support.outlyer.com/hc/en
 
 ## Troubleshooting
 
+[Expired gpg keys](troubleshooting/expired_gpg_key/)  
 [Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
 
 
 
 ## Latest Pages
 
-[Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
+[Expired gpg keys](troubleshooting/expired_gpg_key/)
