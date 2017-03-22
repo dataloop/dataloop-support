@@ -2,7 +2,7 @@
 
 ### Logging a Ticket
 
-For long running issues we recommend that you [log a support ticket](https://outlyer.zendesk.com/hc/en-gb/requests/new) via Zendesk web interface so that you can keep track of the status. We try hard to be extremely responsive to tickets.
+For long running issues we recommend that you [log a support ticket](https://support.outlyer.com/hc/en-gb/requests/new) via Zendesk web interface so that you can keep track of the status. We try hard to be extremely responsive to tickets.
 
 - - - 
  
