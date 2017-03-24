@@ -1,6 +1,6 @@
-site_name: Dataloop Support
+site_name: Outlyer Support
 # site_url:
-repo_url: https://github.com/dataloop/dataloop-support
+repo_url: https://github.com/outlyerapp/support
 site_description: Support and Help Documentation for Outlyer.com
 site_author: support@outlyer.com
 site_favicon: 'img/favicon.ico'
@@ -13,6 +13,7 @@ remote_branch: gh-pages
 #   - Integrations: integrations.md
 #   - Troubleshooting: foo.md
 theme: material
+theme_dir: 'theme_override'
 extra:
   logo: 'img/touchicon-x120.png'
   palette:
@@ -20,9 +21,9 @@ extra:
     accent: 'teal'
   social:
     - type: 'support'
-      link: 'https://outlyer.zendesk.com/hc/en-gb/requests/new'
+      link: 'https://support.outlyer.com/hc/en-gb/requests/new'
     - type: 'github'
-      link: 'https://github.com/dataloop'
+      link: 'https://github.com/outlyerapp'
     - type: 'twitter'
       link: 'https://twitter.com/outlyerapp'
 extra_javascript: [ 'js/segmentio.js', 'js/dltrk.js' ]
