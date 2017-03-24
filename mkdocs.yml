@@ -13,7 +13,6 @@ remote_branch: gh-pages
 #   - Integrations: integrations.md
 #   - Troubleshooting: foo.md
 theme: material
-theme_dir: 'theme_override'
 extra:
   logo: 'img/touchicon-x120.png'
   palette:
