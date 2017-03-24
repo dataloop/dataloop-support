@@ -26,7 +26,7 @@ You can add a Dataloop (Outlyer) Agent as a datasource in Grafana by following t
 
 * Create an API token
 
-Login to Dataloop and click account settings in the top right corner. Then generate an API token. You may want to create a service user account to restrict access to certain metrics in Grafana. 
+Login to Outlyer and click account settings in the top right corner. Then generate an API token. You may want to create a service user account to restrict access to certain metrics in Grafana. 
 
 * Create a new Data source in Grafana as per below
 
