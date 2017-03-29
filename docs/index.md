@@ -21,7 +21,7 @@ Head on over to our [Zendesk ticketing system](https://support.outlyer.com/hc/en
 
 ## Integrations
 
-[Third Party](/integrations/thirdparty/)  
+[Third Party](/integrations/thirdparty/aws/)  
 [Webhook](/integrations/webhook/)
 
 
