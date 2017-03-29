@@ -7,7 +7,7 @@
 
 * Install the latest Dataloop Agent package from
 
-<https://download.dataloop.io/windows/latest/dataloop-1.1-windows-installer.exe>
+<https://download.dataloop.io/windows/latest/dataloop-1.3-windows-installer.exe>
 
 For some systems you may need to install the Microsoft Visual C++ DLLs, they can be found here:
 
