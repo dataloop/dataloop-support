@@ -20,7 +20,7 @@ function ExitWithCode
         $exitcode
     )  
     $host.SetShouldExit($exitcode)
-    exit
+    exit $exitcode
 }
 ```
 
