@@ -11,7 +11,7 @@ Head on over to our [Zendesk ticketing system](https://outlyer.zendesk.com/hc/en
 ## Setup and Configuration
 
 [Getting Started](/getting_started/)  
-[Dataloop Agent](/agent/)  
+[Outlyer Agent](/agent/)  
 [Graphite, StatsD & InfluxDB](/endpoints/)  
 [Nagios and Prometheus](/nagios/)  
 [Alerting](/alerting/)  
