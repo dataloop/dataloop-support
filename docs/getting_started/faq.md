@@ -144,3 +144,13 @@ If you need any help with writing scripts let us know.
 **Q. The share dashboard button has gone missing. How can I get it back?**
 
 * A. This can happen when you have browser extensions like Adblock installed
+
+- - -
+
+**Q. Why are my alerts all grey and not triggering?**
+
+* A. Alerts are grey when any agent in the alert criteria is not returning data for the defined metric path.  
+
+Correct this by removing the offending agents, or ensure the agent returns the metric for the criteria.
+
+  Please see the [rules](/alerting/rules) page fo rmore details about alerts.
