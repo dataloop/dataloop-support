@@ -9,4 +9,4 @@
 [Data Retention Policy](/getting_started/data_retention_policy.md)  
 [Where We Fit in the Monitoring Landscape](/getting_started/where_we_fit.md)  
 [FAQ](/getting_started/faq.md)  
-[Roadmap](/getting_started/roadmap.md)
+
