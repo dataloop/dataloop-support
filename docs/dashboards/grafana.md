@@ -1,14 +1,17 @@
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+
 # Grafana
 
 ## Grafana 3.0 Plugin
 
-You can add a Dataloop agent as a datasource in Grafana by following these instructions. This is especially useful when used with a StatsD server. Install a Dataloop agent on the StatsD server and use the fingerprint to view all of your StatsD metrics in Grafana.
+You can add a Dataloop (Outlyer) Agent as a datasource in Grafana by following these instructions. This is especially useful when used with a StatsD server. Install a Dataloop Dataloop (Outlyer) Agent on the StatsD server and use the fingerprint to view all of your StatsD metrics in Grafana.
 
 * Install Grafana 3.0
 
 <http://docs.grafana.org/installation/>
 
-* Add the Dataloop data source
+* Add the Outlyer data source
 
 ```
 #> cd /var/lib/grafana/plugins
@@ -23,7 +26,7 @@ You can add a Dataloop agent as a datasource in Grafana by following these instr
 
 * Create an API token
 
-Login into Outlyer and click account settings in the top right corner. Then generate an API token. You may want to create a service user account to restrict access to certain metrics in Grafana. 
+Login to Outlyer and click account settings in the top right corner. Then generate an API token. You may want to create a service user account to restrict access to certain metrics in Grafana. 
 
 * Create a new Data source in Grafana as per below
 

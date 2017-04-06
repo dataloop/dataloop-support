@@ -1,10 +1,13 @@
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+
 # Annotations
 
 You can post annotations into Outlyer via either the API or command line utility.
 
 [API Docs](https://documenter.getpostman.com/view/505524/dataloop_public_api/2FyccR#annotations)
 
-Annotations are posted into `streams`. These streams can then be switched on and off within the Dataloop dashboards page via the annotations drop down at the top.
+Annotations are posted into `streams`. These streams can then be switched on and off within the Outlyer dashboards page via the annotations drop down at the top.
 
 ## Curl
 

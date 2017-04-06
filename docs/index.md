@@ -4,7 +4,7 @@ Here you will find a body of knowledge to get your monitoring started with Datal
 
 Start with the [Installation](/agent/) pages to get Outlyer.com agents installed on your servers.
 
-Head on over to our [Zendesk ticketing system](https://outlyer.zendesk.com/hc/en-gb/requests/new) to raise a support ticket with the Outlyer Team, or send an support request to <support@outlyer.com>, which will also open a ticket.
+Head on over to our [Zendesk ticketing system](https://support.outlyer.com/hc/en-gb/requests/new) to raise a support ticket with the Outlyer Team, or send a support request to [support[at]outlyer.com](mailto:support[at]outlyer.com), which will also open a ticket.
 
 
 
@@ -21,16 +21,17 @@ Head on over to our [Zendesk ticketing system](https://outlyer.zendesk.com/hc/en
 
 ## Integrations
 
-[Third Party](/integrations/thirdparty/)  
+[Third Party](/integrations/thirdparty/aws/)  
 [Webhook](/integrations/webhook/)
 
 
 ## Troubleshooting
 
+[Expired gpg keys](troubleshooting/expired_gpg_key/)  
 [Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
 
 
 
 ## Latest Pages
 
-[Generating an HTTP Archive (HAR) file](/troubleshooting/har_archive/)
+[Expired gpg keys](troubleshooting/expired_gpg_key/)

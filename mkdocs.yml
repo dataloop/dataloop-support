@@ -1,6 +1,6 @@
-site_name: Dataloop Support
+site_name: Outlyer Support
 # site_url:
-repo_url: https://github.com/dataloop/dataloop-support
+repo_url: https://github.com/outlyerapp/support
 site_description: Support and Help Documentation for Outlyer.com
 site_author: support@outlyer.com
 site_favicon: 'img/favicon.ico'
@@ -16,11 +16,13 @@ theme: material
 extra:
   logo: 'img/touchicon-x120.png'
   palette:
-    primary: 'orange'
+    primary: 'deep-orange'
     accent: 'teal'
   social:
+    - type: 'support'
+      link: 'https://support.outlyer.com/hc/en-gb/requests/new'
     - type: 'github'
-      link: 'https://github.com/dataloop'
+      link: 'https://github.com/outlyerapp'
     - type: 'twitter'
       link: 'https://twitter.com/outlyerapp'
 extra_javascript: [ 'js/segmentio.js', 'js/dltrk.js' ]

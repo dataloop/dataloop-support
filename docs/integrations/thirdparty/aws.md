@@ -1,8 +1,8 @@
 # Amazon Web Services
 
-Some of the Dataloop plugins need an `AWS Access Key ID` and `Secret Access Key` in order to extract metrics from the CloudWatch API.
+Some of the Outlyer plugins need an `AWS Access Key ID` and `Secret Access Key` in order to extract metrics from the CloudWatch API.
 
-To generate them use the following instructions:
+To generate them, use the following instructions:
 
 1. To get started, open the [AWS Management Console](https://console.aws.amazon.com)
 1. Click the IAM tab.

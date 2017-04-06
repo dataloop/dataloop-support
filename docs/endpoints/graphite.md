@@ -1,4 +1,5 @@
-_**PLEASE NOTE:** We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything._
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called “dataloop agent”, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
 
 # Graphite
 
@@ -20,7 +21,7 @@ The timestamp value is optional. If you don't set one we will set the timestamp 
 
 Currently we only allow Graphite data to be attached to an Agent fingerprint.
 
-The first step is therefore to install a Dataloop Agent on your server. After that you can find your Agent fingerprint on Linux in `/etc/dataloop/agent.finger`, or in the Dataloop UI on the agent details page.
+The first step is therefore to install a Dataloop Agent on your server. After that you can find your Agent fingerprint on Linux in `/etc/dataloop/agent.finger`, or in the Dataloop UI on the Dataloop (Outlyer) Agent details page.
 
  
 
@@ -38,8 +39,7 @@ Then echo a random metric to our graphite port:
 echo "${finger}.test $RANDOM" | nc -c graphite.dataloop.io 2003
 ```
 
-You can now create a dashboard widget in Outlyer and browse to the agent you sent the metric in from.
-
+You can now create a dashboard widget in Outlyer and browse to the Dataloop (Outlyer) Agent you sent the metric in from.
  
 
 ## Simple Example

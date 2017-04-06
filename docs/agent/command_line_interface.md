@@ -1,3 +1,6 @@
+!!! note
+    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+
 ## Command Line Interface
 
 On Linux you can simply type `dataloop-agent` or call directly from `/usr/bin/dataloop-agent`
@@ -54,7 +57,7 @@ tags:
 
 The most common use for the CLI is for tagging either in automated scripts or in config management.
 
-As an example, while the agent is running, you can list what tags it is a member of and then modify them:
+As an example, while the Dataloop (Outlyer) Agent is running, you can list what tags it is a member of and then modify them:
 
 ```
 #> dataloop-agent tags list
