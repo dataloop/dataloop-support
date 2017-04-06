@@ -44,9 +44,36 @@ docker run -d \
 dataloop/dataloop-docker:latest
 
 ```
+
+## CentOS 6
+
+CentOS 6 supports Docker to version 1.7, whereat the platform appears to have been deprecated.
+
+You can still run this container, if you install cgroups and adjust the volume mapping for the cgroups directory.
+
+```
+sudo yum install -y libcgroup
+```
+
+CentOS 6 has cgroups under `/cgroups`. Run the container accordingly
+
+```
+DATALOOP_AGENT_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+DATALOOP_NAME=docker_container_name
+
+docker run -d \
+-e "DATALOOP_AGENT_KEY=${DATALOOP_AGENT_KEY}" \
+-e "DATALOOP_NAME=${DATALOOP_NAME}" \
+-v /var/run/docker.sock:/var/run/docker.sock:ro \
+-v /proc:/rootfs/proc:ro \
+-v /cgroup:/rootfs/sys/fs/cgroup:ro \
+dataloop/dataloop-docker:latest
+
+```
+
 ## Support Versions
 
-This container has been tested to run on Docker >= 1.9.1  
+This container has been tested to run on Docker >= 1.7
 
 
 # Troubleshooting
