@@ -1,5 +1,10 @@
 # Welcome to Outlyer.com Support Knowledge base
 
+!!! Note
+    You can raise a support ticket via this link:  
+    <https://support.outlyer.com/hc/en-gb/requests/new>
+
+
 Here you will find a body of knowledge to get your monitoring started with Dataloop.IO
 
 Start with the [Installation](/agent/) pages to get Outlyer.com agents installed on your servers.
