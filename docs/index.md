@@ -18,19 +18,19 @@ support ticket with the Outlyer team, or send email to
 
 ## Setup and Configuration
 
-[Getting Started](/getting_started/)  
+[Getting Started](/getting_started/overview/)  
 [Outlyer Agent](/agent/)  
 [Graphite, StatsD & InfluxDB](/endpoints/)  
 [Nagios and Prometheus](/nagios/)  
-[Alerting](/alerting/)  
-[Dashboards](/dashboards)  
-[Organizational Account Model](/account_model)  
+[Alerting](/alerting/rules/)  
+[Dashboards](/dashboards/)  
+[Organizational Account Model](/account_model/overview/)  
 
 
 ## Integrations
 
 [Third Party](/integrations/thirdparty/aws/)  
-[Webhook](/integrations/webhook/)
+[Webhook](/alerting/webhook/)
 
 
 ## Troubleshooting
