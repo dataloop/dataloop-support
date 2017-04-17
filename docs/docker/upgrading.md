@@ -8,15 +8,15 @@ Upgrading to the latest version
 The latest version of our agent is always available on [Docker Hub][1] with
 the `latest` tag, so upgrading should be as simple as:
 ```
-    docker pull dataloop/dataloop-docker:latest
-    docker stop dataloop
-    docker start dataloop
+    docker pull outlyer/agent:latest
+    docker stop outlyer
+    docker start outlyer
 ```
 
 If you are using Docker Compose to run the container, just execute this in the
 directory where you placed our `docker-compose.yml`:
 ```
-    docker-compose down && docker-compose up
+    docker-compose up
 ```
 
 For Kubernetes versions prior to 1.6, you must delete the Outlyer DaemonSet and
@@ -32,8 +32,8 @@ Kubernetes 1.6 and later support rolling updates to DaemonSets. See the
 For Swarm, you should update the image on your manager nodes and worker
 nodes as follows:
 ```
-    docker service update --image dataloop/dataloop-docker:latest agent-worker
-    docker service update --image dataloop/dataloop-docker:latest agent-manager
+    docker service update --image outlyer/agent:latest agent-worker
+    docker service update --image outlyer/agent:latest agent-manager
 ```
 
 Upgrading from the previous generation agent
@@ -59,10 +59,10 @@ This only needs to be done once.
 
  3. If the Host Agent is installed, you should remove that also. The Host
     Agent is no longer required on Docker machines. Follow our
-    [uninstall instructions](../agent/uninstall.md) to remove it.
+    [uninstall instructions](/agent/uninstall.md) to remove it.
 
- 4. Now you can [install the latest version](installation.md) of the
+ 4. Now you can [install the latest version](/docker/installation.md) of the
     Docker Agent.
 
-[1]: https://hub.docker.com/r/dataloop/dataloop-docker/ "Docker Hub"
+[1]: https://hub.docker.com/r/outlyer/agent/ "Docker Hub"
 [2]: https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/ "Performing a Rolling Update on a DaemonSet"

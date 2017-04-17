@@ -61,7 +61,7 @@ installation. At minimum, you will want to set your DOCKER_AGENT_KEY:
 
     :::yaml hl_lines="3"
     environment:
-      - DATALOOP_NAME=dataloop-docker
+      - DATALOOP_NAME=outlyer
       - DATALOOP_AGENT_KEY=<your dataloop agent key>
 
 Deploy the container with:
@@ -73,7 +73,7 @@ Deploy the container with:
 ### Starting the container by hand
 
 The Dataloop container can be manually started with a simple `docker run`
-command. Detailed instructions are [here](../agent/installation_docker.md).
+command. Detailed instructions are [here](/agent/installation_docker.md).
 
 
 ## Configuration
@@ -121,4 +121,4 @@ monitored containers goes down. To customize the rule, go to
 [1]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/kubernetes_daemonset.yaml
 [2]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/swarm_service.yaml
 [3]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/docker-compose.yaml
-[4]: ../img/docker_pack.png
+[4]: /img/docker_pack.png

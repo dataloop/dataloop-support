@@ -19,7 +19,7 @@ Create custom Nagios check scripts and apply them to agents using tags. Build da
 
 ### Docker Monitoring
 
-Install a Dataloop Agent onto each Docker host to collect host level metrics and run Nagios plugins for service monitoring. Also run a dataloop/dataloop-docker container on each Docker host to collect container resource metrics.
+Install a Dataloop Agent onto each Docker host to collect host level metrics and run Nagios plugins for service monitoring. Also run an outlyer/agent container on each Docker host to collect container resource metrics.
 
 ### Application Metrics
 
