@@ -23,4 +23,4 @@ apt-get remove dataloop-agent
 
 ### Windows
 
-On Windows you can remove via add/remove programs.
+On Windows you can remove via **Control Panel > Add/Remove Programs**.
