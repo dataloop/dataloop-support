@@ -1,14 +1,9 @@
 !!! note
-    We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
+ s   We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
 
+# Dataloop Docker Autodiscovery Container
 
-Dataloop Docker Autodiscovery Container
-=======================================
-
-This container contains a Dataloop agent and some magic scripts that create virtual agents in Dataloop for each
-running container. Depending on which OS you are running on your Docker hosts you may need to add different run options.
-
-This container builds on [dataloop/agent-base](https://github.com/dataloop/docker-alpine/tree/master/agent-base) where further options to pass to the container can be found.
+This container contains a Dataloop (Outlyer) agent. It will create virtual agents in Outlyer for each running container. Depending on which OS you are running on your Docker hosts you may need to add different run options.
 
 The list of metrics returned for each running containers can be found [here](https://github.com/dataloop/docker-alpine/tree/master/dataloop-docker/METRICS.md).
 
@@ -76,14 +71,13 @@ dataloop/dataloop-docker:latest
 This container has been tested to run on Docker >= 1.7
 
 
-# Troubleshooting
+## Troubleshooting
 
 Please contact us on <https://slack.outlyer.com> or [support[at]outlyer.com](mailto:support[at]outlyer.com) for help.
 
 If you dont see any memory metrics in your containers you will need to enable memory accounting in cgroups. To do that just add some kernel command-line parameters: cgroup_enable=memory swapaccount=1. More info from the [docker documentation](https://docs.docker.com/engine/admin/runmetrics/#/memory-metrics-memorystat).
 
-Proxy
-=====
+## Proxy
 
 If you are behind a proxy server, you can pass the standard proxy environment variables to the docker container to have data passed through:
 
@@ -91,20 +85,37 @@ If you are behind a proxy server, you can pass the standard proxy environment va
 docker run -e HTTP_PROXY=http://proxy:port....
 ```
 
+## Environment Variables
 
-Contributing Changes
-====================
+This docker image will accept various other environment variables to allow you to customize the configuration for the dataloop-agent
+
+`DATALOOP_AGENT_KEY` *Required* The API Key for your Dataloop account. *Default*: None
+
+`DATALOOP_NAME` *Optional* A name for your agent to appear as in Dataloop. *Default*: dataloop
+
+`DATALOOP_TAGS` *Optional* A comma separated list of tags to apply to the agent. *Default*: docker
+
+`DATALOOP_FINGERPRINT` *Optional* You can pass an existing fingerprint if you want to keep your data association in Dataloop. *Default* None
+
+`DATALOOP_DEBUG` *Optional* You can pass in the debug flag `yes/no` or `true/false` to add extra logging to the agent. *Default* no
+
+
+## Exposed Ports
+
+Port 8000 is exposed as an HTTP endpoint. It will respond to GET with the fingerprint of the Dataloop agent.
+
+```
+curl -XGET http://<container>:8000
+```
+
+## Contributing Changes
 
 If you want to modify the container then feel free to submit a pull request. Below is the spec for what each script does.
 
 A set of independent foreground processes that log to standard out that can be run under a [s6-svc](http://skarnet.org/software/s6/)
 
-All state is stored in Dataloop so these scripts can be run in ephemeral containers with no local storage.
+This container is also provided as a base container running a Dataloop agent. You can extend it with embedded plugins, or with Prometheus exporters, for example.
 
-- agents.py
+Based upon [Alpine Linux](https://www.alpinelinux.org) and using [Scott Mebberson](https://github.com/smebberson) base image, [s6](http://skarnet.org/software/s6/) is used for process managment
 
-Polls Docker api and Dataloop. Ensures containers match agents via register and deregister API's. Tag containers with relevant info taken from various places. Send a ping metric for each running containers.
-
-- metrics.py
-
-Sends docker metrics to Dataloop via the Graphite endpoint every 30 seconds by matching container ID to agent name.
+Please see [here](https://github.com/smebberson/docker-alpine) for more information about Scott Mebberson's base images and design.
