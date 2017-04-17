@@ -7,9 +7,14 @@ site_favicon: 'img/favicon.ico'
 copyright: © Outlyer 2017
 # google_analytics: [ ]
 remote_branch: gh-pages
-theme_dir: 'theme/mkdocs-material/material'
+theme: 'material'
+theme_dir: 'theme_override/material'
+# theme_dir: 'theme/mkdocs-material/material'
 extra:
   logo: 'img/touchicon-x120.png'
+  palette:     
+    primary: 'deep-orange'       
+    accent: 'teal'
   social:
     - type: 'support'
       link: 'https://support.outlyer.com/hc/en-gb/requests/new'
@@ -31,7 +36,7 @@ pages:
       - Overview: 'getting_started/overview.md'
       - Typical use cases: 'getting_started/use_cases.md'
       - Where we fit: 'getting_started/where_we_fit.md'
-      - Security and privacy: 'getting_started/security.md'
+      # - Security and privacy: 'getting_started/security.md'
       - Data retention policy: 'getting_started/data_retention_policy.md'
       - FAQ: 'getting_started/faq.md'
   - Agent installation:
