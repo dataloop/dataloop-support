@@ -11,9 +11,9 @@ You can add additional fields to the payload in the 'Extra Payload' box. This ca
 
 Finally, click the test button to verify your webhook is configured correctly.
 
-## Example delivery 
+## Example delivery
 
-```json
+```
 User-Agent: Dataloop
 Content-Type: application/json
 X-Dataloop-Event: alert-webhook
@@ -37,8 +37,8 @@ X-Dataloop-Event: alert-webhook
 }
 ```
 
- 
-## Details 
+
+## Details
 
 * event: ["alert" | "recovered"]
 

@@ -1,16 +1,16 @@
-# Rules
+# Alert Rules
 
-Rules are comprised of **criteria** and **actions**. It is recommended that all rules be created based on tags and that criteria for a given service are grouped together based on severity.
+Alert rules are comprised of **criteria** and **actions**. It is recommended that all rules be created based on tags and that criteria for a given service are grouped together based on severity.
 
-* Example: The rule 'ElasticSearch Warning' may contain criteria that need attention but wouldn't necessarily wake anyone up. The actions for this rule would email a group and send a webhook to Slack. Whereas the 'ElasticSearch Critical' rule would contain a few critical checks, such as service down and would send a webhook to Pagerduty.
+* Example: The rule 'ElasticSearch Warning' may contain criteria that need attention but wouldn't necessarily wake anyone up. The actions for this rule would email a group and send a webhook to Slack. Whereas the 'ElasticSearch Critical' rule would contain a few critical checks, such as service down and would send a webhook to PagerDuty.
 
-Criterias are made up of a scope, the metric to alert on and options like comparator, duration and threshold.
+Criteria are made up of a scope, the metric to alert on and options like comparator, duration and threshold.
 
 Supported actions include sending an email or a webhook. When a webhook is configured for a supported integration (listed under the Integrations section of the support docs) we detect the url and send additional fields.
 
 If multiple criteria are created within a rule then **ANY** need to be met before the rule is triggered and **ALL** actions are run.
 
-Outyer rules are very flexible, to the point where you can shoot yourself in the foot if you choose to do so.
+Outlyer rules are very flexible, to the point where you can shoot yourself in the foot if you choose to do so.
 
 * Example: You can create a plugin to monitor a service and apply it to one tag of agents. Then configure a criteria to alert on that same plugin using a different tag that only contains a subset of agents that the plugin is deployed to. For this reason we have defined a simple traffic light system to help uncover mistakes in setup.
 
@@ -18,12 +18,12 @@ Outyer rules are very flexible, to the point where you can shoot yourself in the
 
 You can view the overall health of rules in the alerts page in Outlyer. Each rule is colour coded as per the table below. To be confident that you have effective alerting setup the aim should be to keep all rules in a green state.
 
-| Colour | State     |
-|:-------:|:-----------:|
-| Green  | Clear     |
-| Orange | Pending   |
-| Grey   | Unknown   |
-| Red    | Triggered |
+| Colour  | State       |
+|:--------|:------------|
+| Green   | Clear       |
+| Orange  | Pending     |
+| Grey    | Unknown     |
+| Red     | Triggered   |
 
 When a criteria is defined in Outlyer, a query is added to a background set of workers that poll every 10 seconds and compare desired state to current state.
 

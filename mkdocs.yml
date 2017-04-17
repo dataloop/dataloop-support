@@ -1,23 +1,15 @@
-site_name: Outlyer Support
+site_name: Outlyer Documentation
 # site_url:
-repo_url: https://github.com/outlyerapp/support
+# repo_url: https://github.com/outlyerapp/support
 site_description: Support and Help Documentation for Outlyer.com
 site_author: support@outlyer.com
 site_favicon: 'img/favicon.ico'
 copyright: © Outlyer 2017
 # google_analytics: [ ]
 remote_branch: gh-pages
-# pages:
-#   - Home: index.md
-#   - Setup and Configuration: setup.md
-#   - Integrations: integrations.md
-#   - Troubleshooting: foo.md
-theme: material
+theme_dir: 'theme/mkdocs-material/material'
 extra:
   logo: 'img/touchicon-x120.png'
-  palette:
-    primary: 'deep-orange'
-    accent: 'teal'
   social:
     - type: 'support'
       link: 'https://support.outlyer.com/hc/en-gb/requests/new'
@@ -28,7 +20,94 @@ extra:
 extra_javascript: [ 'js/segmentio.js', 'js/dltrk.js' ]
 
 markdown_extensions:
+  - markdown.extensions.def_list
   - admonition
   - codehilite(guess_lang=false)
   - toc(permalink=true)
 
+pages:
+  - Home: 'index.md'
+  - About Outlyer:
+      - Overview: 'getting_started/overview.md'
+      - Typical use cases: 'getting_started/use_cases.md'
+      - Where we fit: 'getting_started/where_we_fit.md'
+      - Security and privacy: 'getting_started/security.md'
+      - Data retention policy: 'getting_started/data_retention_policy.md'
+      - FAQ: 'getting_started/faq.md'
+  - Agent installation:
+      - Introduction: 'agent/index.md'
+      - Supported platforms: 'agent/supported_operating_systems.md'
+      - Installing on Linux: 'agent/installation_linux.md'
+      - Installing on Windows: 'agent/installation_windows.md'
+      - Installing on Raspberry Pi: 'agent/installation_raspberry_pi.md'
+      - Installing on Docker: 'agent/installation_docker.md'
+      - Deploying with a configuration management tool: 'agent/config_management.md'
+      - About agent fingerprints: 'agent/fingerprints.md'
+      - Uninstalling: 'agent/uninstall.md'
+  - Agent configuration:
+      - Command-line options: 'agent/command_line_interface.md'
+      - Configuration: 'agent/configuration.md'
+      - Solo mode: 'agent/solo_mode.md'
+  - Monitoring Docker environments:
+      - Introduction to Docker monitoring: 'docker/introduction.md'
+      - Installation: 'docker/installation.md'
+      - Upgrading from an older release: 'docker/upgrading.md'
+      - Tagging Docker containers for service discovery: 'docker/tagging.md'
+      - Using Host View to visualize containers and relationships: 'docker/host_view.md'
+  - Dashboards:
+      - About dashboards: 'dashboards/index.md'
+      - Graph widgets: 'dashboards/graph_widgets.md'
+      - Numeric widgets: 'dashboards/numeric_widgets.md'
+      - Annotations: 'dashboards/annotations.md'
+      - Sharing your dashboards: 'dashboards/public_dashboards.md'
+      - Troubleshooting: 'dashboards/troubleshooting.md'
+  - Alerting:
+      - Introduction: 'alerting/rules.md'
+      - Metric alerts: 'alerting/metric_alerts.md'
+      - Plugin alerts: 'alerting/plugin_alerts.md'
+      - Agent alerts: 'alerting/agent_alerts.md'
+      - Webhooks:
+          - About webhooks: 'alerting/webhook.md'
+          - Slack: 'integrations/webhook/slack.md'
+          - HipChat: 'integrations/webhook/hipchat.md'
+          - PagerDuty: 'integrations/webhook/pagerduty.md'
+          - OpsGenie: 'integrations/webhook/opsgenie.md'
+          - BigPanda: 'integrations/webhook/bigpanda.md'
+          - VictorOps: 'integrations/webhook/victorops.md'
+  - Security and the Outlyer account model:
+      - Overview: 'account_model/overview.md'
+      - Security and privacy: 'getting_started/security.md'
+      - Creating private packs: 'account_model/private_packs.md'
+      - Backing up and restoring: 'account_model/backup_restore.md'
+      - Solo mode: 'agent/solo_mode.md'
+  - Developing plugins:
+      - Introduction: 'nagios/index.md'
+      - Plugin deployment models: 'nagios/plugin_deployment_models.md'
+      - Nagios plugins: 'nagios/nagios_plugins.md'
+      - Nagios performance data: 'nagios/nagios_performance_data.md'
+      - Prometheus plugins: 'nagios/prometheus_plugins.md'
+      - Built-in Python interpreter: 'nagios/built_in_python.md'
+      - Powershell: 'nagios/powershell.md'
+  - Custom metric endpoints:
+      - About custom endpoints: 'endpoints/index.md'
+      - InfluxDB: 'endpoints/influxdb.md'
+      - CollectD: 'endpoints/collectd.md'
+      - Graphite: 'endpoints/graphite.md'
+      - Statsd:
+          - About Statsd: 'endpoints/statsd.md'
+          - Hosted statsd server: 'endpoints/hosted_statsd.md'
+          - Self-hosted statsd: 'endpoints/self-hosted_statsd.md'
+          - Self-hosted statsite: 'endpoints/self-hosted_statsite.md'
+          - Statsd clients: 'endpoints/statsd_clients.md'
+  - Integrations:
+      - Importing metrics from Amazon CloudWatch: 'integrations/thirdparty/aws.md'
+      - Exporting data to Grafana: 'dashboards/grafana.md'
+      - Sending alerts to third-party services (webhooks): 'alerting/webhook.md'
+      - Collecting metrics from custom endpoints: 'endpoints/index.md'
+  - Automation:
+      - Using the command line utility (dlcli): 'getting_started/command_line_utility.md'
+      - Using the REST API: 'getting_started/API.md'
+  - Troubleshooting:
+      - Getting help: 'getting_started/getting_help.md'
+      - Generating an HTTP Archive File for support: 'troubleshooting/har_archive.md'
+      - Updating an expired GPG signing key: 'troubleshooting/expired_gpg_key.md'

@@ -1,4 +1,4 @@
-# Dataloop Support and Knowledge base articles
+# Outlyer Support and Knowledge base articles
 
 This repository contains support and knowledge base articles that are written in Markdown.
 
@@ -11,7 +11,7 @@ Editing a document can be done straight from the rendered site. This will link y
 You can also checkout the git repository, make local changes and submit them back with a Pull Request.
 
 
-**WARNING** 
+**WARNING**
 Commits submitted to the `master` branch of this repository will be built and may be published to production immediately.
 
 
