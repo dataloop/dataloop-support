@@ -57,7 +57,7 @@ pages:
       - Introduction to Docker monitoring: 'docker/introduction.md'
       - Installation: 'docker/installation.md'
       - Upgrading from an older release: 'docker/upgrading.md'
-      - Tagging Docker containers for service discovery: 'docker/tagging.md'
+      # - Tagging Docker containers for service discovery: 'docker/tagging.md'
       - Using Host View to visualize containers and relationships: 'docker/host_view.md'
   - Dashboards:
       - About dashboards: 'dashboards/index.md'
