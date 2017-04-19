@@ -9,7 +9,7 @@ The Dataloop Agent connects outbound on port `443` only.
 
 Installation of the Dataloop (Outlyer) Agent can be done in a number of ways. Most of our customers use configuration management tools and the repos provided in the public [Outlyer Github account](https://github.com/outlyerapp). These are extremely simple; they add a repo file, install the dataloop-agent package, modify a config file and start a service.
 
-We provide a curl installer for people who want to give Outlyre a quick try on a test machine. Curl installers by their very nature are not secure, however they are extremely quick (just a simple copy and paste). We strongly advise people stop using the curl installer after they have moved past the test phase.
+We provide a curl installer for people who want to give Outlyer a quick try on a test machine. Curl installers by their very nature are not secure, however they are extremely quick (just a simple copy and paste). We strongly advise people stop using the curl installer after they have moved past the test phase.
 
 By default the Dataloop (Outlyer) Agent runs as a non privileged user `dataloop` which can be locked down further by the operating system if required.
 
