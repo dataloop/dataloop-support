@@ -118,7 +118,7 @@ The pack provides a simple alert rule that triggers whenever any of the
 monitored containers goes down. To customize the rule, go to
 **Alerts > Docker**.
 
-[1]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/kubernetes_daemonset.yaml
-[2]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/swarm_service.yaml
-[3]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/dataloop-docker/docker-compose.yaml
+[1]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/kubernetes_daemonset.yaml
+[2]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/swarm_service.yaml
+[3]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/docker-compose.yaml
 [4]: /img/docker_pack.png
