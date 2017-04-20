@@ -1,7 +1,7 @@
 !!! note
     We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
 
-Introduction to Using Dataloop with Docker
+Introduction to Using Outlyer with Docker
 ==========================================
 
 ## What is Docker?
@@ -18,14 +18,14 @@ Docker brings a new level of complexity to monitoring. Each container consumes
 CPU, memory, network, and other resources, but all containers must share the
 resources available to their host.
 
-Dataloop gives you the ability to monitor the resources used by each of the
+Outlyer gives you the ability to monitor the resources used by each of the
 containers as well as the host.
 
 Our packs and plugins work with containers as well. The MySQL plugin, for
 example, will report the same metrics whether MySQL is running on a traditional
 host, or inside a container.
 
-## Monitoring with Dataloop
+## Monitoring with Outlyer 
 
 We provide a special agent for Docker environments. Naturally, this agent is
 itself packaged as a Docker container. Our container provides the following
@@ -34,7 +34,7 @@ features:
  * **Container inventory and autodiscovery.** The agent reports metrics for
    every container. When you create new containers, the agent will automatically
    begin reporting metrics for those new containers without any work from you.
-   When you delete containers, they will be removed from the Dataloop console.
+   When you delete containers, they will be removed from the Outlyer console.
 
  * **Per-container and per-host metrics.** The agent will report base system
    metrics (CPU, memory, I/O, and network usage) consumed by each container,
@@ -45,8 +45,8 @@ features:
    usually no changes required to the plugin scripts.
 
 !!! note
-    It is not necessary to install the regular Dataloop Agent on a host if
-    the Dataloop Docker Agent is deployed there. The Docker Agent will report
+    It is not necessary to install the regular Outlyer (Dataloop) Agent on a host if
+    the Outlyer (Dataloop) Docker Agent is deployed there. The Docker Agent will report
     host metrics as well as container metrics.
 
 ## Container Orchestration
@@ -57,7 +57,7 @@ let you manage your Docker hosts as a single cluster, also adding a layer
 of additional services like fault-tolerance and DNS.
 
 On our [installation page](installation.md), we show you how to deploy
-Dataloop to all of the hosts in your Kubernetes or Swarm cluster with a
+Outlyer to all of the hosts in your Kubernetes or Swarm cluster with a
 single command. (Support for Mesos is coming soon.)
 
 ## Getting Started
