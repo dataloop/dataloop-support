@@ -77,16 +77,20 @@ Please contact us on <https://slack.outlyer.com> or [support[at]outlyer.com](mai
 
 If you dont see any memory metrics in your containers you will need to enable memory accounting in cgroups. To do that just add some kernel command-line parameters: cgroup_enable=memory swapaccount=1. More info from the [docker documentation](https://docs.docker.com/engine/admin/runmetrics/#/memory-metrics-memorystat).
 
-When running the agent with the above `docker run` options, some features will be missing. Please run the container with `--net host` if you would like the following features:
-1) CPU load average for your containers
-2) Container network connections
-3) Host network metrics sent under your agent container
+!!! tip
+    When running the agent with the above `docker run` options, some features will be missing. Please run the container with `--net host` if you would like the following features:
 
-If you'd like to have host network metrics sent under your agent container (rather than your actual container's network metrics) and you cannot run your container with `--net host`, please follow these steps:
-1) On your account's main overview page (https://app.outlyer.com/YOUR_ORG/YOUR_ACCOUNT/#/setup/overview), click on "Setup Monitoring";
-2) Click on "Plugins List", then on "base.py".
-3) On the code editor, there should be a function called `check_netio`. Replace it with the one here: https://gist.github.com/alexdias/d51ef12d02d9e8f56721c48d52517f5c
-4) Click "Save changes" to have your base plugin updated.
+        - CPU load average for your containers
+        - Container network connections
+        - Host network metrics sent under your agent container
+
+    If you'd like to have host network metrics sent under your agent container (rather than your actual container's network metrics) and you cannot run your container with `--net host`, please follow these steps:
+
+        1) On your account's main overview page (https://app.outlyer.com/YOUR_ORG/YOUR_ACCOUNT/#/setup/overview), click on "Setup Monitoring";
+        2) Click on "Plugins List", then on "base.py".
+        3) On the code editor, there should be a function called `check_netio`.
+           Replace it with the one here: https://gist.github.com/alexdias/d51ef12d02d9e8f56721c48d52517f5c
+        4) Click "Save changes" to have your base plugin updated.
 
 ## Proxy
 
