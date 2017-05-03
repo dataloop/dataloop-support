@@ -75,7 +75,7 @@ objects that have that tag. For example:
  * Select the `container:id` tag to display only containers.
  * Select the `ec2` tag to display only AWS EC2 instances.
  * Select the `mysql` tag to display only objects that have been tagged to
-   run the MySQL plugin. See [Tagging Docker Containers for Service Discovery](tagging.md).
+   run the MySQL plugin.
 
 If you select multiple tags, then only those objects that match ALL of the
 filters will be displayed.

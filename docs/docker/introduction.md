@@ -63,13 +63,11 @@ single command. (Support for Mesos is coming soon.)
 ## Getting Started
 
  1. [Install the agent][1] on your Docker hosts.
- 2. [Install the Docker pack][2] in your account.
- 3. [Tag your containers][3] for service discovery.
- 4. [Use "host view"][4] to visualize your hosts, containers, and the
+ 1. [Install the Docker pack][2] in your account.
+ 1. [Use "host view"][4] to visualize your hosts, containers, and the
     connections between them.
 
 
 [1]: installation.md#installing-the-container
 [2]: installation.md#installing-the-docker-monitoring-pack
-[3]: tagging.md
 [4]: host_view.md
