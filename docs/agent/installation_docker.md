@@ -1,7 +1,7 @@
 !!! note
     We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called `dataloop agent`, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.
 
-# Dataloop Docker Autodiscovery Container
+# Outlyer Agent Autodiscovery Container
 
 This container contains a Outlyer (Dataloop) agent. It will create virtual agents in Outlyer for each running container. Depending on which OS you are running on your Docker hosts you may need to add different run options.
 
