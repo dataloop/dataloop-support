@@ -37,8 +37,8 @@ Then deploy it to Kubernetes with this command:
 
 ### Deploying on Swarm
 
-The Dataloop container can be manually started with a simple `docker run`
-command. Detailed instructions are [here](/agent/installation_docker.md).
+Please follow the instructions detailed [here](/agent/installation_docker.md),
+making sure that you pass `--net=host` to the `docker run` command.
 
 #### Why can't the Agent run as a swarm service?
 
