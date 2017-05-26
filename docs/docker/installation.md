@@ -37,7 +37,7 @@ Then deploy it to Kubernetes with this command:
 
 ### Deploying on Swarm
 
-Please follow the instructions detailed [here](/agent/installation_docker.md),
+Please follow the instructions detailed in a standard [Docker deployment](/agent/installation_docker.md),
 making sure that you pass `--net=host` to the `docker run` command.
 
 #### Why can't the Agent run as a swarm service?
