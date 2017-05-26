@@ -17,7 +17,6 @@ environment. Choose the option that matches your needs:
 
  * [Deploying on a Kubernetes cluster](#deploying-on-kubernetes)
  * [Deploying on a Swarm cluster](#deploying-on-swarm)
- * [Deploying with Docker Compose](#deploying-with-docker-compose)
  * [Deploying manually](#manually-starting-the-container)
 
 ### Deploying on Kubernetes
@@ -53,35 +52,14 @@ Then deploy it to Kubernetes with this command:
 
 ### Deploying on Swarm
 
-Download our [sample Swarm compose file][2] and customize as necessary for your
-installation. At minimum, you will want to set your DOCKER_AGENT_KEY:
+Please follow the instructions detailed in a standard [Docker deployment](/agent/installation_docker.md),
+making sure that you pass `--net=host` to the `docker run` command.
 
-    :::yaml hl_lines="2"
-    environment:
-      - DATALOOP_AGENT_KEY=<your dataoop agent key>
+#### Why can't the Agent run as a swarm service?
 
-Note that DOCKER_AGENT_KEY appears in the file twice. Don't forget to change it
-in both places.
-
-Then you can deploy the container to every node in your cluster with:
-
-    docker stack deploy --compose-file=swarm_service.yaml
-
-- - -
-
-### Deploying with Docker Compose
-
-Download our [sample compose file][3] and customize as necessary for your
-installation. At minimum, you will want to set your DOCKER_AGENT_KEY:
-
-    :::yaml hl_lines="3"
-    environment:
-      - DATALOOP_NAME=outlyer
-      - DATALOOP_AGENT_KEY=<your dataloop agent key>
-
-Deploy the container with:
-
-    docker-compose up
+Swarm does not [yet](https://github.com/moby/moby/issues/27082) support running
+containers with `--net=host`, which is needed for the Agent to communicate
+simply with all containers on the host.
 
 - - -
 
@@ -119,7 +97,7 @@ environments. To install it:
  2. Scroll down to the Docker pack.
  3. Click the green "Install" button on the right side of the screen.
 
-![Docker pack][4]
+![Docker pack][2]
 
 ### Viewing the Docker dashboard
 
@@ -134,6 +112,4 @@ monitored containers goes down. To customize the rule, go to
 **Alerts > Docker**.
 
 [1]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/kubernetes_daemonset.yaml
-[2]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/swarm_service.yaml
-[3]: https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/docker-compose.yaml
-[4]: /img/docker_pack.png
+[2]: /img/docker_pack.png
