@@ -34,6 +34,21 @@ Then deploy it to Kubernetes with this command:
 
     kubectl apply -f kubernetes_daemonset.yaml
 
+!!! Tip
+    If you used kubeadm to setup your cluster, or if you use [RBAC](https://kubernetes.io/docs/admin/authorization/rbac/), 
+    the default service account will not have some permissions. We use your cluster's configuration to talk to
+    the API, which uses [service accounts](https://kubernetes.io/docs/admin/service-accounts-admin/).
+    Kubeadm sets up [RBAC](https://kubernetes.io/docs/admin/authorization/rbac/),
+    which in turn by default grants [no permissions](https://kubernetes.io/docs/admin/authorization/rbac/#service-account-permissions)
+    outside of the "kube-system" namespace.
+
+    This problem will manifest itself as an HTTP 403 error when running plugins.  
+    To give your default service account the necessary "view" permissions, run the following:
+
+    ```
+    kubectl create rolebinding default-view --clusterrole=view --serviceaccount=default:default --namespace=default
+    ```
+
 - - -
 
 ### Deploying on Swarm
