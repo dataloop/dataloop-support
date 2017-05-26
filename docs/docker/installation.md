@@ -44,11 +44,9 @@ Then deploy it to Kubernetes with this command:
 
     This problem should manifest itself as an HTTP 403 error when running plugins. To give your default
     service account the necessary "view" permissions, run the following:
+
     ```
-    kubectl create rolebinding default-view \
-      --clusterrole=view \
-      --serviceaccount=default:default \
-      --namespace=default
+    kubectl create rolebinding default-view --clusterrole=view --serviceaccount=default:default --namespace=default
     ```
 
 - - -
