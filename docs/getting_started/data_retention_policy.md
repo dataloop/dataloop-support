@@ -4,12 +4,7 @@ Outlyer supports Nagios check scripts which send back metrics at 30 second inter
 
 We store:
 
-    * 1 second resolution for 48 hours
-    * 1 minute resolution for 60 days
-    * 1 hour resolution for 10 years
+    * 10 second resolution for 13 months for statsd metrics
+    * 30 second resolution for 13 months for plugins metrics
 
-The 1 second resolution metrics are great for troubleshooting issues as they happen. They also allow us to alert extremely quickly if something does break.
-
-Holding 1 minute resolution for 60 days provides a high level of detail for dashboards, reports and looking at trends.
-
-We will effectively keep every metrics you enter into Outlyer forever at a 1 hour resolution.
+10 second resolution is really as low as you need go to debug most issues as they happen. Anything more granular will require you to be on servers debugging live.
