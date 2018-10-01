@@ -1,4 +1,12 @@
-# Welcome to our support docs!
+# Welcome to our V1 support docs!
+
+---
+
+**If you are looking for V2 documentation please click below**
+
+[Outlyer V2 Documentation](https://www.outlyer.com/docs)
+
+---
 
 Here you will find a body of knowledge to get your monitoring started with
 Outlyer.
