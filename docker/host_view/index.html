@@ -1,0 +1,1556 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Support and Help Documentation for Outlyer.com">
+      
+      
+      
+        <meta name="author" content="support@outlyer.com">
+      
+      
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.3">
+    
+    
+      
+        <title>Using Host View to visualize containers and relationships - Outlyer Documentation</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-5b0c41c2b5.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-166740f5bb.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="deep-orange" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../.." title="Outlyer Documentation" class="md-logo md-header-nav__button">
+            <img src="../../img/touchicon-x120.png" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Monitoring Docker environments
+                </span>
+              
+            
+            Using Host View to visualize containers and relationships
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          <a href="https://support.outlyer.com/hc/en-gb/requests/new">
+            New Ticket
+          </a> |
+          <a href="https://support.outlyer.com/hc/en-gb/requests">
+            My Tickets
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../../img/touchicon-x120.png">
+      
+    </i>
+    Outlyer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../.." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      About Outlyer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2">
+        About Outlyer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/use_cases/" title="Typical use cases" class="md-nav__link">
+        Typical use cases
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/where_we_fit/" title="Where we fit" class="md-nav__link">
+        Where we fit
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/data_retention_policy/" title="Data retention policy" class="md-nav__link">
+        Data retention policy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/faq/" title="FAQ" class="md-nav__link">
+        FAQ
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Agent installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Agent installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/supported_operating_systems/" title="Supported platforms" class="md-nav__link">
+        Supported platforms
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_linux/" title="Installing on Linux" class="md-nav__link">
+        Installing on Linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_windows/" title="Installing on Windows" class="md-nav__link">
+        Installing on Windows
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_raspberry_pi/" title="Installing on Raspberry Pi" class="md-nav__link">
+        Installing on Raspberry Pi
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_docker/" title="Installing on Docker" class="md-nav__link">
+        Installing on Docker
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/config_management/" title="Deploying with a configuration management tool" class="md-nav__link">
+        Deploying with a configuration management tool
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/fingerprints/" title="About agent fingerprints" class="md-nav__link">
+        About agent fingerprints
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/uninstall/" title="Uninstalling" class="md-nav__link">
+        Uninstalling
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Agent configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Agent configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/command_line_interface/" title="Command-line options" class="md-nav__link">
+        Command-line options
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/configuration/" title="Configuration" class="md-nav__link">
+        Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/solo_mode/" title="Solo mode" class="md-nav__link">
+        Solo mode
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Monitoring Docker environments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        Monitoring Docker environments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../introduction/" title="Introduction to Docker monitoring" class="md-nav__link">
+        Introduction to Docker monitoring
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../installation/" title="Installation" class="md-nav__link">
+        Installation
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../upgrading/" title="Upgrading from an older release" class="md-nav__link">
+        Upgrading from an older release
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Using Host View to visualize containers and relationships
+      </label>
+    
+    <a href="./" title="Using Host View to visualize containers and relationships" class="md-nav__link md-nav__link--active">
+      Using Host View to visualize containers and relationships
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-host-view" title="Getting started with Host View" class="md-nav__link">
+    Getting started with Host View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displaying-connections-between-objects" title="Displaying connections between objects" class="md-nav__link">
+    Displaying connections between objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zooming-in-for-more-details" title="Zooming in for more details" class="md-nav__link">
+    Zooming in for more details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering-the-view" title="Filtering the view" class="md-nav__link">
+    Filtering the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grouping-objects-in-the-view" title="Grouping objects in the view" class="md-nav__link">
+    Grouping objects in the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-objects-in-the-view" title="Sorting objects in the view" class="md-nav__link">
+    Sorting objects in the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorizing-and-resizing-objects" title="Colorizing and resizing objects" class="md-nav__link">
+    Colorizing and resizing objects
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Dashboards
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Dashboards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/" title="About dashboards" class="md-nav__link">
+        About dashboards
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/graph_widgets/" title="Graph widgets" class="md-nav__link">
+        Graph widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/numeric_widgets/" title="Numeric widgets" class="md-nav__link">
+        Numeric widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/annotations/" title="Annotations" class="md-nav__link">
+        Annotations
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/public_dashboards/" title="Sharing your dashboards" class="md-nav__link">
+        Sharing your dashboards
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+        Troubleshooting
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Alerting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        Alerting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/rules/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/metric_alerts/" title="Metric alerts" class="md-nav__link">
+        Metric alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/plugin_alerts/" title="Plugin alerts" class="md-nav__link">
+        Plugin alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/agent_alerts/" title="Agent alerts" class="md-nav__link">
+        Agent alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-5" type="checkbox" id="nav-7-5">
+    
+    <label class="md-nav__link" for="nav-7-5">
+      Webhooks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7-5">
+        Webhooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/webhook/" title="About webhooks" class="md-nav__link">
+        About webhooks
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/slack/" title="Slack" class="md-nav__link">
+        Slack
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/hipchat/" title="HipChat" class="md-nav__link">
+        HipChat
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/pagerduty/" title="PagerDuty" class="md-nav__link">
+        PagerDuty
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/opsgenie/" title="OpsGenie" class="md-nav__link">
+        OpsGenie
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/bigpanda/" title="BigPanda" class="md-nav__link">
+        BigPanda
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/victorops/" title="VictorOps" class="md-nav__link">
+        VictorOps
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Security and the Outlyer account model
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        Security and the Outlyer account model
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/security/" title="Security and privacy" class="md-nav__link">
+        Security and privacy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/private_packs/" title="Creating private packs" class="md-nav__link">
+        Creating private packs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/backup_restore/" title="Backing up and restoring" class="md-nav__link">
+        Backing up and restoring
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/solo_mode/" title="Solo mode" class="md-nav__link">
+        Solo mode
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Developing plugins
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        Developing plugins
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/plugin_deployment_models/" title="Plugin deployment models" class="md-nav__link">
+        Plugin deployment models
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_plugins/" title="Nagios plugins" class="md-nav__link">
+        Nagios plugins
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_performance_data/" title="Nagios performance data" class="md-nav__link">
+        Nagios performance data
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/prometheus_plugins/" title="Prometheus plugins" class="md-nav__link">
+        Prometheus plugins
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/built_in_python/" title="Built-in Python interpreter" class="md-nav__link">
+        Built-in Python interpreter
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/powershell/" title="Powershell" class="md-nav__link">
+        Powershell
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Custom metric endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        Custom metric endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/" title="About custom endpoints" class="md-nav__link">
+        About custom endpoints
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/influxdb/" title="InfluxDB" class="md-nav__link">
+        InfluxDB
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/collectd/" title="CollectD" class="md-nav__link">
+        CollectD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/graphite/" title="Graphite" class="md-nav__link">
+        Graphite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-5" type="checkbox" id="nav-10-5">
+    
+    <label class="md-nav__link" for="nav-10-5">
+      Statsd
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10-5">
+        Statsd
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd/" title="About Statsd" class="md-nav__link">
+        About Statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/hosted_statsd/" title="Hosted statsd server" class="md-nav__link">
+        Hosted statsd server
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsd/" title="Self-hosted statsd" class="md-nav__link">
+        Self-hosted statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsite/" title="Self-hosted statsite" class="md-nav__link">
+        Self-hosted statsite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd_clients/" title="Statsd clients" class="md-nav__link">
+        Statsd clients
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-11">
+        Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/thirdparty/aws/" title="Importing metrics from Amazon CloudWatch" class="md-nav__link">
+        Importing metrics from Amazon CloudWatch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/grafana/" title="Exporting data to Grafana" class="md-nav__link">
+        Exporting data to Grafana
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/webhook/" title="Sending alerts to third-party services (webhooks)" class="md-nav__link">
+        Sending alerts to third-party services (webhooks)
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/" title="Collecting metrics from custom endpoints" class="md-nav__link">
+        Collecting metrics from custom endpoints
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Automation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-12">
+        Automation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/command_line_utility/" title="Using the command line utility (dlcli)" class="md-nav__link">
+        Using the command line utility (dlcli)
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/API/" title="Using the REST API" class="md-nav__link">
+        Using the REST API
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-13">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/getting_help/" title="Getting help" class="md-nav__link">
+        Getting help
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../troubleshooting/har_archive/" title="Generating an HTTP Archive File for support" class="md-nav__link">
+        Generating an HTTP Archive File for support
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../troubleshooting/expired_gpg_key/" title="Updating an expired GPG signing key" class="md-nav__link">
+        Updating an expired GPG signing key
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-host-view" title="Getting started with Host View" class="md-nav__link">
+    Getting started with Host View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displaying-connections-between-objects" title="Displaying connections between objects" class="md-nav__link">
+    Displaying connections between objects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zooming-in-for-more-details" title="Zooming in for more details" class="md-nav__link">
+    Zooming in for more details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering-the-view" title="Filtering the view" class="md-nav__link">
+    Filtering the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grouping-objects-in-the-view" title="Grouping objects in the view" class="md-nav__link">
+    Grouping objects in the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-objects-in-the-view" title="Sorting objects in the view" class="md-nav__link">
+    Sorting objects in the view
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colorizing-and-resizing-objects" title="Colorizing and resizing objects" class="md-nav__link">
+    Colorizing and resizing objects
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+              
+                
+                <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called <code>dataloop agent</code>, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.</p>
+</div>
+<h1 id="using-host-view-to-visualize-containers-and-relationships">Using Host View to Visualize Containers and Relationships<a class="headerlink" href="#using-host-view-to-visualize-containers-and-relationships" title="Permanent link">&para;</a></h1>
+<p>Host View displays an overview of all the containers and hosts in your
+account. It has powerful features that let you filter, group, and
+colorize objects based on criteria you select. Here are some of the things
+you can do with Host View:</p>
+<ul>
+<li>Show which containers belong to which hosts.</li>
+<li>Visualize which containers are consuming the most CPU or memory.</li>
+<li>Display quick facts at a glance, including: CPU and memory usage,
+   tags and plugins assigned to an object, and running processes.</li>
+</ul>
+<p><img alt="Host View example" src="../../img/host_view.png" title="Host View example" /></p>
+<h2 id="getting-started-with-host-view">Getting started with Host View<a class="headerlink" href="#getting-started-with-host-view" title="Permanent link">&para;</a></h2>
+<p>To display the host view, navigate to <strong>Status &gt; Host View</strong>. The default
+host view is displayed as a set of colored squares. Each square represents
+a container or host.</p>
+<p>Clicking on one of the colored squares will open a side panel with details
+about the selected object, including:</p>
+<ul>
+<li>Current status (Connected/disconnected)</li>
+<li>CPU and memory metrics for the past hour</li>
+<li>Hostname and agent fingerprint (for debugging)</li>
+<li>Parent hostname (if the selected object is a container) or
+   containers running on this host (if the selected object is a host)</li>
+<li>Alerts currently being triggered</li>
+<li>Tags assigned to this object</li>
+<li>Plugins configured to collect data on this object</li>
+<li>Processes running on this object</li>
+</ul>
+<h2 id="displaying-connections-between-objects">Displaying connections between objects<a class="headerlink" href="#displaying-connections-between-objects" title="Permanent link">&para;</a></h2>
+<p>When you select an object, you will see lines connecting this object to its
+parent or children.</p>
+<ul>
+<li>
+<p>If you select a container, Host View will draw a line connecting the
+   container to its host.</p>
+</li>
+<li>
+<p>If you select a host, Host View will draw lines connecting the host to
+   each of its containers.</p>
+</li>
+</ul>
+<p>If you would prefer not to see the connections, change the view setting in the
+sidebar from "Show container relationships" to "Don't show any connections".</p>
+<p>The "highlight connected nodes" checkbox will cause other objects to be
+grayed out, making it easier to see the connections to the selected object.</p>
+<h2 id="zooming-in-for-more-details">Zooming in for more details<a class="headerlink" href="#zooming-in-for-more-details" title="Permanent link">&para;</a></h2>
+<p>You can zoom in on sections of the host view to display more details inside
+each object.</p>
+<p><img alt="Zooming in on a single object" src="../../img/host_view_zoom.png" title="Zooming in on a single object" /></p>
+<p>To zoom in on an object:</p>
+<ol>
+<li>Click the <img alt="Zoom in" src="../../img/host_view_plus.png" title="Zoom in" /> zoom in button in the bottom right corner of
+    the Host View.</li>
+<li>Or scroll your mouse wheel to zoom in.</li>
+</ol>
+<h2 id="filtering-the-view">Filtering the view<a class="headerlink" href="#filtering-the-view" title="Permanent link">&para;</a></h2>
+<p>If you have many objects in the Host View, you might prefer to display only
+a subset. If you select a tag in the "Filter By" view, you will see only the
+objects that have that tag. For example:</p>
+<ul>
+<li>Select the <code>container:host</code> tag to display only hosts, not containers.</li>
+<li>Select the <code>container:id</code> tag to display only containers.</li>
+<li>Select the <code>ec2</code> tag to display only AWS EC2 instances.</li>
+<li>Select the <code>mysql</code> tag to display only objects that have been tagged to
+   run the MySQL plugin.</li>
+</ul>
+<p>If you select multiple tags, then only those objects that match ALL of the
+filters will be displayed.</p>
+<p>To remove the filters and display all objects, click the "x" next to the
+selected filter.</p>
+<h2 id="grouping-objects-in-the-view">Grouping objects in the view<a class="headerlink" href="#grouping-objects-in-the-view" title="Permanent link">&para;</a></h2>
+<p>This is one of the most powerful features of Host View. You can use your tags
+(and additional metadata supplied by Outlyer) to group similar objects
+together.</p>
+<p>A very useful example would be to group your Docker containers with their
+host, as in the following screenshot.</p>
+<p><img alt="Host View grouped by container host" src="../../img/host_view_group.png" title="Host View grouped by container host" /></p>
+<p>To group containers by host:</p>
+<ol>
+<li>In the upper right corner of Host View, click <img alt="Group by" src="../../img/host_view_groupby.png" title="Group by" />.</li>
+<li>Select the <code>container:parent_id</code> meta-tag.</li>
+</ol>
+<p>You will also see your hosts grouped in the lower-left corner, in a group
+called "no container:parent_id". Since hosts do not carry the <code>parent_id</code> tag,
+this is where they are placed. If you wanted to remove the hosts from view,
+you could add a filter on <code>container:id</code>.</p>
+<p>Another example, especially useful in clustered environments, would be to
+group by <code>container:image</code>. This will show you how many instances of each
+Docker image are running in your environment.</p>
+<h2 id="sorting-objects-in-the-view">Sorting objects in the view<a class="headerlink" href="#sorting-objects-in-the-view" title="Permanent link">&para;</a></h2>
+<p>You can sort the objects in view by their name, CPU usage, or memory usage. To
+sort the view, click the "Unsorted" dropdown in the top right corner of the
+display and choose one of the options.</p>
+<p>Objects will be sorted from left to right, then top to bottom. If you are also
+grouping objects, then the objects within each group will be sorted.</p>
+<h2 id="colorizing-and-resizing-objects">Colorizing and resizing objects<a class="headerlink" href="#colorizing-and-resizing-objects" title="Permanent link">&para;</a></h2>
+<p>As an alternative to sorting, you can adjust the colors of objects based on
+their CPU or memory usage. This turns the display into a "heat map" where
+you can quickly spot problems in your infrastructure.</p>
+<p><img alt="Host View heat map by memory usage" src="../../img/host_view_heatmap.png" title="Host View heat map by memory usage" /></p>
+<p>To change how objects are colorized:</p>
+<ol>
+<li>Click the "color by presence" dropdown list in the upper right corner<br />
+    of the Host View.</li>
+<li>Select either "color by CPU" or "color by memory" as appropriate.</li>
+<li>Choose whether you'd prefer a red/amber/green display or a smooth gradient
+    of colors, and adjust the thresholds as needed.</li>
+</ol>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../upgrading/" title="Upgrading from an older release" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Upgrading from an older release
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../dashboards/" title="About dashboards" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About dashboards
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Outlyer 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://support.outlyer.com/hc/en-gb/requests/new" class="md-footer-social__link fa fa-support"></a>
+    
+      <a href="https://github.com/outlyerapp" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/outlyerapp" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-39a173f6f5.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../js/segmentio.js"></script>
+      
+        <script src="../../js/dltrk.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

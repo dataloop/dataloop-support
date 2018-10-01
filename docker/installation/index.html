@@ -1,0 +1,1595 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Support and Help Documentation for Outlyer.com">
+      
+      
+      
+        <meta name="author" content="support@outlyer.com">
+      
+      
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.3">
+    
+    
+      
+        <title>Installation - Outlyer Documentation</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-5b0c41c2b5.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-166740f5bb.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="deep-orange" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../.." title="Outlyer Documentation" class="md-logo md-header-nav__button">
+            <img src="../../img/touchicon-x120.png" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Monitoring Docker environments
+                </span>
+              
+            
+            Installation
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          <a href="https://support.outlyer.com/hc/en-gb/requests/new">
+            New Ticket
+          </a> |
+          <a href="https://support.outlyer.com/hc/en-gb/requests">
+            My Tickets
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../../img/touchicon-x120.png">
+      
+    </i>
+    Outlyer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../.." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      About Outlyer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2">
+        About Outlyer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/use_cases/" title="Typical use cases" class="md-nav__link">
+        Typical use cases
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/where_we_fit/" title="Where we fit" class="md-nav__link">
+        Where we fit
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/data_retention_policy/" title="Data retention policy" class="md-nav__link">
+        Data retention policy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/faq/" title="FAQ" class="md-nav__link">
+        FAQ
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Agent installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Agent installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/supported_operating_systems/" title="Supported platforms" class="md-nav__link">
+        Supported platforms
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_linux/" title="Installing on Linux" class="md-nav__link">
+        Installing on Linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_windows/" title="Installing on Windows" class="md-nav__link">
+        Installing on Windows
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_raspberry_pi/" title="Installing on Raspberry Pi" class="md-nav__link">
+        Installing on Raspberry Pi
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/installation_docker/" title="Installing on Docker" class="md-nav__link">
+        Installing on Docker
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/config_management/" title="Deploying with a configuration management tool" class="md-nav__link">
+        Deploying with a configuration management tool
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/fingerprints/" title="About agent fingerprints" class="md-nav__link">
+        About agent fingerprints
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/uninstall/" title="Uninstalling" class="md-nav__link">
+        Uninstalling
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Agent configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Agent configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/command_line_interface/" title="Command-line options" class="md-nav__link">
+        Command-line options
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/configuration/" title="Configuration" class="md-nav__link">
+        Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/solo_mode/" title="Solo mode" class="md-nav__link">
+        Solo mode
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Monitoring Docker environments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        Monitoring Docker environments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../introduction/" title="Introduction to Docker monitoring" class="md-nav__link">
+        Introduction to Docker monitoring
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Installation
+      </label>
+    
+    <a href="./" title="Installation" class="md-nav__link md-nav__link--active">
+      Installation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-agent-container" title="Installing the Agent container" class="md-nav__link">
+    Installing the Agent container
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-on-kubernetes" title="Deploying on Kubernetes" class="md-nav__link">
+    Deploying on Kubernetes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-on-swarm" title="Deploying on Swarm" class="md-nav__link">
+    Deploying on Swarm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cant-the-agent-run-as-a-swarm-service" title="Why can't the Agent run as a swarm service?" class="md-nav__link">
+    Why can't the Agent run as a swarm service?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-container-by-hand" title="Starting the container by hand" class="md-nav__link">
+    Starting the container by hand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-docker-monitoring-pack" title="Installing the Docker monitoring pack" class="md-nav__link">
+    Installing the Docker monitoring pack
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-the-docker-dashboard" title="Viewing the Docker dashboard" class="md-nav__link">
+    Viewing the Docker dashboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-the-standard-alerts" title="Customizing the standard alerts" class="md-nav__link">
+    Customizing the standard alerts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../upgrading/" title="Upgrading from an older release" class="md-nav__link">
+        Upgrading from an older release
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../host_view/" title="Using Host View to visualize containers and relationships" class="md-nav__link">
+        Using Host View to visualize containers and relationships
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Dashboards
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Dashboards
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/" title="About dashboards" class="md-nav__link">
+        About dashboards
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/graph_widgets/" title="Graph widgets" class="md-nav__link">
+        Graph widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/numeric_widgets/" title="Numeric widgets" class="md-nav__link">
+        Numeric widgets
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/annotations/" title="Annotations" class="md-nav__link">
+        Annotations
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/public_dashboards/" title="Sharing your dashboards" class="md-nav__link">
+        Sharing your dashboards
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/troubleshooting/" title="Troubleshooting" class="md-nav__link">
+        Troubleshooting
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Alerting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        Alerting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/rules/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/metric_alerts/" title="Metric alerts" class="md-nav__link">
+        Metric alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/plugin_alerts/" title="Plugin alerts" class="md-nav__link">
+        Plugin alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/agent_alerts/" title="Agent alerts" class="md-nav__link">
+        Agent alerts
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-5" type="checkbox" id="nav-7-5">
+    
+    <label class="md-nav__link" for="nav-7-5">
+      Webhooks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7-5">
+        Webhooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/webhook/" title="About webhooks" class="md-nav__link">
+        About webhooks
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/slack/" title="Slack" class="md-nav__link">
+        Slack
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/hipchat/" title="HipChat" class="md-nav__link">
+        HipChat
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/pagerduty/" title="PagerDuty" class="md-nav__link">
+        PagerDuty
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/opsgenie/" title="OpsGenie" class="md-nav__link">
+        OpsGenie
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/bigpanda/" title="BigPanda" class="md-nav__link">
+        BigPanda
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/webhook/victorops/" title="VictorOps" class="md-nav__link">
+        VictorOps
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Security and the Outlyer account model
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        Security and the Outlyer account model
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/overview/" title="Overview" class="md-nav__link">
+        Overview
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/security/" title="Security and privacy" class="md-nav__link">
+        Security and privacy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/private_packs/" title="Creating private packs" class="md-nav__link">
+        Creating private packs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../account_model/backup_restore/" title="Backing up and restoring" class="md-nav__link">
+        Backing up and restoring
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../agent/solo_mode/" title="Solo mode" class="md-nav__link">
+        Solo mode
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Developing plugins
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        Developing plugins
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/" title="Introduction" class="md-nav__link">
+        Introduction
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/plugin_deployment_models/" title="Plugin deployment models" class="md-nav__link">
+        Plugin deployment models
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_plugins/" title="Nagios plugins" class="md-nav__link">
+        Nagios plugins
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/nagios_performance_data/" title="Nagios performance data" class="md-nav__link">
+        Nagios performance data
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/prometheus_plugins/" title="Prometheus plugins" class="md-nav__link">
+        Prometheus plugins
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/built_in_python/" title="Built-in Python interpreter" class="md-nav__link">
+        Built-in Python interpreter
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../nagios/powershell/" title="Powershell" class="md-nav__link">
+        Powershell
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Custom metric endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        Custom metric endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/" title="About custom endpoints" class="md-nav__link">
+        About custom endpoints
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/influxdb/" title="InfluxDB" class="md-nav__link">
+        InfluxDB
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/collectd/" title="CollectD" class="md-nav__link">
+        CollectD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/graphite/" title="Graphite" class="md-nav__link">
+        Graphite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-5" type="checkbox" id="nav-10-5">
+    
+    <label class="md-nav__link" for="nav-10-5">
+      Statsd
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10-5">
+        Statsd
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd/" title="About Statsd" class="md-nav__link">
+        About Statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/hosted_statsd/" title="Hosted statsd server" class="md-nav__link">
+        Hosted statsd server
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsd/" title="Self-hosted statsd" class="md-nav__link">
+        Self-hosted statsd
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/self-hosted_statsite/" title="Self-hosted statsite" class="md-nav__link">
+        Self-hosted statsite
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/statsd_clients/" title="Statsd clients" class="md-nav__link">
+        Statsd clients
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Integrations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-11">
+        Integrations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../integrations/thirdparty/aws/" title="Importing metrics from Amazon CloudWatch" class="md-nav__link">
+        Importing metrics from Amazon CloudWatch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../dashboards/grafana/" title="Exporting data to Grafana" class="md-nav__link">
+        Exporting data to Grafana
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../alerting/webhook/" title="Sending alerts to third-party services (webhooks)" class="md-nav__link">
+        Sending alerts to third-party services (webhooks)
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../endpoints/" title="Collecting metrics from custom endpoints" class="md-nav__link">
+        Collecting metrics from custom endpoints
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Automation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-12">
+        Automation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/command_line_utility/" title="Using the command line utility (dlcli)" class="md-nav__link">
+        Using the command line utility (dlcli)
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/API/" title="Using the REST API" class="md-nav__link">
+        Using the REST API
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-13">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../getting_started/getting_help/" title="Getting help" class="md-nav__link">
+        Getting help
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../troubleshooting/har_archive/" title="Generating an HTTP Archive File for support" class="md-nav__link">
+        Generating an HTTP Archive File for support
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../../troubleshooting/expired_gpg_key/" title="Updating an expired GPG signing key" class="md-nav__link">
+        Updating an expired GPG signing key
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-agent-container" title="Installing the Agent container" class="md-nav__link">
+    Installing the Agent container
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-on-kubernetes" title="Deploying on Kubernetes" class="md-nav__link">
+    Deploying on Kubernetes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-on-swarm" title="Deploying on Swarm" class="md-nav__link">
+    Deploying on Swarm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-cant-the-agent-run-as-a-swarm-service" title="Why can't the Agent run as a swarm service?" class="md-nav__link">
+    Why can't the Agent run as a swarm service?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-container-by-hand" title="Starting the container by hand" class="md-nav__link">
+    Starting the container by hand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-docker-monitoring-pack" title="Installing the Docker monitoring pack" class="md-nav__link">
+    Installing the Docker monitoring pack
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-the-docker-dashboard" title="Viewing the Docker dashboard" class="md-nav__link">
+    Viewing the Docker dashboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-the-standard-alerts" title="Customizing the standard alerts" class="md-nav__link">
+    Customizing the standard alerts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+              
+                
+                <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have recently rebranded and changed our name from Dataloop.IO to Outlyer. Our agent is still called <code>dataloop agent</code>, and relevant code reflects the old name (Dataloop) as well. Thank you for your patience as we update everything.</p>
+</div>
+<h1 id="docker-agent-and-pack-installation">Docker Agent and Pack installation<a class="headerlink" href="#docker-agent-and-pack-installation" title="Permanent link">&para;</a></h1>
+<p>There are two steps to getting our Docker support up and running:</p>
+<ol>
+<li>Installing the Docker Agent.</li>
+<li>Installing the Docker Monitoring Pack in your account.</li>
+</ol>
+<h2 id="installing-the-agent-container">Installing the Agent container<a class="headerlink" href="#installing-the-agent-container" title="Permanent link">&para;</a></h2>
+<p>The Docker Agent is itself just a Docker container. It runs alongside the other
+containers on your Docker host. How you deploy the container depends on your
+environment. Choose the option that matches your needs:</p>
+<ul>
+<li><a href="#deploying-on-kubernetes">Deploying on a Kubernetes cluster</a></li>
+<li><a href="#deploying-on-swarm">Deploying on a Swarm cluster</a></li>
+<li><a href="#manually-starting-the-container">Deploying manually</a></li>
+</ul>
+<h3 id="deploying-on-kubernetes">Deploying on Kubernetes<a class="headerlink" href="#deploying-on-kubernetes" title="Permanent link">&para;</a></h3>
+<p>Download our <a href="https://raw.githubusercontent.com/outlyerapp/docker-alpine/master/agent/kubernetes_daemonset.yaml">sample daemonset file</a> and customize as necessary for your
+installation. At minimum, you will want to set your DOCKER_AGENT_KEY:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">env</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">DATALOOP_AGENT_KEY</span>
+<span class="hll">    <span class="l l-Scalar l-Scalar-Plain">value</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;your dataloop agent key&gt;</span>
+</span></pre></div>
+
+
+<p>Then deploy it to Kubernetes with this command:</p>
+<div class="codehilite"><pre><span></span>kubectl apply -f kubernetes_daemonset.yaml
+</pre></div>
+
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you used kubeadm to setup your cluster, or if you use <a href="https://kubernetes.io/docs/admin/authorization/rbac/">RBAC</a>, 
+the default service account will not have some permissions. We use your cluster's configuration to talk to
+the API, which uses <a href="https://kubernetes.io/docs/admin/service-accounts-admin/">service accounts</a>.
+Kubeadm sets up <a href="https://kubernetes.io/docs/admin/authorization/rbac/">RBAC</a>,
+which in turn by default grants <a href="https://kubernetes.io/docs/admin/authorization/rbac/#service-account-permissions">no permissions</a>
+outside of the "kube-system" namespace.</p>
+<p>This problem will manifest itself as an HTTP 403 error when running plugins.<br />
+To give your default service account the necessary "view" permissions, run the following:</p>
+<p><code>kubectl create rolebinding default-view --clusterrole=view --serviceaccount=default:default --namespace=default</code></p>
+</div>
+<hr />
+<h3 id="deploying-on-swarm">Deploying on Swarm<a class="headerlink" href="#deploying-on-swarm" title="Permanent link">&para;</a></h3>
+<p>Please follow the instructions detailed in a standard <a href="../../agent/installation_docker/">Docker deployment</a>,
+making sure that you pass <code>--net=host</code> to the <code>docker run</code> command.</p>
+<h4 id="why-cant-the-agent-run-as-a-swarm-service">Why can't the Agent run as a swarm service?<a class="headerlink" href="#why-cant-the-agent-run-as-a-swarm-service" title="Permanent link">&para;</a></h4>
+<p>Swarm does not <a href="https://github.com/moby/moby/issues/27082">yet</a> support running
+containers with <code>--net=host</code>, which is needed for the Agent to communicate
+simply with all containers on the host.</p>
+<hr />
+<h3 id="starting-the-container-by-hand">Starting the container by hand<a class="headerlink" href="#starting-the-container-by-hand" title="Permanent link">&para;</a></h3>
+<p>The Dataloop container can be manually started with a simple <code>docker run</code>
+command. Detailed instructions are <a href="../../agent/installation_docker/">here</a>.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>No matter which method you choose, you will need to specify your agent key,
+which associates the agent with your account. You can also pass in any of
+these additional environment variables:</p>
+<dl>
+<dt><code>DATALOOP_AGENT_KEY</code></dt>
+<dd>Your agent key.</dd>
+<dt><code>DATALOOP_NAME</code></dt>
+<dd>Assigns a name to the agent. If not provided, the host name will be used.</dd>
+<dt><code>DATALOOP_TAGS</code></dt>
+<dd>Comma-separated list of extra tags to apply to the agent.</dd>
+<dt><code>DATALOOP_DEBUG</code></dt>
+<dd>If set to <code>true</code>, the agent will enable extra verbose logging.</dd>
+</dl>
+<h2 id="installing-the-docker-monitoring-pack">Installing the Docker monitoring pack<a class="headerlink" href="#installing-the-docker-monitoring-pack" title="Permanent link">&para;</a></h2>
+<p>The Docker pack provides some default dashboards and alerts for Docker
+environments. To install it:</p>
+<ol>
+<li>Go to <strong>Setup Monitoring &gt; Pack Library</strong>.</li>
+<li>Scroll down to the Docker pack.</li>
+<li>Click the green "Install" button on the right side of the screen.</li>
+</ol>
+<p><img alt="Docker pack" src="../../img/docker_pack.png" /></p>
+<h3 id="viewing-the-docker-dashboard">Viewing the Docker dashboard<a class="headerlink" href="#viewing-the-docker-dashboard" title="Permanent link">&para;</a></h3>
+<p>The dashboard in the Docker pack provides a snapshot of your environment's
+overall health, including service status, number of containers running, and
+container resource usage. To view it, go to <strong>Dashboards &gt; Docker</strong>.</p>
+<h3 id="customizing-the-standard-alerts">Customizing the standard alerts<a class="headerlink" href="#customizing-the-standard-alerts" title="Permanent link">&para;</a></h3>
+<p>The pack provides a simple alert rule that triggers whenever any of the
+monitored containers goes down. To customize the rule, go to
+<strong>Alerts &gt; Docker</strong>.</p>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../introduction/" title="Introduction to Docker monitoring" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction to Docker monitoring
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../upgrading/" title="Upgrading from an older release" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Upgrading from an older release
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Outlyer 2017
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://support.outlyer.com/hc/en-gb/requests/new" class="md-footer-social__link fa fa-support"></a>
+    
+      <a href="https://github.com/outlyerapp" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/outlyerapp" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-39a173f6f5.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../js/segmentio.js"></script>
+      
+        <script src="../../js/dltrk.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
