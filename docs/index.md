@@ -2,9 +2,10 @@
 
 ---
 
-**If you are looking for V2 documentation please click below**
+!!! warning
+    **If you are looking for V2 documentation please click below**
 
-[Outlyer V2 Documentation](https://www.outlyer.com/docs)
+    [Outlyer V2 Documentation](https://www.outlyer.com/docs)
 
 ---
 
